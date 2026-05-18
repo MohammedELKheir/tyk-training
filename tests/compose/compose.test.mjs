@@ -181,7 +181,7 @@ test('requirements fixture composes a coherent and buildable Slidev deck', async
   const slidesMarkdown = await readFile(path.join(deckDir, 'slides.md'), 'utf8');
   const parsedDeck = parseGeneratedSlidesMarkdown(slidesMarkdown);
   const readme = await readFile(path.join(deckDir, 'README.md'), 'utf8');
-  const slidevOutDir = path.join(tempRoot, 'slidev-build');
+  const slidevOutDir = path.join(deckDir, '.artifacts', 'slidev-build');
 
   assert.equal(summary.deck_slug, expected.deck_slug);
   assert.equal(summary.title, expected.title);
@@ -241,8 +241,8 @@ test('requirements fixture composes a coherent and buildable Slidev deck', async
     env: { ...process.env, CI: 'true' },
   });
 
-  await execFileAsync('npm', ['exec', '--', 'slidev', 'build', path.join(deckDir, 'slides.md'), '--out', slidevOutDir], {
-    cwd: repoCopy,
+  await execFileAsync('npm', ['exec', '--', 'slidev', 'build', 'slides.md', '--out', '.artifacts/slidev-build'], {
+    cwd: deckDir,
     env: { ...process.env, CI: 'true' },
   });
 

@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-05-18T14:23:25.140Z",
+  "customer": "Acme",
+  "deck_slug": "acme-architecture-onboarding",
+  "title": "Acme Architecture Onboarding",
+  "requirements": {
+    "customer": "Acme",
+    "title": "Acme Architecture Onboarding",
+    "deck_slug": "acme-architecture-onboarding",
+    "topics": [
+      "architecture"
+    ],
+    "categories": [],
+    "audiences": [
+      "solutions-architect"
+    ],
+    "use_cases": [
+      "onboarding"
+    ],
+    "products": [
+      "tyk-gateway"
+    ],
+    "include_slide_ids": [],
+    "exclude_slide_ids": [],
+    "notes": "Example requirements for the customer-deck composition workflow."
+  },
+  "total_selected_slides": 3,
+  "direct_match_slide_ids": [
+    "api-gateway-fundamentals/003-control-plane-vs-data-plane"
+  ],
+  "dependency_added_slide_ids": [
+    "api-gateway-fundamentals/001-title",
+    "api-gateway-fundamentals/002-what-is-tyk"
+  ],
+  "selected_slides": [
+    {
+      "id": "api-gateway-fundamentals/001-title",
+      "deck_id": "api-gateway-fundamentals",
+      "title": "API Gateway Fundamentals",
+      "source_file": "decks/api-gateway-fundamentals/slides/001-title.md",
+      "inclusion_reason": "dependency",
+      "requires_context": [],
+      "builds_on": [],
+      "standalone_safe": true,
+      "assets": []
+    },
+    {
+      "id": "api-gateway-fundamentals/002-what-is-tyk",
+      "deck_id": "api-gateway-fundamentals",
+      "title": "What is Tyk?",
+      "source_file": "decks/api-gateway-fundamentals/slides/002-what-is-tyk.md",
+      "inclusion_reason": "dependency",
+      "requires_context": [
+        "api-gateway-fundamentals/001-title"
+      ],
+      "builds_on": [],
+      "standalone_safe": false,
+      "assets": []
+    },
+    {
+      "id": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "deck_id": "api-gateway-fundamentals",
+      "title": "Control Plane vs Data Plane",
+      "source_file": "decks/api-gateway-fundamentals/slides/003-control-plane-vs-data-plane.md",
+      "inclusion_reason": "direct_match",
+      "requires_context": [
+        "api-gateway-fundamentals/002-what-is-tyk"
+      ],
+      "builds_on": [
+        "api-gateway-fundamentals/002-what-is-tyk"
+      ],
+      "standalone_safe": false,
+      "assets": []
+    }
+  ],
+  "output_files": [
+    {
+      "file": "slides/001-api-gateway-fundamentals-title.md",
+      "source_slide_id": "api-gateway-fundamentals/001-title",
+      "source_file": "decks/api-gateway-fundamentals/slides/001-title.md",
+      "inclusion_reason": "dependency"
+    },
+    {
+      "file": "slides/002-api-gateway-fundamentals-what-is-tyk.md",
+      "source_slide_id": "api-gateway-fundamentals/002-what-is-tyk",
+      "source_file": "decks/api-gateway-fundamentals/slides/002-what-is-tyk.md",
+      "inclusion_reason": "dependency"
+    },
+    {
+      "file": "slides/003-api-gateway-fundamentals-control-plane-vs-data-plane.md",
+      "source_slide_id": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "source_file": "decks/api-gateway-fundamentals/slides/003-control-plane-vs-data-plane.md",
+      "inclusion_reason": "direct_match"
+    }
+  ],
+  "copied_assets": []
+}

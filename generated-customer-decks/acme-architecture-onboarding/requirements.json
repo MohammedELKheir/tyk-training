@@ -1,0 +1,21 @@
+{
+  "customer": "Acme",
+  "title": "Acme Architecture Onboarding",
+  "deck_slug": "acme-architecture-onboarding",
+  "topics": [
+    "architecture"
+  ],
+  "categories": [],
+  "audiences": [
+    "solutions-architect"
+  ],
+  "use_cases": [
+    "onboarding"
+  ],
+  "products": [
+    "tyk-gateway"
+  ],
+  "include_slide_ids": [],
+  "exclude_slide_ids": [],
+  "notes": "Example requirements for the customer-deck composition workflow."
+}

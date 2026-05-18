@@ -1,0 +1,33 @@
+id: api-gateway-fundamentals
+slug: api-gateway-fundamentals
+title: API Gateway Fundamentals
+status: draft
+version: 1
+owners:
+  - training-team
+summary: Introductory Tyk training deck covering core gateway concepts and request flow.
+topics:
+  - api-gateway
+  - traffic-management
+categories:
+  - fundamentals
+audiences:
+  - sales-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-title
+  - 002-what-is-tyk
+  - 003-control-plane-vs-data-plane
+extraction_defaults:
+  standalone_safe_default: false
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

@@ -1,0 +1,15 @@
+{
+  "topics": {
+    "api-gateway": { "label": "API Gateway" }
+  },
+  "categories": {
+    "fundamentals": { "label": "Fundamentals" }
+  },
+  "audiences": {
+    "solutions-architect": { "label": "Solutions Architect" }
+  },
+  "use_cases": {
+    "onboarding": { "label": "Onboarding" }
+  },
+  "products": {}
+}

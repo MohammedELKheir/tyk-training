@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Slide metadata",
+  "type": "object",
+  "required": [
+    "id",
+    "deck_id",
+    "order",
+    "slug",
+    "title",
+    "summary",
+    "topics",
+    "categories",
+    "audiences",
+    "use_cases",
+    "standalone_safe",
+    "reusable"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[0-9]{3}-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "deck_id": { "$ref": "#/$defs/slug" },
+    "order": { "type": "integer", "minimum": 1 },
+    "slug": { "$ref": "#/$defs/slug" },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "topics": { "$ref": "#/$defs/tagList" },
+    "categories": { "$ref": "#/$defs/tagList" },
+    "audiences": { "$ref": "#/$defs/tagList" },
+    "use_cases": { "$ref": "#/$defs/tagList" },
+    "products": { "$ref": "#/$defs/optionalTagList" },
+    "standalone_safe": { "type": "boolean" },
+    "reusable": { "type": "boolean" },
+    "sequence_group": { "$ref": "#/$defs/slug" },
+    "sequence_role": { "enum": ["start", "middle", "end", "single"] },
+    "requires_context": { "$ref": "#/$defs/referenceList" },
+    "builds_on": { "$ref": "#/$defs/referenceList" },
+    "recommended_next": { "$ref": "#/$defs/referenceList" },
+    "customer_visible": { "type": "boolean" },
+    "notes_visibility": { "enum": ["internal", "customer-safe", "hidden"] },
+    "assets": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "tagList": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/slug" }
+    },
+    "optionalTagList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/slug" }
+    },
+    "referenceList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[0-9]{3}-[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    }
+  }
+}

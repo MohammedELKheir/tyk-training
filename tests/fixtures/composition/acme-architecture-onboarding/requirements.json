@@ -1,0 +1,13 @@
+{
+  "customer": "Acme",
+  "deck_slug": "acme-architecture-onboarding",
+  "title": "Acme Architecture Onboarding",
+  "topics": ["architecture"],
+  "categories": [],
+  "audiences": ["solutions-architect"],
+  "use_cases": ["onboarding"],
+  "products": ["tyk-gateway"],
+  "include_slide_ids": [],
+  "exclude_slide_ids": [],
+  "notes": "Fixture requirements for the end-to-end customer onboarding composition flow."
+}

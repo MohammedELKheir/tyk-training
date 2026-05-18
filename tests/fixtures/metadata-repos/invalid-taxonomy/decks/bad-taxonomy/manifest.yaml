@@ -1,0 +1,24 @@
+id: bad-taxonomy
+slug: bad-taxonomy
+title: Bad Taxonomy
+status: active
+version: 1
+owners:
+  - training-team
+summary: Deck with invalid topic tag.
+topics:
+  - totally-unknown-topic
+categories:
+  - fundamentals
+audiences:
+  - solutions-architect
+use_cases:
+  - onboarding
+canonical_order:
+  - 001-title
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

@@ -1,0 +1,24 @@
+{
+  "name": "tyk-training-slides",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Canonical Tyk training deck repository scaffold with catalog and GitHub Pages build helpers.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node tools/validate/main.mjs",
+    "build:catalog": "node tools/build-catalog/main.mjs",
+    "build:site": "node site/build.mjs",
+    "build:decks": "node tools/build-slidev/main.mjs",
+    "build": "npm run build:catalog && npm run build:site",
+    "extract": "node tools/extract/main.mjs",
+    "compose": "node tools/compose/main.mjs",
+    "test": "node --test tests/**/*.test.mjs"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.15.2",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}

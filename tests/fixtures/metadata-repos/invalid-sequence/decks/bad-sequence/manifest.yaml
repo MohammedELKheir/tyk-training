@@ -1,0 +1,25 @@
+id: bad-sequence
+slug: bad-sequence
+title: Bad Sequence
+status: active
+version: 1
+owners:
+  - training-team
+summary: Deck with contradictory sequence roles.
+topics:
+  - api-gateway
+categories:
+  - fundamentals
+audiences:
+  - solutions-architect
+use_cases:
+  - onboarding
+canonical_order:
+  - 001-start-a
+  - 002-start-b
+extraction_defaults:
+  standalone_safe_default: false
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

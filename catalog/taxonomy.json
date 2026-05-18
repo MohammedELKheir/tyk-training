@@ -1,0 +1,57 @@
+{
+  "topics": {
+    "api-gateway": {
+      "label": "API Gateway",
+      "description": "Gateway fundamentals and role in API architecture."
+    },
+    "traffic-management": {
+      "label": "Traffic Management",
+      "description": "Traffic handling, routing, and request flow concepts."
+    },
+    "architecture": {
+      "label": "Architecture",
+      "description": "System structure, planes, and component boundaries."
+    }
+  },
+  "categories": {
+    "fundamentals": {
+      "label": "Fundamentals"
+    },
+    "concepts": {
+      "label": "Concepts"
+    },
+    "deep-dive": {
+      "label": "Deep Dive"
+    }
+  },
+  "audiences": {
+    "sales-engineer": {
+      "label": "Sales Engineer"
+    },
+    "solutions-architect": {
+      "label": "Solutions Architect"
+    },
+    "platform-engineer": {
+      "label": "Platform Engineer"
+    }
+  },
+  "use_cases": {
+    "onboarding": {
+      "label": "Onboarding"
+    },
+    "workshop": {
+      "label": "Workshop"
+    },
+    "discovery": {
+      "label": "Discovery"
+    }
+  },
+  "products": {
+    "tyk-gateway": {
+      "label": "Tyk Gateway"
+    },
+    "tyk-dashboard": {
+      "label": "Tyk Dashboard"
+    }
+  }
+}

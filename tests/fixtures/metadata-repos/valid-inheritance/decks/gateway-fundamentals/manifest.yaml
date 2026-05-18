@@ -1,0 +1,30 @@
+id: gateway-fundamentals
+slug: gateway-fundamentals
+title: Gateway Fundamentals
+status: active
+version: 1
+owners:
+  - training-team
+summary: Covers core gateway concepts.
+topics:
+  - api-gateway
+categories:
+  - fundamentals
+audiences:
+  - solutions-architect
+use_cases:
+  - onboarding
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-title
+  - 002-traffic-flow
+  - 003-request-lifecycle
+extraction_defaults:
+  standalone_safe_default: false
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

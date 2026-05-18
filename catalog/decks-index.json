@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-18T14:23:19.595Z",
+  "decks": [
+    {
+      "id": "api-gateway-fundamentals",
+      "slug": "api-gateway-fundamentals",
+      "title": "API Gateway Fundamentals",
+      "status": "draft",
+      "version": 1,
+      "summary": "Introductory Tyk training deck covering core gateway concepts and request flow.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-gateway",
+        "traffic-management"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "sales-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 3,
+      "reusable_slide_count": 3,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": false,
+        "inherit_deck_tags": true
+      }
+    }
+  ]
+}

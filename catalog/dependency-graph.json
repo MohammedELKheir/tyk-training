@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-05-18T14:23:19.595Z",
+  "nodes": [
+    {
+      "id": "api-gateway-fundamentals/001-title",
+      "deck_id": "api-gateway-fundamentals",
+      "sequence_group": "gateway-core-concepts",
+      "sequence_role": "start"
+    },
+    {
+      "id": "api-gateway-fundamentals/002-what-is-tyk",
+      "deck_id": "api-gateway-fundamentals",
+      "sequence_group": "gateway-core-concepts",
+      "sequence_role": "middle"
+    },
+    {
+      "id": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "deck_id": "api-gateway-fundamentals",
+      "sequence_group": "gateway-core-concepts",
+      "sequence_role": "end"
+    }
+  ],
+  "edges": [
+    {
+      "from": "api-gateway-fundamentals/001-title",
+      "to": "api-gateway-fundamentals/002-what-is-tyk",
+      "type": "recommended_next"
+    },
+    {
+      "from": "api-gateway-fundamentals/001-title",
+      "to": "api-gateway-fundamentals/002-what-is-tyk",
+      "type": "requires_context"
+    },
+    {
+      "from": "api-gateway-fundamentals/002-what-is-tyk",
+      "to": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "type": "recommended_next"
+    },
+    {
+      "from": "api-gateway-fundamentals/002-what-is-tyk",
+      "to": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "type": "requires_context"
+    },
+    {
+      "from": "api-gateway-fundamentals/002-what-is-tyk",
+      "to": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "type": "builds_on"
+    },
+    {
+      "from": "api-gateway-fundamentals/001-title",
+      "to": "api-gateway-fundamentals/002-what-is-tyk",
+      "type": "sequence"
+    },
+    {
+      "from": "api-gateway-fundamentals/002-what-is-tyk",
+      "to": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "type": "sequence"
+    }
+  ]
+}

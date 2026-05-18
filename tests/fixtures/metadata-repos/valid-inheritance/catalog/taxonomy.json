@@ -1,0 +1,21 @@
+{
+  "topics": {
+    "api-gateway": { "label": "API Gateway" },
+    "traffic-management": { "label": "Traffic Management" }
+  },
+  "categories": {
+    "fundamentals": { "label": "Fundamentals" },
+    "concepts": { "label": "Concepts" }
+  },
+  "audiences": {
+    "solutions-architect": { "label": "Solutions Architect" },
+    "sales-engineer": { "label": "Sales Engineer" }
+  },
+  "use_cases": {
+    "onboarding": { "label": "Onboarding" },
+    "workshop": { "label": "Workshop" }
+  },
+  "products": {
+    "tyk-gateway": { "label": "Tyk Gateway" }
+  }
+}

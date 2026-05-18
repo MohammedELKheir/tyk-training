@@ -1,0 +1,30 @@
+{
+  "customer": "Acme",
+  "deck_slug": "acme-architecture-onboarding",
+  "title": "Acme Architecture Onboarding",
+  "total_selected_slides": 3,
+  "direct_match_slide_ids": [
+    "api-gateway-fundamentals/003-control-plane-vs-data-plane"
+  ],
+  "dependency_added_slide_ids": [
+    "api-gateway-fundamentals/001-title",
+    "api-gateway-fundamentals/002-what-is-tyk"
+  ],
+  "selected_slides": [
+    {
+      "id": "api-gateway-fundamentals/001-title",
+      "source_file": "decks/api-gateway-fundamentals/slides/001-title.md",
+      "inclusion_reason": "dependency"
+    },
+    {
+      "id": "api-gateway-fundamentals/002-what-is-tyk",
+      "source_file": "decks/api-gateway-fundamentals/slides/002-what-is-tyk.md",
+      "inclusion_reason": "dependency"
+    },
+    {
+      "id": "api-gateway-fundamentals/003-control-plane-vs-data-plane",
+      "source_file": "decks/api-gateway-fundamentals/slides/003-control-plane-vs-data-plane.md",
+      "inclusion_reason": "direct_match"
+    }
+  ]
+}

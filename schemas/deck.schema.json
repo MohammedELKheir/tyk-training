@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deck manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "status",
+    "version",
+    "owners",
+    "summary",
+    "topics",
+    "categories",
+    "audiences",
+    "use_cases"
+  ],
+  "properties": {
+    "id": { "$ref": "#/$defs/slug" },
+    "slug": { "$ref": "#/$defs/slug" },
+    "title": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["active", "draft", "deprecated", "archived"] },
+    "version": { "type": "integer", "minimum": 1 },
+    "owners": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "summary": { "type": "string", "minLength": 1 },
+    "topics": { "$ref": "#/$defs/tagList" },
+    "categories": { "$ref": "#/$defs/tagList" },
+    "audiences": { "$ref": "#/$defs/tagList" },
+    "use_cases": { "$ref": "#/$defs/tagList" },
+    "products": { "$ref": "#/$defs/optionalTagList" },
+    "prerequisites": { "$ref": "#/$defs/referenceList" },
+    "related_decks": { "$ref": "#/$defs/referenceList" },
+    "canonical_order": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{3}-[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "extraction_defaults": {
+      "type": "object",
+      "properties": {
+        "standalone_safe_default": { "type": "boolean" },
+        "inherit_deck_tags": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "publishing": {
+      "type": "object",
+      "properties": {
+        "github_pages": { "type": "boolean" },
+        "catalog_visibility": { "enum": ["public", "internal", "private"] }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "tagList": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/slug" }
+    },
+    "optionalTagList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/slug" }
+    },
+    "referenceList": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

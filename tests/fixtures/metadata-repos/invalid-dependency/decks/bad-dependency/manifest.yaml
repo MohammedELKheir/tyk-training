@@ -1,0 +1,24 @@
+id: bad-dependency
+slug: bad-dependency
+title: Bad Dependency
+status: active
+version: 1
+owners:
+  - training-team
+summary: Deck with missing hard dependency.
+topics:
+  - api-gateway
+categories:
+  - fundamentals
+audiences:
+  - solutions-architect
+use_cases:
+  - onboarding
+canonical_order:
+  - 001-title
+extraction_defaults:
+  standalone_safe_default: false
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

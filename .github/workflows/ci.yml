@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate metadata and internal references
+        run: npm run validate
+
+      - name: Build catalog artifacts
+        run: npm run build:catalog
+
+      - name: Run test suite
+        run: npm test
+
+      - name: Build GitHub Pages site scaffold
+        run: npm run build:site
+
+      - name: Build publishable Slidev decks
+        run: npm run build:decks

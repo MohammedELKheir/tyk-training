@@ -1,0 +1,48 @@
+id: tyk-streams-2025
+slug: tyk-streams-2025
+title: Tyk Streams
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---tyk-streams` with 19 converted slides.
+topics:
+  - streaming
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+  - tyk-streams
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-streams
+  - 002-02
+  - 003-what-are-streaming-apis
+  - 004-traditional-rest
+  - 005-event-driven-architecture-explained
+  - 006-tyk-and-streaming-apis
+  - 007-tyk-and-streaming-apis-2
+  - 008-why-tyk-streams
+  - 009-core-concept-unified-streaming-layer
+  - 010-core-concept-unified-streaming-layer-2
+  - 011-capabilities-overview
+  - 012-capabilities-overview-2
+  - 013-architecture-and-flow
+  - 014-request-lifecycle
+  - 015-hands-on-workshop
+  - 016-example-scenario-overview
+  - 017-tyk-as-an-api-producer-gateway-client-stream
+  - 018-tyk-as-an-api-consumer-gateway-stream-client
+  - 019-prerequisites
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

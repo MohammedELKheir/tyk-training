@@ -1,0 +1,25 @@
+:root {
+  --tyk-purple: #7F38FA;
+  --tyk-magenta: #BB11FF;
+}
+
+.slidev-page {
+  font-size: 1.04rem;
+}
+
+h1, h2, h3 {
+  color: #5E2CCF;
+}
+
+pre {
+  font-size: 0.84rem !important;
+  line-height: 1.35 !important;
+}
+
+code {
+  font-family: "SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas, monospace;
+}
+
+ul li, ol li {
+  margin: 0.35rem 0;
+}

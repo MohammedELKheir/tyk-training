@@ -1,0 +1,46 @@
+id: foundation-api-security-4-policies-in-tyk
+slug: foundation-api-security-4-policies-in-tyk
+title: API Security with Tyk: Policies in Tyk
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--4-policies-in-tyk` with 15 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-api-security-with-tyk-policies-in-tyk
+  - 002-policies
+  - 003-security-policy-overview
+  - 004-why-use-policies
+  - 005-policy-capabilities
+  - 006-relationship-policy-vs-access-key
+  - 007-policy-evaluation-flow
+  - 008-policy-structure
+  - 009-key-policy-fields
+  - 010-access-key-example
+  - 011-policies-general-vs-per-api-rules
+  - 012-policies-policy-partitioning
+  - 013-policies-multi-policy-keys
+  - 014-example-policy-combination-diagram
+  - 015-example-policy-key-session-data
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

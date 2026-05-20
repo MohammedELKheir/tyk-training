@@ -1,0 +1,139 @@
+id: graphql-2025
+slug: graphql-2025
+title: Tyk Training - GraphQL
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---graphql` with 111 converted slides.
+topics:
+  - graphql
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-onboarding
+  - 002-graphql
+  - 003-graphql-2
+  - 004-graphql-3
+  - 005-graphql-4
+  - 006-graphql-5
+  - 007-graphql-with-tyk
+  - 008-hands-on
+  - 009-onboarding-a-graphql-api
+  - 010-onboarding-a-graphql-api-via-operator
+  - 011-apiversion-kind-metadata-name-spec-name-use-keyless-protocol-active-prox
+  - 012-securing-a-graphql-api-via-operator
+  - 013-graphql-proxy-only
+  - 014-creating-a-graphql-proxy-only-api
+  - 015-managing-schema
+  - 016-field-based-permissions
+  - 017-field-based-permissions-2
+  - 018-setting-up-field-based-permissions
+  - 019-setting-up-field-based-permissions-blocklist
+  - 020-setting-up-field-based-permissions-allowlist
+  - 021-hands-on-2
+  - 022-setting-up-field-based-permissions-2
+  - 023-complexity-limiting
+  - 024-complexity-limiting-2
+  - 025-complexity-limiting-3
+  - 026-introspection
+  - 027-introspection-2
+  - 028-introspection-3
+  - 029-introspection-queries
+  - 030-introspection-queries-2
+  - 031-validation-query-validation
+  - 032-validation-schema-validation
+  - 033-introspection-headers
+  - 034-introspection-headers-2
+  - 035-request-headers
+  - 036-request-headers-2
+  - 037-persisting-graphql-queries
+  - 038-persisting-graphql-queries-2
+  - 039-persisting-graphql-queries-3
+  - 040-persisting-graphql-queries-4
+  - 041-dynamic-variables
+  - 042-dynamic-variables-2
+  - 043-dynamic-variables-3
+  - 044-dynamic-variables-4
+  - 045-dynamic-variables-5
+  - 046-universal-data-graph
+  - 047-what-is-the-universal-data-graph-udg
+  - 048-currently-supported-datasources-rest-graphql-soap-through-the-rest-datas
+  - 049-key-concepts-datasources
+  - 050-key-concepts-arguments
+  - 051-key-concepts-arguments-2
+  - 052-key-concepts-arguments-3
+  - 053-key-concepts-field-mappings
+  - 054-key-concepts-field-mappings-2
+  - 055-key-concepts-reusing-response-fields
+  - 056-key-concepts-defining-data-source-urls
+  - 057-key-concepts-defining-data-source-urls-2
+  - 058-response-example-data-people-id-1-name-john-doe
+  - 059-udg-header-management
+  - 060-udg-header-management-2
+  - 061-udg-header-management-3
+  - 062-datasources
+  - 063-connect-data-sources
+  - 064-graphql-datasource-overview
+  - 065-graphql-datasource-overview-2
+  - 066-graphql-datasource-overview-3
+  - 067-graphql-datasource-overview-4
+  - 068-kafka-datasource-overview
+  - 069-kafka-datasource-overview-2
+  - 070-kafka-datasource-overview-3
+  - 071-kafka-datasource-overview-4
+  - 072-kafka-datasource-overview-5
+  - 073-kafka-datasource-overview-6
+  - 074-kafka-datasource-overview-7
+  - 075-kafka-datasource-overview-8
+  - 076-rest-datasource-overview
+  - 077-rest-datasource-overview-2
+  - 078-rest-datasource-overview-3
+  - 079-rest-datasource-overview-4
+  - 080-rest-datasource-overview-5
+  - 081-hands-on-3
+  - 082-prerequisites
+  - 083-clone-and-run-example-rest-apis
+  - 084-create-a-udg-api-in-tyk-dashboard
+  - 085-define-your-graphql-schema
+  - 086-connect-the-user-query-to-the-users-rest-api
+  - 087-test-the-api-in-graphql-playground
+  - 088-challenge
+  - 089-demo
+  - 090-udg-countries-enriched-overview
+  - 091-udg-countries-enriched-overview-2
+  - 092-udg-countries-enriched-how-it-works
+  - 093-data-sources-configuration
+  - 094-data-sources-configuration-2
+  - 095-graphql-federation
+  - 096-what-is-graphql-federation
+  - 097-slide-97
+  - 098-subgraphs-and-supergraphs
+  - 099-subgraph-examples
+  - 100-subgraph-examples-2
+  - 101-after-federating-all-subgraphs-in-tyk-the-unified-supergraph-schema-look
+  - 102-subgraph-and-supergraphs
+  - 103-creating-a-subgraph-via-the-dashboard-ui
+  - 104-go-to-apis-add-new-api-federation-supergraph-in-details-select-subgraphs
+  - 105-open-supergraph-api-in-dashboard-go-to-subgraphs-tab-global-headers-add
+  - 106-open-supergraph-api-in-dashboard-go-to-subgraphs-tab-global-headers-add-2
+  - 107-entities-defining-the-base-entity
+  - 108-entities-extending-entities
+  - 109-entities-entity-stubs
+  - 110-shared-types-and-extending-shared-types
+  - 111-extension-orphans
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

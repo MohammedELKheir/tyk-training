@@ -1,0 +1,34 @@
+id: architect-server-side-events-server-side-events
+slug: architect-server-side-events-server-side-events
+title: Server-Sent Events (SSE)
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/server-side-events/server-side-events` with 5 converted slides.
+topics:
+  - streaming
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+  - tyk-streams
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-server-sent-events-sse
+  - 002-overview
+  - 003-gateway-configuration-for-sse
+  - 004-example-setup-streaming-messages
+  - 005-output-example
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

@@ -1,0 +1,37 @@
+id: foundation-api-security-7-rate-limiting
+slug: foundation-api-security-7-rate-limiting
+title: API Security with Tyk: Rate Limiting in Tyk
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--7-rate-limiting` with 6 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-api-security-with-tyk-rate-limiting-in-tyk
+  - 002-rate-limiting
+  - 003-rate-limiting-2
+  - 004-rate-limiting-3
+  - 005-rate-limiting-4
+  - 006-rate-limiting-5
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

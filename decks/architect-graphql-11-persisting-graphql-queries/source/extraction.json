@@ -1,0 +1,471 @@
+{
+  "source": "11. Persisting GraphQL Queries.pptx",
+  "slide_size": {
+    "width_emu": 9144000,
+    "height_emu": 5143500
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "notes": "Tyk allows you to expose a GraphQL query as a REST endpoint using the persist_graphql feature inside extended_paths.\nThis is configured on an HTTP-type API definition, not a GraphQL type.\nIt\u2019s especially useful for:\nCreating simple, cacheable REST endpoints from complex GraphQL queries.\u000b\nProviding predefined access to specific GraphQL operations without exposing the full schema.\u000b\nTo use this feature, two requirements must be met:\nThe target_url must point to a valid GraphQL upstream.\u000b\nenable_context_vars must be set to true.\u000b\nThis approach lets you combine the flexibility of GraphQL with the simplicity and caching benefits of REST.",
+      "shapes": [
+        {
+          "name": "Google Shape;112;p28",
+          "type": "AUTO_SHAPE (1)",
+          "box": {
+            "x": 873.83,
+            "y": 474.69,
+            "w": 106.17,
+            "h": 76.55
+          },
+          "group": null
+        },
+        {
+          "name": "Google Shape;113;p28",
+          "type": "PICTURE (13)",
+          "box": {
+            "x": 902.83,
+            "y": 502.43,
+            "w": 56.56,
+            "h": 29.33
+          },
+          "group": null,
+          "asset": "/screenshots/slide-001-Google-Shape;113;p28.png"
+        },
+        {
+          "name": "Google Shape;114;p28",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 77.17,
+            "y": 33.17,
+            "w": 836.38,
+            "h": 70.93
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "Persisting GraphQL queries"
+            }
+          ],
+          "text": "Persisting GraphQL queries"
+        },
+        {
+          "name": "Google Shape;115;p28",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 41.81,
+            "y": 128.83,
+            "w": 836.38,
+            "h": 422.42
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "Tyk allows exposing a GraphQL query as a REST endpoint."
+            },
+            {
+              "level": 0,
+              "text": "Achieved using persist_graphql inside extended_paths."
+            },
+            {
+              "level": 0,
+              "text": "Configured on an HTTP-type API definition."
+            },
+            {
+              "level": 0,
+              "text": "Useful for:"
+            },
+            {
+              "level": 1,
+              "text": "Creating simple, cacheable REST endpoints"
+            },
+            {
+              "level": 1,
+              "text": "Predefined access to known GraphQL operations"
+            },
+            {
+              "level": 0,
+              "text": "Requirements:"
+            },
+            {
+              "level": 0,
+              "text": "The target_url must point to a GraphQL upstream."
+            },
+            {
+              "level": 0,
+              "text": "enable_context_vars must be set to true."
+            }
+          ],
+          "text": "Tyk allows exposing a GraphQL query as a REST endpoint.\nAchieved using persist_graphql inside extended_paths.\nConfigured on an HTTP-type API definition.\nUseful for:\nCreating simple, cacheable REST endpoints\nPredefined access to known GraphQL operations\nRequirements:\nThe target_url must point to a GraphQL upstream.\nenable_context_vars must be set to true."
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "notes": "Here\u2019s a basic example of an API definition for a GraphQL proxy in Tyk:\nThe listen_path is set to /trevorblades/.\u000b\nThe target_url points to the upstream GraphQL service at https://countries.trevorblades.com.\u000b\nWe enable strip_listen_path to remove the prefix before forwarding requests upstream.\u000b\nTo enable versioning with this setup:\nSet use_extended_paths to true \u2014 this allows more granular path handling.\u000b\nSet not_versioned to true if you want to disable automatic versioning behavior.\u000b\nThe important piece for GraphQL-to-REST conversion is that the middleware handling this logic lives inside the extended_paths.persist_graphql section.\nThis modular approach gives you flexibility to manage your API versions and expose GraphQL queries as REST endpoints with fine control",
+      "shapes": [
+        {
+          "name": "Google Shape;120;p29",
+          "type": "AUTO_SHAPE (1)",
+          "box": {
+            "x": 873.83,
+            "y": 474.69,
+            "w": 106.17,
+            "h": 76.55
+          },
+          "group": null
+        },
+        {
+          "name": "Google Shape;121;p29",
+          "type": "PICTURE (13)",
+          "box": {
+            "x": 902.83,
+            "y": 502.43,
+            "w": 56.56,
+            "h": 29.33
+          },
+          "group": null,
+          "asset": "/screenshots/slide-002-Google-Shape;121;p29.png"
+        },
+        {
+          "name": "Google Shape;122;p29",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 77.17,
+            "y": 33.17,
+            "w": 836.38,
+            "h": 70.93
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "Persisting GraphQL queries"
+            }
+          ],
+          "text": "Persisting GraphQL queries"
+        },
+        {
+          "name": "Google Shape;123;p29",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 41.81,
+            "y": 128.83,
+            "w": 836.38,
+            "h": 422.42
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "API Definition & Versioning Setup"
+            },
+            {
+              "level": 0,
+              "text": "Basic API definition:"
+            },
+            {
+              "level": 0,
+              "text": "\"proxy\": {"
+            },
+            {
+              "level": 0,
+              "text": "  \"listen_path\": \"/trevorblades/\","
+            },
+            {
+              "level": 0,
+              "text": "  \"target_url\": \"https://countries.trevorblades.com\","
+            },
+            {
+              "level": 0,
+              "text": "  \"strip_listen_path\": true"
+            },
+            {
+              "level": 0,
+              "text": "}"
+            },
+            {
+              "level": 0,
+              "text": "Enable versioning with:"
+            },
+            {
+              "level": 1,
+              "text": "use_extended_paths: true"
+            },
+            {
+              "level": 1,
+              "text": "not_versioned: true"
+            },
+            {
+              "level": 0,
+              "text": "GraphQL to REST middleware lives inside extended_paths.persist_graphql."
+            }
+          ],
+          "text": "API Definition & Versioning Setup\nBasic API definition:\n\"proxy\": {\n  \"listen_path\": \"/trevorblades/\",\n  \"target_url\": \"https://countries.trevorblades.com\",\n  \"strip_listen_path\": true\n}\nEnable versioning with:\nuse_extended_paths: true\nnot_versioned: true\nGraphQL to REST middleware lives inside extended_paths.persist_graphql."
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "notes": "Once the API definition is in place, versioning plays an important role \u2014 even if you're not managing multiple versions.\nBy setting not_versioned: true and providing a \"Default\" version, you activate the GraphQL-to-REST middleware. This is where the persist_graphql configuration lives.",
+      "shapes": [
+        {
+          "name": "Google Shape;128;p30",
+          "type": "AUTO_SHAPE (1)",
+          "box": {
+            "x": 873.83,
+            "y": 474.69,
+            "w": 106.17,
+            "h": 76.55
+          },
+          "group": null
+        },
+        {
+          "name": "Google Shape;129;p30",
+          "type": "PICTURE (13)",
+          "box": {
+            "x": 902.83,
+            "y": 502.43,
+            "w": 56.56,
+            "h": 29.33
+          },
+          "group": null,
+          "asset": "/screenshots/slide-003-Google-Shape;129;p30.png"
+        },
+        {
+          "name": "Google Shape;130;p30",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 77.17,
+            "y": 33.17,
+            "w": 836.38,
+            "h": 70.93
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "Persisting GraphQL queries"
+            }
+          ],
+          "text": "Persisting GraphQL queries"
+        },
+        {
+          "name": "Google Shape;131;p30",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 41.81,
+            "y": 112.5,
+            "w": 836.38,
+            "h": 422.42
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "The vital part of this is the extended_paths.persist_graphql field"
+            },
+            {
+              "level": 0,
+              "text": "Sample persist_graphql configuration:"
+            },
+            {
+              "level": 0,
+              "text": "\"persist_graphql\": ["
+            },
+            {
+              "level": 0,
+              "text": "  {"
+            },
+            {
+              "level": 0,
+              "text": "    \"method\": \"GET\","
+            },
+            {
+              "level": 0,
+              "text": "    \"path\": \"/getContinentByCode\","
+            },
+            {
+              "level": 0,
+              "text": "    \"operation\": \"query ($continentCode: ID!) { continent(code: $continentCode) { code name countries { name } } }\","
+            },
+            {
+              "level": 0,
+              "text": "    \"variables\": {"
+            },
+            {
+              "level": 0,
+              "text": "      \"continentCode\": \"EU\""
+            },
+            {
+              "level": 0,
+              "text": "    }"
+            },
+            {
+              "level": 0,
+              "text": "  }"
+            },
+            {
+              "level": 0,
+              "text": "]"
+            }
+          ],
+          "text": "The vital part of this is the extended_paths.persist_graphql field\nSample persist_graphql configuration:\n\"persist_graphql\": [\n  {\n    \"method\": \"GET\",\n    \"path\": \"/getContinentByCode\",\n    \"operation\": \"query ($continentCode: ID!) { continent(code: $continentCode) { code name countries { name } } }\",\n    \"variables\": {\n      \"continentCode\": \"EU\"\n    }\n  }\n]"
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "notes": "In this final step, we configure the actual persisted query.\nThe path /getContinentByCode becomes a usable REST endpoint.\nWhen Tyk receives a GET request to that path, it will construct and send the defined GraphQL operation to the upstream \u2014 in this case, fetching the continent by code.\nThe query and variables are hardcoded, so it's predictable and easy to cache or control.",
+      "shapes": [
+        {
+          "name": "Google Shape;136;p31",
+          "type": "AUTO_SHAPE (1)",
+          "box": {
+            "x": 873.83,
+            "y": 474.69,
+            "w": 106.17,
+            "h": 76.55
+          },
+          "group": null
+        },
+        {
+          "name": "Google Shape;137;p31",
+          "type": "PICTURE (13)",
+          "box": {
+            "x": 902.83,
+            "y": 502.43,
+            "w": 56.56,
+            "h": 29.33
+          },
+          "group": null,
+          "asset": "/screenshots/slide-004-Google-Shape;137;p31.png"
+        },
+        {
+          "name": "Google Shape;138;p31",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 77.17,
+            "y": 33.17,
+            "w": 836.38,
+            "h": 70.93
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "Persisting GraphQL queries"
+            }
+          ],
+          "text": "Persisting GraphQL queries"
+        },
+        {
+          "name": "Google Shape;139;p31",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 41.81,
+            "y": 112.5,
+            "w": 836.38,
+            "h": 422.42
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "Each entry includes:"
+            },
+            {
+              "level": 0,
+              "text": "method \u2013 e.g., GET"
+            },
+            {
+              "level": 0,
+              "text": "path \u2013 e.g., /getContinentByCode"
+            },
+            {
+              "level": 0,
+              "text": "operation \u2013 the GraphQL query"
+            },
+            {
+              "level": 0,
+              "text": "variables \u2013 parameters passed to the query"
+            }
+          ],
+          "text": "Each entry includes:\nmethod \u2013 e.g., GET\npath \u2013 e.g., /getContinentByCode\noperation \u2013 the GraphQL query\nvariables \u2013 parameters passed to the query"
+        },
+        {
+          "name": "Google Shape;140;p31",
+          "type": "TEXT_BOX (17)",
+          "box": {
+            "x": 532.24,
+            "y": 128.31,
+            "w": 427.14,
+            "h": 326.22
+          },
+          "group": null,
+          "paragraphs": [
+            {
+              "level": 0,
+              "text": "{"
+            },
+            {
+              "level": 0,
+              "text": "    \"data\": {"
+            },
+            {
+              "level": 0,
+              "text": "        \"continent\": {"
+            },
+            {
+              "level": 0,
+              "text": "            \"code\": \"EU\","
+            },
+            {
+              "level": 0,
+              "text": "            \"name\": \"Europe\","
+            },
+            {
+              "level": 0,
+              "text": "            \"countries\": ["
+            },
+            {
+              "level": 0,
+              "text": "                {"
+            },
+            {
+              "level": 0,
+              "text": "                    \"name\": \"Andorra\""
+            },
+            {
+              "level": 0,
+              "text": "                },"
+            },
+            {
+              "level": 0,
+              "text": "                ..."
+            },
+            {
+              "level": 0,
+              "text": "            ]"
+            },
+            {
+              "level": 0,
+              "text": "        }"
+            },
+            {
+              "level": 0,
+              "text": "    }"
+            },
+            {
+              "level": 0,
+              "text": "}"
+            }
+          ],
+          "text": "{\n    \"data\": {\n        \"continent\": {\n            \"code\": \"EU\",\n            \"name\": \"Europe\",\n            \"countries\": [\n                {\n                    \"name\": \"Andorra\"\n                },\n                ...\n            ]\n        }\n    }\n}"
+        }
+      ]
+    }
+  ]
+}

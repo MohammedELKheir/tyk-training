@@ -1,0 +1,204 @@
+{
+  "slide_size": [
+    9144000,
+    5143500
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "items": [
+        {
+          "name": "Google Shape;63;p15",
+          "type": "TEXT_BOX (17)",
+          "left": 0.412,
+          "top": 1.052,
+          "width": 9.214,
+          "height": 1.481,
+          "depth": 0,
+          "text": "API Security with Tyk:\nRate Limiting Scopes"
+        },
+        {
+          "name": "Google Shape;64;p15",
+          "type": "TEXT_BOX (17)",
+          "left": 1.902,
+          "top": 2.456,
+          "width": 6.211,
+          "height": 0.98,
+          "depth": 0,
+          "text": "Learn how to define how rate limits apply across different levels. Giving you fine-grained control to protect critical services and ensure reliable performance"
+        },
+        {
+          "name": "Google Shape;65;p15",
+          "type": "AUTO_SHAPE (1)",
+          "left": 8.917,
+          "top": 4.844,
+          "width": 1.083,
+          "height": 0.781,
+          "depth": 0
+        },
+        {
+          "name": "Google Shape;66;p15",
+          "type": "PICTURE (13)",
+          "left": 9.213,
+          "top": 5.127,
+          "width": 0.577,
+          "height": 0.299,
+          "depth": 0,
+          "image_ext": "png",
+          "image_size": [
+            2048,
+            1062
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 2,
+      "items": [
+        {
+          "name": "Google Shape;71;p16",
+          "type": "PLACEHOLDER (14)",
+          "left": 0.385,
+          "top": 0.049,
+          "width": 9.37,
+          "height": 1.247,
+          "depth": 0,
+          "text": "API-Level Rate Limiting"
+        },
+        {
+          "name": "Google Shape;72;p16",
+          "type": "TEXT_BOX (17)",
+          "left": 0.473,
+          "top": 1.352,
+          "width": 9.198,
+          "height": 1.937,
+          "depth": 0,
+          "text": "Protecting the whole API\n\nThis limits how much total traffic the entire API can handle \u2014 no matter who is making the requests\nIt protects your backend system from getting too many requests at once (which could slow it down or crash it). Think of it like setting a maximum capacity for a restaurant \u2014 once it's full, no one else can enter."
+        },
+        {
+          "name": "Google Shape;73;p16",
+          "type": "AUTO_SHAPE (1)",
+          "left": 8.917,
+          "top": 4.844,
+          "width": 1.083,
+          "height": 0.781,
+          "depth": 0
+        },
+        {
+          "name": "Google Shape;74;p16",
+          "type": "PICTURE (13)",
+          "left": 9.213,
+          "top": 5.127,
+          "width": 0.577,
+          "height": 0.299,
+          "depth": 0,
+          "image_ext": "png",
+          "image_size": [
+            2048,
+            1062
+          ]
+        }
+      ],
+      "notes": "So first we\u2019re talking about API level rate limiting.\nThis type of rate limiting is all about protecting the entire API \u2014 regardless of who the user is.\nIt sets a global limit on how much total traffic the API can handle in a given period. So whether you have one user or a hundred, they all share the same cap.\nWhy is this useful?\nIt protects your backend from being overwhelmed by too many requests at once.\nThink of it like setting a maximum capacity for a restaurant. Once it's full, no more people can come in until others leave \u2014 regardless of whether they're VIPs or regulars."
+    },
+    {
+      "slide": 3,
+      "items": [
+        {
+          "name": "Google Shape;79;p17",
+          "type": "PLACEHOLDER (14)",
+          "left": 0.385,
+          "top": -0.117,
+          "width": 9.37,
+          "height": 1.247,
+          "depth": 0,
+          "text": "Key-Level Rate Limiting"
+        },
+        {
+          "name": "Google Shape;80;p17",
+          "type": "TEXT_BOX (17)",
+          "left": 0.889,
+          "top": 0.935,
+          "width": 9.198,
+          "height": 3.835,
+          "depth": 0,
+          "text": "Controlling each user or app:\n\nLimits how many requests each individual user or API key can make\nPrevents any one user from hogging the system or abusing their access\n\nTypes of Key-Level Limits:\n\nGlobal (all APIs) \u2013 Limit how many total requests this user/API key can make across everything they have access to\nExample: \u201cUser123 can only make 500 requests per hour total.\u201d\nPer API \u2013 Limit requests to one specific API\nExample: \u201cUser123 can only make 200 requests per hour to the Billing API.\u201d\nPer Endpoint \u2013 Limit requests to a specific path or function\nExample: \u201cUser123 can only call /checkout/pay 10 times per minute.\u201d"
+        },
+        {
+          "name": "Google Shape;81;p17",
+          "type": "AUTO_SHAPE (1)",
+          "left": 8.917,
+          "top": 4.844,
+          "width": 1.083,
+          "height": 0.781,
+          "depth": 0
+        },
+        {
+          "name": "Google Shape;82;p17",
+          "type": "PICTURE (13)",
+          "left": 9.213,
+          "top": 5.127,
+          "width": 0.577,
+          "height": 0.299,
+          "depth": 0,
+          "image_ext": "png",
+          "image_size": [
+            2048,
+            1062
+          ]
+        }
+      ],
+      "notes": "While API-level rate limiting protects the entire API, key-level rate limiting focuses on individual users or API keys.\nThink of it like giving each user their own quota \u2014 a personal limit on how many requests they can make.\nThis helps prevent any one user from hogging resources or overwhelming the system. You can think of it like giving each person a ticket that allows them, say, 100 entries per hour \u2014 once they use them all, they have to wait.\nThere are a few ways to apply key-level limits:\nGlobal \u2014 This sets a total request limit across all APIs the user can access.\nFor example: \u201cUser123 can only make 500 requests per hour, no matter which APIs they call.\u201d\nPer API \u2014 This narrows it down to just one API.\nExample: \u201cUser123 can only make 200 requests per hour to the Billing API.\u201d\nPer Endpoint \u2014 This goes even more granular. You can limit specific functions or paths.\nExample: \u201cUser123 can only call /checkout/pay 10 times per minute.\u201d"
+    },
+    {
+      "slide": 4,
+      "items": [
+        {
+          "name": "Google Shape;87;p18",
+          "type": "PLACEHOLDER (14)",
+          "left": 0.385,
+          "top": 0.049,
+          "width": 9.37,
+          "height": 1.247,
+          "depth": 0,
+          "text": "Endpoint-Level Rate Limiting"
+        },
+        {
+          "name": "Google Shape;88;p18",
+          "type": "TEXT_BOX (17)",
+          "left": 0.556,
+          "top": 1.352,
+          "width": 9.198,
+          "height": 1.937,
+          "depth": 0,
+          "text": "Endpoint-level rate limiting allows you to control how often a specific path or function in your API can be accessed \n\nHelps protect critical or sensitive operations from being overloaded or abused.\nExample: User 123 can only make 10 req/min to checkout/pay\n\nIn Tyk, you can set this under key-level policies by defining custom limits per endpoint."
+        },
+        {
+          "name": "Google Shape;89;p18",
+          "type": "AUTO_SHAPE (1)",
+          "left": 8.917,
+          "top": 4.844,
+          "width": 1.083,
+          "height": 0.781,
+          "depth": 0
+        },
+        {
+          "name": "Google Shape;90;p18",
+          "type": "PICTURE (13)",
+          "left": 9.213,
+          "top": 5.127,
+          "width": 0.577,
+          "height": 0.299,
+          "depth": 0,
+          "image_ext": "png",
+          "image_size": [
+            2048,
+            1062
+          ]
+        }
+      ],
+      "notes": "Now let\u2019s dive one level deeper \u2014 into endpoint-level rate limiting.\nThis type of rate limiting lets you control how often a specific path or function in your API can be accessed. So instead of limiting an entire API or a whole user, you can target just one endpoint.\nWhy is this useful?\nIt helps protect critical or sensitive operations from being overloaded \u2014 such as payment gateways, account updates, or resource-intensive database queries.\nHere\u2019s a simple example:\nYou might allow a user to make 10 requests per minute to the /checkout/pay endpoint \u2014 even if they\u2019re allowed more requests overall.\nIn Tyk, you configure this under key-level policies, where you can define custom limits for individual endpoints."
+    }
+  ]
+}

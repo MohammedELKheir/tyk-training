@@ -1,0 +1,78 @@
+.slidev-layout {
+  position: relative;
+  overflow: hidden;
+}
+
+.tyk-mini-brand {
+  position: absolute;
+  left: 26px;
+  bottom: 18px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  color: #56597e;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+
+.tyk-mini-brand .mark {
+  width: 8px;
+  height: 8px;
+  background: #20edba;
+  border-radius: 2px 2px 7px 2px;
+  transform: translateY(-2px);
+  flex: 0 0 auto;
+}
+
+.tyk-corner-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 108px;
+  height: 88px;
+  background: #000;
+  border-top-left-radius: 38px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 4px;
+  padding: 0 15px 10px 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.95rem;
+  letter-spacing: -0.06em;
+}
+
+.tyk-corner-logo .mark {
+  width: 16px;
+  height: 16px;
+  background: #20edba;
+  border-radius: 3px 3px 12px 3px;
+  transform: translateY(-13px);
+  flex: 0 0 auto;
+}
+
+.content-shell {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 0 0 5.5rem 0;
+}
+
+.body-copy {
+  color: #55597d;
+  font-size: 1.06rem;
+  line-height: 1.4;
+}
+
+.body-copy p,
+.body-copy li {
+  color: #55597d;
+}
+
+.body-copy ul {
+  margin: 0;
+  padding-left: 1.6rem;
+}

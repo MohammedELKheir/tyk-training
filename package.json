@@ -12,13 +12,16 @@
     "build:catalog": "node tools/build-catalog/main.mjs",
     "build:site": "node site/build.mjs",
     "build:decks": "node tools/build-slidev/main.mjs",
-    "build": "npm run build:catalog && npm run build:site",
+    "build:decks:changed": "node tools/build-slidev/main.mjs --changed",
+    "build:decks:fast": "node tools/build-slidev/main.mjs --changed --concurrency=3",
+    "build": "npm run build:catalog && npm run build:decks && npm run build:site",
     "extract": "node tools/extract/main.mjs",
     "compose": "node tools/compose/main.mjs",
     "test": "node --test tests/**/*.test.mjs"
   },
   "devDependencies": {
     "@slidev/cli": "^52.6.0",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "slidev-theme-tyk": "file:./themes/slidev-theme-tyk"
   }
 }

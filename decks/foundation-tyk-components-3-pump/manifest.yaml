@@ -1,0 +1,34 @@
+id: foundation-tyk-components-3-pump
+slug: foundation-tyk-components-3-pump
+title: Tyk Product Components: Pump
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---3-pump` with 4 converted slides.
+topics:
+  - api-gateway
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-product-components-pump-exploring-the-role-of-each-component-in-the
+  - 002-tyk-pump-overview-extracts-analytics-from-tyk-gateway-via-redis-reads-re
+  - 003-tyk-pump-default-data-sink-tyk
+  - 004-tyk-pump-third-party-data-sink-tyk
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

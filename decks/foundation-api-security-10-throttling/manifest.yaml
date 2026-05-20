@@ -1,0 +1,35 @@
+id: foundation-api-security-10-throttling
+slug: foundation-api-security-10-throttling
+title: API Security with Tyk: Request Throttling
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--10-throttling` with 4 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-api-security-with-tyk-request-throttling-learn-how-request-throttling-in
+  - 002-throttling-throttling-enables-requests-which-exceed-their-rate-limit-to
+  - 003-throttling-throttling-can-be-configured-on-keys-and-policies-by-setting
+  - 004-throttling-tyk
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

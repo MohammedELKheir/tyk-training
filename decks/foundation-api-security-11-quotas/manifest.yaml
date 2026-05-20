@@ -1,0 +1,38 @@
+id: foundation-api-security-11-quotas
+slug: foundation-api-security-11-quotas
+title: API Security with Tyk: Request Quotas
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--11-quotas` with 7 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-api-security-with-tyk-request-quotas
+  - 002-quotas
+  - 003-quota-configuration
+  - 004-quota-enforcement
+  - 005-quota-renewal
+  - 006-quota-headers
+  - 007-quota-example
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

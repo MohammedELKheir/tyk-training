@@ -1,0 +1,35 @@
+id: architect-graphql-1-graphql-introduction
+slug: architect-graphql-1-graphql-introduction
+title: GraphQL Introduction
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/1.-graphql-introduction` with 6 converted slides.
+topics:
+  - graphql
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-module-1-graphql
+  - 002-graphql
+  - 003-graphql-2
+  - 004-graphql-3
+  - 005-graphql-4
+  - 006-graphql-with-tyk
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

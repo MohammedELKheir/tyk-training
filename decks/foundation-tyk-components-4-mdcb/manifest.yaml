@@ -1,0 +1,39 @@
+id: foundation-tyk-components-4-mdcb
+slug: foundation-tyk-components-4-mdcb
+title: Tyk Product Components: MDCB (Multi Data Centre Bridge)
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---4-mdcb` with 7 converted slides.
+topics:
+  - architecture
+  - observability
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+  - tyk-mdcb
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-product-components-mdcb-multi-data-centre-bridge-exploring-the-role
+  - 002-tyk-mdcb-overview
+  - 003-tyk-mdcb-how-does-it-work-control-plane-tyk-central-dashboard-tyk-mdcb-d
+  - 004-tyk-mdcb-control-plane-tyk-central-dashboard-control-plane-to-manage-con
+  - 005-tyk-mdcb-control-plane-tyk-management-gateway-operates-as-a-master-gatew
+  - 006-tyk-mdcb-data-plane-worker-gateway-s-handling-api-requests-synchronizes
+  - 007-tyk-mdcb-data-plane-control-plane-data-plane-worker-gateway-s-local-redi
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

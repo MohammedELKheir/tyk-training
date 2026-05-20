@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T16:07:36.083Z",
+  "generated_at": "2026-05-20T09:42:52.957Z",
   "decks": [
     {
       "id": "api-gateway-fundamentals",
@@ -39,6 +39,2670 @@
       },
       "extraction_defaults": {
         "standalone_safe_default": false,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "api-security-with-tyk",
+      "slug": "api-security-with-tyk",
+      "title": "API Security with Tyk: Authentication & Authorization",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/api-security-with-tyk` with 9 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 9,
+      "reusable_slide_count": 9,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-1-architecture-1-deployment-models",
+      "slug": "architect-1-architecture-1-deployment-models",
+      "title": "Tyk Deployment Models",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/1.-architecture/1.-deployment-models` with 16 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 16,
+      "reusable_slide_count": 16,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-circuit-breakers-1-circuit-breaker-overview",
+      "slug": "architect-circuit-breakers-1-circuit-breaker-overview",
+      "title": "Circuit Breaker Overview",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/1.-circuit-breaker-overview` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-circuit-breakers-2-how-circuit-breakers-work",
+      "slug": "architect-circuit-breakers-2-how-circuit-breakers-work",
+      "title": "How Circuit Breakers Work",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/2.-how-circuit-breakers-work` with 3 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 3,
+      "reusable_slide_count": 3,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-circuit-breakers-3-configuring-circuit-breakers",
+      "slug": "architect-circuit-breakers-3-configuring-circuit-breakers",
+      "title": "Configuring Circuit Breakers",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/3.-configuring-circuit-breakers` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-circuit-breakers-4-multiple-upstreams-and-gateways",
+      "slug": "architect-circuit-breakers-4-multiple-upstreams-and-gateways",
+      "title": "Multiple Upstreams & Gateways",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/4.-multiple-upstreams-and-gateways` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture",
+        "streaming"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway",
+        "tyk-streams"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-circuit-breakers-5-circuit-breaker-events",
+      "slug": "architect-circuit-breakers-5-circuit-breaker-events",
+      "title": "Circuit Breaker Events",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/5.-circuit-breaker-events` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-circuit-breakers-6-configuring-circuit-breakers-on-tyk-oas",
+      "slug": "architect-circuit-breakers-6-configuring-circuit-breakers-on-tyk-oas",
+      "title": "Configuring Circuit Breaker on Tyk OAS API",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/6.-configuring-circuit-breakers-on-tyk-oas-` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "architecture"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-1-graphql-introduction",
+      "slug": "architect-graphql-1-graphql-introduction",
+      "title": "GraphQL Introduction",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/1.-graphql-introduction` with 6 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 6,
+      "reusable_slide_count": 6,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-10-headers",
+      "slug": "architect-graphql-10-headers",
+      "title": "Headers",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/10.-headers` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-11-persisting-graphql-queries",
+      "slug": "architect-graphql-11-persisting-graphql-queries",
+      "title": "Persisting GraphQL queries",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/11.-persisting-graphql-queries` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-12-dynamic-variables",
+      "slug": "architect-graphql-12-dynamic-variables",
+      "title": "Dynamic Variables",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/12.-dynamic-variables` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-2-hands-on-1-onboarding-a-graphql-api",
+      "slug": "architect-graphql-2-hands-on-1-onboarding-a-graphql-api",
+      "title": "Hands-On: Onboarding a GraphQL API",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/2.-hands-on-1--onboarding-a-graphql-api` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "graphql"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-3-graphql-proxy-only",
+      "slug": "architect-graphql-3-graphql-proxy-only",
+      "title": "GraphQL Proxy Only",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/3.-graphql-proxy-only` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-4-managing-schema",
+      "slug": "architect-graphql-4-managing-schema",
+      "title": "Managing Schema",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/4.-managing-schema` with 1 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 1,
+      "reusable_slide_count": 1,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-5-field-based-permissions",
+      "slug": "architect-graphql-5-field-based-permissions",
+      "title": "Field Based Permissions",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/5.-field-based-permissions` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-6-hands-on-2-setting-up-field-based-permissions",
+      "slug": "architect-graphql-6-hands-on-2-setting-up-field-based-permissions",
+      "title": "Hands-On: Setting Up Field Based Permissions",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/6.-hands-on-2--setting-up-field-based-permissions` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-7-complexity-limiting",
+      "slug": "architect-graphql-7-complexity-limiting",
+      "title": "Complexity Limiting",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/7.-complexity-limiting` with 3 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 3,
+      "reusable_slide_count": 3,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-8-introspection",
+      "slug": "architect-graphql-8-introspection",
+      "title": "Introspection",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/8.-introspection` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-9-validation",
+      "slug": "architect-graphql-9-validation",
+      "title": "Validation",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/9.-validation` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-graphql-federation-1-graphql-federation",
+      "slug": "architect-graphql-federation-1-graphql-federation",
+      "title": "GraphQL Federation",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql-federation/1.-graphql-federation` with 18 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 18,
+      "reusable_slide_count": 18,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-grpc-proxy-1-grpc-overview",
+      "slug": "architect-grpc-proxy-1-grpc-overview",
+      "title": "gRPC Proxy",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/1.-grpc-overview` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "grpc"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-grpc-proxy-2-advanced-grpc-proxying-concepts",
+      "slug": "architect-grpc-proxy-2-advanced-grpc-proxying-concepts",
+      "title": "Advanced gRPC Proxying Concepts",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/2.-advanced-grpc-proxying-concepts` with 3 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "grpc"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 3,
+      "reusable_slide_count": 3,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-grpc-proxy-3-authentication-with-grpc",
+      "slug": "architect-grpc-proxy-3-authentication-with-grpc",
+      "title": "Authentication with gRPC",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/3.-authentication-with-grpc-` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "grpc",
+        "security"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-grpc-proxy-4-example-of-grpc-proxy-using-h2c",
+      "slug": "architect-grpc-proxy-4-example-of-grpc-proxy-using-h2c",
+      "title": "Example of gRPC proxy using H2C",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/4.-example-of-grpc-proxy-using-h2c-` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "grpc"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-grpc-proxy-5-secure-grpc-proxy-setup-with-tyk-and-https",
+      "slug": "architect-grpc-proxy-5-secure-grpc-proxy-setup-with-tyk-and-https",
+      "title": "Secure gRPC Proxy Setup with Tyk and HTTPS",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/5.-secure-grpc-proxy-setup-with-tyk-and-https-` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "grpc"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-grpc-proxy-6-bidirectional-grpc-streaming-with-https-and-h2c",
+      "slug": "architect-grpc-proxy-6-bidirectional-grpc-streaming-with-https-and-h2c",
+      "title": "Bidirectional gRPC Streaming with HTTPS & H2C",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/6.-bidirectional-grpc-streaming-with-https-and-h2c-` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "grpc",
+        "streaming"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway",
+        "tyk-streams"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-mdcb-analytics-mdcb-analytics",
+      "slug": "architect-mdcb-analytics-mdcb-analytics",
+      "title": "MDCB Analytics",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/mdcb-analytics/mdcb-analytics` with 7 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture",
+        "observability"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway",
+        "tyk-mdcb"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 7,
+      "reusable_slide_count": 7,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-server-side-events-server-side-events",
+      "slug": "architect-server-side-events-server-side-events",
+      "title": "Server-Sent Events (SSE)",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/server-side-events/server-side-events` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "streaming"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway",
+        "tyk-streams"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-tcp-proxy-1-tcp-proxy",
+      "slug": "architect-tcp-proxy-1-tcp-proxy",
+      "title": "TCP Proxy",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/tcp-proxy/1.-tcp-proxy` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-tcp-proxy-2-advanced-configurations",
+      "slug": "architect-tcp-proxy-2-advanced-configurations",
+      "title": "TCP Proxy: Advanced Configurations",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/tcp-proxy/2.-advanced-configurations` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-universal-data-graph-1-udg-overview",
+      "slug": "architect-universal-data-graph-1-udg-overview",
+      "title": "Universal Data Graph",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/1.-udg-overview` with 16 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 16,
+      "reusable_slide_count": 16,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-universal-data-graph-2-data-sources",
+      "slug": "architect-universal-data-graph-2-data-sources",
+      "title": "Data Sources",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/2.-data-sources` with 19 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 19,
+      "reusable_slide_count": 19,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "architect-universal-data-graph-3-hands-on-1-setting-up-udg",
+      "slug": "architect-universal-data-graph-3-hands-on-1-setting-up-udg",
+      "title": "Hands-On 1: Setting Up UDG",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/3.-hands-on-1--setting-up-udg` with 8 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "concepts"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 8,
+      "reusable_slide_count": 8,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "custom-plugins-2025",
+      "slug": "custom-plugins-2025",
+      "title": "Custom Plugins",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---custom-plugins` with 18 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 18,
+      "reusable_slide_count": 18,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-1-access-rights-and-policies",
+      "slug": "foundation-api-security-1-access-rights-and-policies",
+      "title": "Security with Tyk: Access Rights",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--1-access-rights-and-policies` with 9 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 9,
+      "reusable_slide_count": 9,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-10-throttling",
+      "slug": "foundation-api-security-10-throttling",
+      "title": "API Security with Tyk: Request Throttling",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--10-throttling` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-11-quotas",
+      "slug": "foundation-api-security-11-quotas",
+      "title": "API Security with Tyk: Request Quotas",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--11-quotas` with 7 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 7,
+      "reusable_slide_count": 7,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-2-authn-and-authz",
+      "slug": "foundation-api-security-2-authn-and-authz",
+      "title": "API Security with Tyk: Authentication & Authorization",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--2-authn-and-authz` with 9 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 9,
+      "reusable_slide_count": 9,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-3-authentication-methods",
+      "slug": "foundation-api-security-3-authentication-methods",
+      "title": "API Security with Tyk: Authentication Methods",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--3-authentication-methods` with 22 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 22,
+      "reusable_slide_count": 22,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-4-policies-in-tyk",
+      "slug": "foundation-api-security-4-policies-in-tyk",
+      "title": "API Security with Tyk: Policies in Tyk",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--4-policies-in-tyk` with 15 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 15,
+      "reusable_slide_count": 15,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-5-api-keys",
+      "slug": "foundation-api-security-5-api-keys",
+      "title": "API Security with Tyk: Session Objects",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--5-api-keys` with 14 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 14,
+      "reusable_slide_count": 14,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-6-rate-limiting-introduction",
+      "slug": "foundation-api-security-6-rate-limiting-introduction",
+      "title": "API Security with Tyk: What is Rate Limiting",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--6-rate-limiting-introduction` with 7 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 7,
+      "reusable_slide_count": 7,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-7-rate-limiting",
+      "slug": "foundation-api-security-7-rate-limiting",
+      "title": "API Security with Tyk: Rate Limiting in Tyk",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--7-rate-limiting` with 6 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 6,
+      "reusable_slide_count": 6,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-8-rate-limiting-scopes",
+      "slug": "foundation-api-security-8-rate-limiting-scopes",
+      "title": "API Security with Tyk: Rate Limiting Scopes",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--8-rate-limiting-scopes` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-api-security-9-rate-limiting-algorithms",
+      "slug": "foundation-api-security-9-rate-limiting-algorithms",
+      "title": "API Security with Tyk: Rate Limiting Algorithms",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--9-rate-limiting-algorithms` with 6 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 6,
+      "reusable_slide_count": 6,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-apis-in-tyk-1-classic-api",
+      "slug": "foundation-apis-in-tyk-1-classic-api",
+      "title": "Classic API Definitions",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---1-classic-api` with 3 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 3,
+      "reusable_slide_count": 3,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-apis-in-tyk-2-oas-api",
+      "slug": "foundation-apis-in-tyk-2-oas-api",
+      "title": "Tyk OAS API Definitions",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---2-oas-api` with 8 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 8,
+      "reusable_slide_count": 8,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-apis-in-tyk-3-api-deployment",
+      "slug": "foundation-apis-in-tyk-3-api-deployment",
+      "title": "API Deployment",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---3-api-deployment` with 6 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 6,
+      "reusable_slide_count": 6,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-apis-in-tyk-4-onboarding-an-api",
+      "slug": "foundation-apis-in-tyk-4-onboarding-an-api",
+      "title": "Onboarding APIs into Tyk",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---4-onboarding-an-api` with 7 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 7,
+      "reusable_slide_count": 7,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-apis-in-tyk-introduction-to-api-definitions",
+      "slug": "foundation-apis-in-tyk-introduction-to-api-definitions",
+      "title": "APIs in Tyk",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---introduction-to-api-definitions` with 2 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 2,
+      "reusable_slide_count": 2,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-introduction",
+      "slug": "foundation-introduction",
+      "title": "Tyk Foundational Certification",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/introduction` with 7 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-gateway"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 7,
+      "reusable_slide_count": 7,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-tyk-architecture-1-gateway-and-redis",
+      "slug": "foundation-tyk-architecture-1-gateway-and-redis",
+      "title": "Tyk Product Components: Gateway & Redis",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---1-gateway-and-redis` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-tyk-architecture-1-traffic-routing",
+      "slug": "foundation-tyk-architecture-1-traffic-routing",
+      "title": "Traffic Routing",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---1-traffic-routing` with 10 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 10,
+      "reusable_slide_count": 10,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-tyk-architecture-2-tyk-architecture-and-ecosystem",
+      "slug": "foundation-tyk-architecture-2-tyk-architecture-and-ecosystem",
+      "title": "Tyk Architecture & Ecosystem",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---2-tyk-architecture-and-ecosystem` with 7 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 7,
+      "reusable_slide_count": 7,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-tyk-architecture-3-mongodb-postgres",
+      "slug": "foundation-tyk-architecture-3-mongodb-postgres",
+      "title": "Tyk Database: MongoDB & PostgreSQL",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---3-mongodb-postgres` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-tyk-components-1-dashboard",
+      "slug": "foundation-tyk-components-1-dashboard",
+      "title": "Tyk Product Components: Dashboard",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---1-dashboard` with 5 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-gateway"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 5,
+      "reusable_slide_count": 5,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-tyk-components-3-pump",
+      "slug": "foundation-tyk-components-3-pump",
+      "title": "Tyk Product Components: Pump",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---3-pump` with 4 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-gateway"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 4,
+      "reusable_slide_count": 4,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundation-tyk-components-4-mdcb",
+      "slug": "foundation-tyk-components-4-mdcb",
+      "title": "Tyk Product Components: MDCB (Multi Data Centre Bridge)",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---4-mdcb` with 7 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "architecture",
+        "observability"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway",
+        "tyk-mdcb"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 7,
+      "reusable_slide_count": 7,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "foundational-onboarding",
+      "slug": "foundational-onboarding",
+      "title": "Tyk Onboarding",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/foundational/converted_foundational` with 91 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 91,
+      "reusable_slide_count": 91,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "graphql-2025",
+      "slug": "graphql-2025",
+      "title": "Tyk Training - GraphQL",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---graphql` with 111 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "graphql"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 111,
+      "reusable_slide_count": 111,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "maintaining-2024",
+      "slug": "maintaining-2024",
+      "title": "Tyk Training Slides 2024 - Maintaining",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2024---maintaining` with 60 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-dashboard",
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 60,
+      "reusable_slide_count": 60,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "opentelemetry-2025",
+      "slug": "opentelemetry-2025",
+      "title": "Tyk Onboarding: Introduction to OpenTelemetry",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---opentelemetry` with 11 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "observability"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 11,
+      "reusable_slide_count": 11,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "operator-2025",
+      "slug": "operator-2025",
+      "title": "Tyk Operator 2025 Training",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---operator` with 60 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "kubernetes"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway",
+        "tyk-operator"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 60,
+      "reusable_slide_count": 60,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "sso-2025",
+      "slug": "sso-2025",
+      "title": "Tyk Onboarding: Single Sign-On",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---sso` with 18 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "api-design",
+        "security"
+      ],
+      "categories": [
+        "fundamentals"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "onboarding",
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 18,
+      "reusable_slide_count": 18,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
+        "inherit_deck_tags": true
+      }
+    },
+    {
+      "id": "tyk-streams-2025",
+      "slug": "tyk-streams-2025",
+      "title": "Tyk Streams",
+      "status": "active",
+      "version": 1,
+      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---tyk-streams` with 19 converted slides.",
+      "owners": [
+        "training-team"
+      ],
+      "topics": [
+        "streaming"
+      ],
+      "categories": [
+        "deep-dive"
+      ],
+      "audiences": [
+        "platform-engineer",
+        "solutions-architect"
+      ],
+      "use_cases": [
+        "workshop"
+      ],
+      "products": [
+        "tyk-gateway",
+        "tyk-streams"
+      ],
+      "prerequisites": [],
+      "related_decks": [],
+      "slide_count": 19,
+      "reusable_slide_count": 19,
+      "publishing": {
+        "github_pages": true,
+        "catalog_visibility": "public"
+      },
+      "extraction_defaults": {
+        "standalone_safe_default": true,
         "inherit_deck_tags": true
       }
     }

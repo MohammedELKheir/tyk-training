@@ -1,0 +1,34 @@
+id: architect-circuit-breakers-1-circuit-breaker-overview
+slug: architect-circuit-breakers-1-circuit-breaker-overview
+title: Circuit Breaker Overview
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/1.-circuit-breaker-overview` with 5 converted slides.
+topics:
+  - architecture
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-circuit-breakers
+  - 002-what-is-a-circuit-breaker
+  - 003-circuit-breaker-diagram
+  - 004-event-integration
+  - 005-circuit-breakers-use-cases
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

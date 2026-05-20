@@ -1,0 +1,36 @@
+id: architect-universal-data-graph-3-hands-on-1-setting-up-udg
+slug: architect-universal-data-graph-3-hands-on-1-setting-up-udg
+title: Hands-On 1: Setting Up UDG
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/3.-hands-on-1--setting-up-udg` with 8 converted slides.
+topics:
+  - graphql
+categories:
+  - concepts
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-hands-on-workshop-setting-up-udg
+  - 002-prerequisites-ensure-the-following-are-ready-tyk-dashboard-access-node-j
+  - 003-clone-and-run-example-rest-apis-we-ll-first-set-up-the-example-services
+  - 004-create-a-udg-api-in-tyk-dashboard-go-to-tyk-dashboard-apis-click-add-new
+  - 005-define-your-graphql-schema-in-the-schema-tab-replace-the-default-schema
+  - 006-connect-the-user-query-to-the-users-rest-api-in-the-schema-tab-select-th
+  - 007-test-the-api-in-graphql-playground-navigate-to-the-playground-tab-in-tyk
+  - 008-challenge-try-to-resolve-reviews-field-on-type-users-try-to-resolve-user
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

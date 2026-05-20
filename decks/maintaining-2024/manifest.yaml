@@ -1,0 +1,90 @@
+id: maintaining-2024
+slug: maintaining-2024
+title: Tyk Training Slides 2024 - Maintaining
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2024---maintaining` with 60 converted slides.
+topics:
+  - api-design
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-onboarding
+  - 002-working-with-data
+  - 003-working-with-data-2
+  - 004-tyk-database-overview
+  - 005-redis
+  - 006-redis-data-storage
+  - 007-redis-data-storage-2
+  - 008-redis-data-storage-3
+  - 009-redis-messaging
+  - 010-redis-security
+  - 011-redis-persistence
+  - 012-redis-persistence-2
+  - 013-redis-high-availability
+  - 014-redis-sentinel
+  - 015-redis-cluster
+  - 016-redis-error-handling
+  - 017-redis-sizing-disk-ram
+  - 018-redis-sizing-disk-ram-2
+  - 019-redis-sizing-disk-ram-3
+  - 020-redis-sizing-disk-ram-4
+  - 021-redis-sizing-cpu
+  - 022-mongodb
+  - 023-mongodb-data-storage
+  - 024-mongodb-data-storage-2
+  - 025-mongodb-high-availability
+  - 026-mongodb-replica-set
+  - 027-mongodb-sizing-disk
+  - 028-mongodb-sizing-disk-2
+  - 029-mongodb-managing-size
+  - 030-mongodb-sizing-ram
+  - 031-mongodb-sizing-ram-2
+  - 032-mongodb-sizing-cpu
+  - 033-postgresql
+  - 034-postgres-data-storage
+  - 035-postgres-data-storage-2
+  - 036-postgres-high-availability
+  - 037-postgresql-2
+  - 038-postgres-sizing-disk
+  - 039-postgres-sizing-disk-2
+  - 040-postgres-managing-size
+  - 041-postgres-sizing-ram
+  - 042-postgres-sizing-cpu
+  - 043-backing-up-and-restoring
+  - 044-backup-and-restore-redis
+  - 045-backup-and-restore-mongodb
+  - 046-backup-and-restore-postgres
+  - 047-hands-on-workshop
+  - 048-migration-between-environments
+  - 049-moving-apis-via-dashboard
+  - 050-moving-policies-via-dashboard
+  - 051-moving-apis-via-tyk-sync
+  - 052-moving-apis-via-tyk-sync-2
+  - 053-moving-policies-via-tyk-sync
+  - 054-tyk-sync
+  - 055-hands-on-workshop-2
+  - 056-upgrading-tyk
+  - 057-backing-up-tyk
+  - 058-upgrading-tyk-2
+  - 059-upgrading-tyk-linux
+  - 060-hands-on-workshop-3
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

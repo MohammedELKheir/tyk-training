@@ -1,0 +1,41 @@
+id: opentelemetry-2025
+slug: opentelemetry-2025
+title: Tyk Onboarding: Introduction to OpenTelemetry
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---opentelemetry` with 11 converted slides.
+topics:
+  - api-design
+  - observability
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-onboarding-cover
+  - 002-introduction-to-open-telemetry
+  - 003-what-is-opentelemetry
+  - 004-opentracing-architecture
+  - 005-opentelemetry-architecture
+  - 006-opentracing-and-opentelemetry
+  - 007-traces-and-spans
+  - 008-open-telemetry-support-in-tyk-gateway
+  - 009-set-up
+  - 010-per-default-1-span-per-api-call
+  - 011-detailed-tracing-for-troubleshooting
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

@@ -1,0 +1,9 @@
+/* Global overrides kept intentionally minimal for export stability. */
+.slidev-layout {
+  background: #ffffff;
+}
+
+.tyk-code {
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  color: #1a1830;
+}

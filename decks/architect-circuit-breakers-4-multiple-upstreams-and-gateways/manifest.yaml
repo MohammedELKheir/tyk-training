@@ -1,0 +1,32 @@
+id: architect-circuit-breakers-4-multiple-upstreams-and-gateways
+slug: architect-circuit-breakers-4-multiple-upstreams-and-gateways
+title: Multiple Upstreams & Gateways
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/4.-multiple-upstreams-and-gateways` with 2 converted slides.
+topics:
+  - architecture
+  - streaming
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+  - tyk-streams
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-multiple-upstreams-and-gateways
+  - 002-multiple-upstreams-and-gateways-2
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

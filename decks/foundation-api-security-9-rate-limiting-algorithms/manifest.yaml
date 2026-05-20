@@ -1,0 +1,37 @@
+id: foundation-api-security-9-rate-limiting-algorithms
+slug: foundation-api-security-9-rate-limiting-algorithms
+title: API Security with Tyk: Rate Limiting Algorithms
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--9-rate-limiting-algorithms` with 6 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-api-security-with-tyk-rate-limiting-algorithms-tyk-supports-various-type
+  - 002-why-multiple-algorithms-not-all-api-traffic-are-the-same-examples-apis-g
+  - 003-types-of-rate-limiting-the-gateway-implements-the-rate-limiter-of-which
+  - 004-distributed-rate-limiter-drl-think-of-this-like-having-buckets-on-each-g
+  - 005-redis-rate-limiter-rrl-this-algorithm-implements-a-sliding-window-log-al
+  - 006-fixed-window-rate-limiter-fixed-window-rate-limiter-will-limit-the-numbe
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

@@ -1,0 +1,40 @@
+id: foundation-api-security-2-authn-and-authz
+slug: foundation-api-security-2-authn-and-authz
+title: API Security with Tyk: Authentication & Authorization
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--2-authn-and-authz` with 9 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-api-security-with-tyk-authentication-and-authorization
+  - 002-what-is-authentication-authn
+  - 003-what-is-authorization-authz
+  - 004-api-request-flow
+  - 005-api-request-flow-2
+  - 006-api-request-flow-3
+  - 007-api-request-flow-4
+  - 008-api-request-flow-5
+  - 009-how-tyk-applies-security
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

@@ -1,0 +1,30 @@
+{
+  "name": "slidev-theme-tyk",
+  "version": "0.1.0",
+  "description": "Tyk branded theme for Slidev",
+  "author": "Tyk",
+  "license": "MIT",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "slidev": ">=v0.47.0"
+  },
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "sans": "Inter",
+        "mono": "JetBrains Mono",
+        "weights": "400, 600, 700"
+      },
+      "colorSchema": "light"
+    }
+  },
+  "dependencies": {
+    "@slidev/types": "^0.47.0",
+    "codemirror-theme-vars": "^0.1.2",
+    "prism-theme-vars": "^0.2.4"
+  }
+}

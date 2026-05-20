@@ -1,0 +1,10 @@
+:root {
+  --cb-purple: #5900CB;
+  --cb-accent: #8438FA;
+  --cb-text: #0C1025;
+  --cb-border: #A7A7A7;
+}
+
+.slidev-layout {
+  color: var(--cb-text);
+}

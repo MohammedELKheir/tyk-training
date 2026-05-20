@@ -1,0 +1,646 @@
+
+============================================================
+SLIDE 1 - FULL NOTES
+============================================================
+[No notes]
+
+--- Full text content ---
+  [Google Shape;68;p16]:
+    Tyk Onboarding
+  [Google Shape;70;p16]:
+    Rahmat - Sr. Customer Solutions Architect
+
+============================================================
+SLIDE 2 - FULL NOTES
+============================================================
+[No notes]
+
+--- Full text content ---
+  [Google Shape;75;p17]:
+    Custom Plugins
+  [Google Shape;76;p17]:
+    Exploring custom plugins in Tyk
+
+============================================================
+SLIDE 3 - FULL NOTES
+============================================================
+Introduction:
+"Custom Plugins in Tyk allow you to extend the functionality of the Gateway by writing your own code for tasks that go beyond standard middleware capabilities."
+"You can use these plugins to add unique logic into specific parts of the API lifecycle
+Key Concept:
+"Tyk provides 7 hooks that allow you to inject your custom code at various phases of a request lifecycle. This includes things like pre-processing a request, modifying the response, or handling authentication."
+"Hooks determine when and how your plugin runs."
+Example: Logging incoming requests
+"Imagine you want to log the incoming request details before Tyk processes it. You can hook into the pre phase using a custom plugin."
+Why Use Custom Plugins?
+"By leveraging custom plugins, you can meet unique business requirements such as:
+Custom rate limiting logic.
+Integration with external services.
+Real-time request and response transformation."
+
+--- Full text content ---
+  [Google Shape;85;p18]:
+    Custom Plugins in Tyk
+  [Google Shape;86;p18]:
+    Custom Plugins enable execution of specific custom code for unique tasks, beyond Tyk’s standard middleware.
+    Users can hook plugins into various phases of the API lifecycle.
+    Tyk includes 7 hooks for custom plugins across the middleware execution order.
+
+============================================================
+SLIDE 4 - FULL NOTES
+============================================================
+Overview of the Table:
+"Here, I’ve summarized the key middleware hooks, their purpose, and common use cases
+
+Hook Types and Execution Phases
+Pre (Request) Hook – Request Plugin
+"The Pre hook runs before the reverse proxy processes the request. This is the first middleware to execute."
+"It’s commonly used for tasks like IP rate limiting or request enrichment."
+Example Use Case:
+"You can use this hook to validate headers or inject metadata into the request before passing it further."
+
+Authentication Hook – Auth Plugin
+"This hook runs before the reverse proxy as well, but it specifically handles authentication."
+"It replaces the default Tyk authentication flow, allowing you to integrate custom authentication logic, such as legacy auth systems."
+Example Use Case:
+"You can validate tokens against external identity providers or custom databases."
+
+Post-Auth (Request) Hook – Auth Plugin
+"The Post-Auth hook runs after the authentication middleware but still before the reverse proxy."
+"It allows you to add special custom authentication logic."
+Example Use Case:
+"You can use it to implement additional authorization checks, like verifying user roles or permissions."
+
+Post (Request) Hook – Request Plugin
+"The Post hook is executed at the final request phase before the reverse proxy sends the request to the upstream API."
+"It’s ideal for modifying the request, such as adding headers or transforming payloads."
+Example Use Case:
+"You can dynamically append headers, like an API key or a custom tracking ID."
+
+Response Hook – Response Plugin
+"The Response hook runs after the upstream API sends the response back to Tyk."
+"It allows you to modify the response before it reaches the client."
+Example Use Case:
+"You can obfuscate sensitive data, format JSON responses, or inject additional headers like caching policies."
+
+Analytics Hook – Analytics Plugin
+"The Analytics hook operates at the final phase of request or response processing."
+"It’s specifically used for logging and analytics."
+Example Use Case:
+"You can obfuscate sensitive data in logs, ensuring compliance with data protection regulations."
+
+Key Takeaways:
+"By using these hooks, you gain full control over the request and response lifecycle."
+"This is particularly useful for scenarios like custom authentication, rate limiting, or response transformation."
+"Each hook has its own specific execution phase, allowing you to optimize your middleware logic effectively."
+
+--- Full text content ---
+  [Google Shape;91;p19]:
+    Custom Middleware
+
+============================================================
+SLIDE 5 - FULL NOTES
+============================================================
+Go Plugins:
+"First, we have Go Plugins. These are native plugins written in the Go programming language, the same language that Tyk Gateway is built on."
+"Because Go Plugins run natively within the Tyk Gateway, they deliver high performance and are ideal for production environments."
+Example Use Case:
+"You could implement a plugin to validate API requests or enhance rate-limiting logic using Go."
+
+gRPC Plugins:
+"Next, we have gRPC Plugins. These plugins run on a gRPC server, which allows you to write plugins in any gRPC-compatible programming language like Python, Java, or Node.js."
+"gRPC Plugins are executed remotely, making them ideal when you want to decouple the plugin logic from the Tyk Gateway."
+Example Use Case:
+"You could use a gRPC plugin to call an external service for advanced request validation."
+
+JavaScript Plugins (JSVM):
+"Tyk also supports JavaScript Plugins that run within a JavaScript Virtual Machine (JSVM), compatible with ECMAScript 5."
+"These plugins are lightweight and easier to write, making them perfect for quick customizations or prototyping."
+Example Use Case:
+"You could add custom headers, transform payloads, or perform a quick check on incoming requests using JavaScript."
+
+Python Plugins:
+"Finally, we have Python Plugins, which are embedded directly into the Tyk Gateway. This allows you to execute Python code within the same process as the gateway."
+"Python plugins are a great choice for teams already familiar with Python and looking to quickly extend Tyk’s behavior."
+Example Use Case:
+"You can implement logic for advanced logging, API transformations, or even dynamic authentication."
+
+Key Takeaways:
+"Each plugin type has its advantages depending on your use case and development preferences."
+"Go Plugins provide the best performance, while gRPC offers flexibility across languages. JavaScript and Python plugins are ideal for lightweight tasks and quick iterations."
+"Choose the plugin type that aligns with your team’s expertise and performance needs."
+
+--- Full text content ---
+  [Google Shape;97;p20]:
+    Plugin Types
+
+============================================================
+SLIDE 6 - FULL NOTES
+============================================================
+"Let’s take a look at how a typical request flows through the Tyk Gateway and how plugins come into play to process the request."
+Step-by-Step Explanation:
+Step 1: The Client Sends a Request
+"The process starts with a client sending an HTTP request to an API managed by the Tyk Gateway."
+"This could be any type of client—an application, a web browser, or even a mobile app."
+Step 2: Tyk Gateway Processes the Request
+"The Tyk Gateway acts as the entry point for all incoming requests."
+"It first evaluates the API request and checks for any configurations applied to that API, like authentication, rate limiting, or access policies."
+Step 3: Plugins Execution
+"Once the request reaches the gateway, any configured custom plugins are executed."
+"Plugins can perform tasks such as:"
+Custom Authentication: Validate tokens or credentials.
+Data Transformation: Modify request payloads or headers.
+Rate Limiting Enforcement: Check if a request exceeds the rate limits."
+"Plugins are essential for extending Tyk's capabilities with custom logic tailored to your needs."
+Step 4: Forwarding to Upstream Services
+"Once the plugins have processed the request, Tyk forwards the modified request to the upstream service or backend API."
+"At this point, the request is fully ready and contains any transformations or additional checks performed by the plugins."
+Step 5: Response Back to the Client
+"The upstream service processes the request and returns a response to the Tyk Gateway."
+"Tyk Gateway forwards the upstream response back to the client, completing the request-response cycle."
+
+
+Key Takeaway:
+"Tyk acts as a smart intermediary, not just forwarding requests but also performing critical operations using plugins."
+"This modular approach ensures that you can handle complex use cases like authentication, rate limiting, and data manipulation if needed
+
+--- Full text content ---
+  [Google Shape;103;p21]:
+    How it works
+  [Google Shape;105;p21]:
+    The client sends request to API on Tyk Gateway.
+    Tyk processes the request and forwards it to one or more plugins implemented and configured for that API.
+    A plugin performs operations (e.g., custom authentication, data transformation).
+    The processed request is then returned to Tyk Gateway, which forwards it upstream.
+    Finally, the upstream response is sent back to the client.
+
+============================================================
+SLIDE 7 - FULL NOTES
+============================================================
+Introduction:
+"Tyk provides flexibility with a few  deployment options: Local Plugins, Plugin Bundles, and gRPC Plugins."
+1. Local Plugins
+"Local Plugins are the simplest option."
+"Here, the plugin source code and its configuration are stored directly on the same file system as the Tyk Gateway."
+"Configuration is defined within the API Definition, and the plugins execute locally."
+"This is ideal for environments where the gateway and plugins reside on the same machine."
+
+2. Plugin Bundles (Remote)
+"In the second option, Plugin Bundles allow you to bundle your plugin source code and configuration into a zip file."
+"These bundles are then uploaded to a remote web server."
+"The Tyk Gateway will download, extract, cache, and execute these plugins as part of the API lifecycle."
+"This approach works well for distributed systems or when plugins are frequently updated."
+Example Use Case:
+"For production setups where plugins are managed centrally and shared across multiple Tyk Gateways."
+
+3. gRPC Plugins (Remote)
+"Lastly, Tyk supports gRPC-based remote plugins."
+"With gRPC Plugins, your custom plugins are hosted on a remote server and executed via gRPC."
+"The Tyk Gateway sends requests to the gRPC server during specific points in the API request/response lifecycle."
+"This allows you to use any programming language to develop your plugins, not just Go or JavaScript."
+Example Use Case:
+"For enterprises that need high performance, remote plugin execution, or use other languages
+Key Takeaways:
+"To summarize, Local Plugins are simple and fast but tied to the Gateway's file system."
+"Plugin Bundles offer central management for shared plugins across multiple gateways."
+"gRPC Plugins provide the most flexibility with remote execution and multi-language support."
+
+--- Full text content ---
+  [Google Shape;110;p22]:
+    Plugin Deployment Options in Tyk
+  [Google Shape;111;p22]:
+    Local Plugins
+    The plugin source code and configuration are stored locally on the same file system as the Tyk Gateway.
+    Configuration is specified within the API Definition.
+    Plugin Bundles (Remote)
+    Plugin source code and configuration are bundled into a zip file and uploaded to a remote web server.
+    Tyk Gateway downloads, extracts, caches, and executes these plugins for the configured phases of the API lifecycle.
+    gRPC Plugins (Remote)
+    Custom plugins are hosted on a remote server and executed via gRPC.
+    Tyk Gateway sends requests to the gRPC server, allowing plugins to run at specific points during the API request/response lifecycle, using any preferred programming language.
+
+============================================================
+SLIDE 8 - FULL NOTES
+============================================================
+What are Local Plugins?
+"Local Plugins are custom plugins where the source code is stored and executed directly on the Tyk Gateway."
+"This approach ensures low latency and minimal dependencies."
+
+Pros of Local Plugins:
+Performance
+"Because the plugin code is executed locally, the performance is high with minimal latency."
+"This is ideal for real-time operations where speed matters."
+Simplicity
+"Local plugins are easy to configure and manage since everything resides within the Tyk Gateway."
+No Network Dependencies
+"You don’t need to worry about external communication or connectivity issues, making local plugins a good fit for isolated environments like on-prem setups."
+
+Cons of Local Plugins:
+Limited Scalability
+"Local plugins don’t scale well in distributed environments or across multiple Tyk Gateway instances."
+"If you need to reuse plugins across a fleet of gateways you will have to compile for each gateway that you are using
+Harder to Manage Updates
+"Every time you make an update to the plugin, you need to manually update it on each gateway."
+"This can become time-consuming, especially as the infrastructure grows."
+
+Summary:
+"To summarize, Local Plugins are great for simplicity and performance, especially isolated environments."
+
+--- Full text content ---
+  [Google Shape;116;p23]:
+    Local Plugins
+  [Google Shape;117;p23]:
+    Local Plugins
+    Pros:
+    Performance: Since the plugin code is stored locally, execution is fast with minimal latency.
+    Simplicity: Easy to configure and manage directly within Tyk Gateway.
+    No network dependencies: No need for external communication, making it ideal for environments without external connectivity.
+    Cons:
+    Limited scalability: Not suitable for large, distributed environments or for reusing plugins across multiple instances of Tyk Gateway.
+    Harder to manage updates: Every update requires manual changes on each Tyk instance.
+
+============================================================
+SLIDE 9 - FULL NOTES
+============================================================
+Plugin Bundles allow you to bundle multiple plugins together and deploy them remotely."
+"This makes it easy to reuse plugins across multiple APIs and Tyk Gateway instances."
+
+Pros of Plugin Bundles:
+Reusability
+"You can package multiple plugins together into a single bundle and reuse them across different APIs and Gateways."
+"For example, a plugin bundle for rate limiting and authentication can be shared across multiple environments."
+Centralized Management
+"Plugins are stored on a central remote server, making it easier to update and manage changes."
+"Instead of updating each Tyk Gateway manually, you simply update the bundle on the server."
+Flexible Deployment
+"Plugin Bundles are ideal for large, distributed architectures."
+"If you have multiple Gateways, they can download and execute plugins from the central bundle without requiring local storage."
+
+Cons of Plugin Bundles:
+Network Dependency
+"The Tyk Gateway depends on a remote server to fetch the plugin bundle."
+"If the server is down or experiences latency, the Gateway may be unable to execute the plugins."
+Complexity
+"Configuration and deployment of Plugin Bundles can be more complex compared to Local Plugins."
+"It involves managing the bundle, uploading it to a remote server, and configuring the Gateways to fetch it."
+
+Summary:
+"In summary, Plugin Bundles are great for centralized management and large-scale deployments, but they require careful consideration for network availability and setup complexity."
+"If you have a distributed environment and want to scale efficiently, Plugin Bundles are the way to go."
+
+--- Full text content ---
+  [Google Shape;122;p24]:
+    Plugin Bundles
+  [Google Shape;123;p24]:
+    Plugin Bundles
+    Pros:
+    Reusability: Multiple plugins can be bundled together and reused across different APIs and Tyk Gateways.
+    Centralized management: Plugins can be centrally stored and updated on a remote server, making it easier to manage changes.
+    Flexible deployment: Suitable for large, distributed architectures where plugins need to be updated across multiple gateways.
+    Cons:
+    Network dependency: Tyk Gateway depends on the remote server, which may introduce latency or fail if the server is down.
+    Complexity: Configuration and deployment can be more complex compared to local plugins.
+
+============================================================
+SLIDE 10 - FULL NOTES
+============================================================
+What are gRPC Plugins?
+"gRPC Plugins allow you to write and run plugins on a remote server using the gRPC protocol."
+"This approach decouples plugin execution from the Tyk Gateway, making it lightweight and scalable."
+
+Pros of gRPC Plugins:
+Language Flexibility
+"You can write plugins in any gRPC-supported language, such as Python, Go, or Java."
+"This flexibility gives developers the freedom to use their preferred programming language."
+Scalability
+"gRPC Plugins are ideal for large-scale deployments where plugins need to run across distributed systems."
+"The remote execution model ensures efficient resource utilization and improved performance."
+Separation of Concerns
+"By executing plugins remotely, the Tyk Gateway remains lightweight and focused on its core tasks."
+"The plugin logic resides on a dedicated server, simplifying the Gateway’s responsibilities."
+
+Cons of gRPC Plugins:
+Network Latency
+"Since plugins are executed remotely, there can be additional latency depending on the server’s location and network load."
+Complex Setup
+"gRPC Plugins require additional infrastructure, such as a gRPC server."
+"This means more configuration and management compared to Local Plugins."
+Potential Failures
+"If the external gRPC server goes down, the plugin execution will fail."
+"This could lead to service disruptions if not properly managed with retries or failover strategies."
+
+Example Use Case:
+"Imagine you want to run a plugin written in Python for a custom data transformation. Instead of running the plugin locally, you can deploy it on a gRPC server and configure Tyk to call it remotely during the API request lifecycle."
+
+Summary:
+"In summary, gRPC Plugins are a fantastic choice for large-scale, distributed environments where you need language flexibility and separation of concerns."
+"However, they do require careful planning around infrastructure, latency, and server availability."
+
+--- Full text content ---
+  [Google Shape;128;p25]:
+    gRPC Plugins
+  [Google Shape;129;p25]:
+    gRPC Plugins (Remote)
+    Pros:
+    Language flexibility: You can write plugins in any gRPC-supported language, offering more flexibility for developers.
+    Scalability: Ideal for large-scale environments where plugins need to run across distributed systems.
+    Separation of concerns: Plugins are executed remotely, keeping the Tyk Gateway lightweight.
+    Cons:
+    Network latency: Involves remote execution, which can add network latency depending on the server’s location and load.
+    More complex setup: Requires additional infrastructure (e.g., a gRPC server) and more configuration.
+    Potential failures: Relies on external gRPC server availability, which could lead to service disruptions if the server fails.
+
+============================================================
+SLIDE 11 - FULL NOTES
+============================================================
+Step 1: Initialize the Go Module
+This is an example of a plugin dev flow using go plugins
+"First, you need to set up your plugin’s workspace. Start by creating a folder for your plugin."
+"Next, initialize Go modules
+"This command prepares your workspace for dependency management."
+Step 2: Write the Plugin
+"The core of the plugin development lies in writing your custom logic."
+Plugin Structure:
+"The plugin must have a Go main package."
+"Within the package, create an exported function. For example:"func AddFooBarHeader() {
+    // Custom logic here
+}
+"This function will contain the code you want the Tyk Gateway to execute, like modifying requests, responses, or performing authentication."
+
+Step 3: Sync Dependencies
+"After writing your plugin code, you need to ensure all dependencies are in sync."
+"This will fetch and clean up all required dependencies for your plugin."
+
+Step 4: Build the Plugin
+"The final step is to build the Go plugin as a shared library (.so file), which can be used by the Tyk Gateway."
+"You can do this in two ways:"
+Using Docker:
+"Use Tyk’s official plugin compiler Docker image
+Using Go Build Commands:
+"Alternatively, you can build the .so file directly using Go:"go build -buildmode=plugin -o plugin.so
+
+"This process generates a plugin.so file, which Tyk will load as part of the plugin execution."
+
+Summary:
+"In summary, the plugin development flow involves initialization, writing custom logic, syncing dependencies, and building a shared library."
+
+--- Full text content ---
+  [Google Shape;134;p26]:
+    Plugin Development Flow
+  [Google Shape;135;p26]:
+    Step 1: Initialize Go Module
+    Create a folder for your plugin.
+    Initialize Go modules - go mod init tyk-plugin
+    Step 2: Write the Plugin
+    Plugin structure:
+    A Go main package.
+    An exported function like AddFooBarHeader() for custom logic.
+    Step 3: Sync Dependencies
+    Run go mod tidy
+    Step 4: Build the Plugin
+    Build the Go plugin as a shared library (.so) using Tyk’s Docker image or Go commands.
+    docker run --rm -v `pwd`:/plugin-source \
+    tykio/tyk-plugin-compiler:v5.2.1 plugin.so
+
+============================================================
+SLIDE 12 - FULL NOTES
+============================================================
+Step 1: Open Tyk Classic API Definition Editor
+"Start by navigating to the Tyk Dashboard and selecting the API you want to edit."
+"Click on View Raw Definition to access the API Definition editor."
+"This editor allows you to see and modify the entire API configuration in JSON format."
+
+Step 2: Edit the API Definition
+"Locate the custom_middleware section in the raw API Definition."
+"Here, you’ll specify your plugin configuration by adding the following details:
+The plugin path or shared library name.
+Hook points where the plugin will be executed, such as Pre-request, Post-request, or Response hooks."
+}
+
+"In this configuration:
+name refers to the plugin name.
+path specifies the location of your shared plugin file."
+Driver specifies which language you are using (mandatory)
+
+Step 3: Save Changes
+"Once you’ve updated the custom_middleware section, save your changes by clicking Update."
+"Tyk will reload the API Definition and load the configured plugin. Make sure your Tyk Gateway has access to the plugin path or remote plugin server."
+
+Key Notes to Remember:
+"Double-check the file path or endpoint configuration to avoid deployment issues."
+"Test your plugin by sending requests to the API and verifying the expected behavior."
+
+--- Full text content ---
+  [Google Shape;140;p27]:
+    Deploying Plugins Tyk Classic Def
+  [Google Shape;141;p27]:
+    Step 1: Open Tyk Classic API Definition Editor
+    Select your API from the list of created APIs.
+    Click View Raw Definition to access the API Definition editor.
+    Step 2: Edit API Definition
+    In the editor, navigate to the custom_middleware section.
+    Configure the plugins by updating this section with the necessary plugin settings.
+    Step 3: Save Changes
+    Click Update to apply the changes to your Tyk Classic API Definition
+    	"custom_middleware": {
+        "pre": [
+            {
+                "name": "myCustomPlugin",
+                "path": "/opt/tyk-gateway/plugins/plugin.so"
+                "driver": "otto/goplugin",
+            }
+        ]
+    }
+
+============================================================
+SLIDE 13 - FULL NOTES
+============================================================
+Introduction: "Let’s now discuss the process of bundling plugins in Tyk. Bundling is an efficient way to manage custom plugins by centralizing and distributing them across multiple Tyk Gateways."
+Step 1: Plugin Creation
+"First, you write the plugin source code and create a manifest.json file."
+"The manifest.json file contains metadata about your plugin, such as the name, version, and entry points."
+Example of manifest.json:
+Step 2: Upload to Web Server
+"Next, you upload the bundled plugin—source code and manifest file—to a web server. This can be an external file server"
+"The server acts as a central repository where Tyk Gateways can fetch the plugin."
+
+Step 3: Download and Execution in Tyk Gateway
+"When a Tyk Gateway starts or reloads the API, it downloads the plugin bundle from the web server."
+"Tyk then caches, extracts, and executes the plugin according to the configuration in the API definition."
+"This allows the Gateway to efficiently use the plugin without repeatedly downloading it."
+
+Key Benefits of Bundling Plugins:
+Centralized Management – "Plugins can be updated in one location and distributed across all Gateways."
+Scalability – "Suitable for distributed architectures where multiple Gateways need the same plugins."
+Performance Optimization – "Tyk caches plugins locally, reducing network calls after the first download."
+
+--- Full text content ---
+  [Google Shape;146;p28]:
+    Bundling Plugins
+
+============================================================
+SLIDE 14 - FULL NOTES
+============================================================
+Introduction"Let's dive into how bundling plugins works in Tyk. Bundling plugins enables efficient management and execution of custom middleware across Tyk Gateways."
+
+How Plugin Bundles Work
+"A plugin bundle is a ZIP file that contains the source code and the manifest.json file."
+"The API definition references the plugin bundle name to identify it."
+"The Tyk Gateway takes care of downloading, caching, extracting, and executing the plugin from the bundle."
+Bundle Caching
+"For performance, Tyk caches plugin bundles locally."
+"To ensure updates to a plugin bundle, you can use unique filenames, such as version numbers."
+"The cached location is: {TYK_ROOT}/{CONFIG_MIDDLEWARE_PATH}/bundles."
+Gateway Configuration
+"To enable plugin bundles, you need to update the tyk.conf file with the following configurations:
+
+Explanation:
+enable_bundle_downloader: Enables the Tyk Gateway to download bundles from a specified URL.
+bundle_base_url: The base URL where the plugin bundles are stored.
+public_key_path: Path to the public key for verifying signed bundles.
+enable_coprocess: Enables advanced plugin execution features, such as rich plugins.
+
+--- Full text content ---
+  [Google Shape;152;p29]:
+    Bundling Plugins
+  [Google Shape;153;p29]:
+    How Plugin Bundles Work
+    ZIP contains source code + manifest file.
+    API definition references the plugin bundle name.
+    Tyk Gateway downloads, caches, extracts, and executes plugins from the bundle.
+    Bundle Caching
+    Plugin bundles are cached locally for efficiency.
+    Use unique filenames (e.g., version numbers) to update bundles.
+    Cache location: {TYK_ROOT}/{CONFIG_MIDDLEWARE_PATH}/bundles
+    Gateway Configuration
+    Add the following to tyk.conf:
+    "enable_bundle_downloader": true
+    "bundle_base_url": "http://my-bundle-server.com/bundles/"
+    "public_key_path": "/path/to/my/pubkey"
+    "enable_coprocess": true (for rich plugins)
+
+============================================================
+SLIDE 15 - FULL NOTES
+============================================================
+What is the Bundler CLI Tool?
+"The Bundler CLI Tool allows you to package all the components required for your plugin into a single ZIP bundle. This makes it easy to deploy plugins to Tyk Gateways."
+What You Need to Create a Plugin Bundle
+To successfully create a plugin bundle, you will need:
+Manifest.json:
+This file contains metadata and configuration for the plugin, including pre/post middleware logic, driver type, and file inclusion list.
+Plugin Source Code Files:
+These are the actual code files (e.g., .py for Python, .so for Go) that implement the plugin’s logic.
+Certificate Key (Optional):
+Certificates can be used to sign the bundle
+How to Build a Bundle
+Run the Command:"To create a plugin bundle, you can run the following command:"$ tyk bundle build
+What Happens After?
+"The resulting ZIP file will include:
+All specified files (based on the manifest).
+A modified manifest.json with the necessary checksum and signature fields added, if required."
+Security Note:
+"By default, Tyk will attempt to sign plugin bundles for security purposes.
+If no private key is specified, you’ll be prompted for confirmation.
+
+Why Use the Bundler CLI Tool?
+"It simplifies the process of creating and deploying plugins by automating file inclusion, checksum generation, and signature validation.
+It ensures the plugin is packaged securely and ready for execution by the Tyk Gateway."
+
+--- Full text content ---
+  [Google Shape;158;p30]:
+    Bundler CLI Tool
+  [Google Shape;159;p30]:
+    The Bundler tool is a CLI service, provided by the Gateway as part of its binary since v2.8
+    To create plugin bundles, you will need
+    Manifest.json
+    Pugin source code files
+    Certificate key(optional)
+    Use the following command to create a bundle:
+    $ tyk bundle build
+    The resulting file will contain all your specified files and a modified manifest.json with the checksum and signature (if required) applied, in ZIP format.
+    By default, Tyk will attempt to sign plugin bundles for improved security. If no private key is specified, the program will prompt for a confirmation. Use -y to override this
+
+============================================================
+SLIDE 16 - FULL NOTES
+============================================================
+Introduction"Next, we’ll discuss the manifest files within plugin bundles and their importance in configuring plugins for Tyk."
+What is a Manifest File?
+"A manifest file is a critical configuration file for your plugin bundle."
+"It defines which source code files are included in the bundle
+"If a file isn’t listed in the manifest, it will be ignored, even if it’s present in the plugin directory."
+Key Components of the Manifest File
+file_list Block
+"This block specifies the source files to include in the plugin bundle. 
+custom_middleware Block
+"This block allows you to define pre and post execution middleware.For instance:"custom_middleware": {
+    "pre": [ { "name": "PreMiddleware" } ],
+    "post": [ { "name": "PostMiddleware" } ]
+}
+
+The pre block runs before the request is proxied to the upstream.
+The post block runs after receiving a response from the upstream."
+driver Field
+"The driver specifies the programming language used for the plugin.
+checksum and signature Fields are usually autofilled during the build process
+"These fields ensure the integrity of the plugin bundle:
+checksum: Automatically generated during the build process to validate the content.
+signature: Provides an additional layer of security to confirm the bundle is trusted."
+
+Why is the Manifest File Important?
+"The manifest file ensures that:
+Only the required source files are included in the bundle.
+Execution behavior (pre/post middleware) is explicitly defined.
+The plugin bundle is secure and tamper-proof through checksums and signatures."
+
+--- Full text content ---
+  [Google Shape;164;p31]:
+    Bundles - Manifest Files
+  [Google Shape;165;p31]:
+    Contains critical configuration details for the plugin bundle.
+    Lists the source code files to be included.
+    Files not specified in the manifest will not be included, even if present in the directory.
+    Key Notes
+    custom_middleware block defines pre/post execution logic.
+    driver specifies the plugin language (e.g., Python).
+    checksum and signature are auto-filled during the build process.
+
+============================================================
+SLIDE 17 - FULL NOTES
+============================================================
+[No notes]
+
+--- Full text content ---
+  [Google Shape;171;p32]:
+    Javascript custom plugin
+  [Google Shape;172;p32]:
+    Step 1: Create a plugin within the gateway directory
+    injectCustomHeader.js
+    Step 2: Modify the API definition on the Dashboard
+    "pre": [
+            {
+              "disabled": false,
+              "name": "injectCustomHeader",
+              "path": "/opt/tyk-gateway/jsvm/injectCustomHeader.js",
+              "require_session": false,
+              "raw_body_only": false
+            }
+    Test via postman
+
+============================================================
+SLIDE 18 - FULL NOTES
+============================================================
+[No notes]
+
+--- Full text content ---
+  [Google Shape;177;p33]:
+    JSVM Custom plugin /w Bundles
+  [Google Shape;178;p33]:
+    Step 1: Create 2 plugins within the gateway directory
+    injectCustomHeader.js
+    tracingHeader.js
+    Step 2: Create a manifest.json file and place define both plugins in json file
+    Step 3: Use tyk bundler CLI to create a bundle and serve it to the web server
+    Step 4: Ensure you have a web server up and running
+    Step 5: Update the API definition to receive plugins via the bundle
+    		"custom_middleware_bundle": "bundle.zip",
+    Step 6: Test via postman

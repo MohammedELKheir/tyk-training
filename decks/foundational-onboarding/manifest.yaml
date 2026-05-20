@@ -1,0 +1,121 @@
+id: foundational-onboarding
+slug: foundational-onboarding
+title: Tyk Onboarding
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/foundational/converted_foundational` with 91 converted slides.
+topics:
+  - api-design
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-onboarding-rahmat-sr-customer-solutions-architect
+  - 002-agenda-foundational-01-apis-and-security-in-tyk-foundational-usage-of-ty
+  - 003-module-2-apis-and-api-security-explore-the-foundation-of-tyk-managing-ap
+  - 004-tyk-api-definition-tyk-stores-api-configurations-as-json-objects-called
+  - 005-tyk-api-definition-metadata-about-the-api-security-method-type-and-locat
+  - 006-tyk-oas-definition-standard-of-defining-apis-via-openapi-specification-t
+  - 007-what-s-tyk-oas-api-definition-tyk-oas-api-definition-openapi-description
+  - 008-tyk-oas-definition-openapi-3-0-info-servers-security-paths-tags-external
+  - 009-tyk-oas-definition-servers-automatically-configures-upstream-url-from-se
+  - 010-slide-10
+  - 011-tyk-oas-definition-validation-automatically-creates-a-request-validation
+  - 012-tyk-oas-definition-middleware-uses-operationids-for-middleware-configure
+  - 013-authentication-auth-tokens-hmac-json-web-tokens-jwt-mtls-oauth-2-0
+  - 014-auth-tokens-bearer-tokens-header-querystring-or-cookie-create-via-post-t
+  - 015-hmac-stands-for-hash-based-message-authentication-code-adds-security-by
+  - 016-hmac-tyk-verifies-the-request-extracts-the-keyid-from-the-header-retriev
+  - 017-hmac-upstream-signing-tyk-takes-the-request-it-s-about-to-send-upstream
+  - 018-json-web-tokens-json-web-tokens-cryptographically-signed-claims-signed-b
+  - 019-json-web-tokens-anatomy
+  - 020-json-web-tokens-configuration
+  - 021-json-web-tokens-flow
+  - 022-oauth-2-0
+  - 023-api-keys
+  - 024-policies
+  - 025-policies-encapsulation
+  - 026-policies-data-structure
+  - 027-rate-limiting
+  - 028-rate-limiting-2
+  - 029-rate-limiting-3
+  - 030-rate-limiting-4
+  - 031-rate-limiting-5
+  - 032-throttling
+  - 033-throttling-2
+  - 034-throttling-3
+  - 035-quotas
+  - 036-quota-configuration
+  - 037-quota-enforcement
+  - 038-quota-renewal
+  - 039-quota-headers
+  - 040-quota-example
+  - 041-hands-on-workshop-using-tyk-to-create-an-api-protect-the-api-create-an-a
+  - 042-module-3-analytics-understanding-analytics-reporting-in-tyk
+  - 043-api-request-flow
+  - 044-api-request-flow-2
+  - 045-api-request-flow-3
+  - 046-api-request-flow-4
+  - 047-api-request-flow-5
+  - 048-api-request-flow-6
+  - 049-api-request-flow-7
+  - 050-api-request-flow-8
+  - 051-redis-pump-database-dashboard
+  - 052-redis-pump-pump-database-database
+  - 053-pump-database-redis-pump-pump-database-database-dashboard
+  - 054-handling-analytics
+  - 055-working-with-analytics
+  - 056-hands-on-workshop-viewing-aggregated-analytics-and-raw-logs-both-detaile
+  - 057-module-4-endpoint-designer-explore-the-rich-api-designer-and-tyk-s-out-o
+  - 058-endpoint-designer
+  - 059-endpoint-designer-2
+  - 060-endpoint-designer-allowlist
+  - 061-endpoint-designer-blocklist
+  - 062-endpoint-designer-method-transforms
+  - 063-endpoint-designer-body-transforms
+  - 064-endpoint-designer-modify-headers
+  - 065-endpoint-designer-url-rewrite
+  - 066-endpoint-designer-caching
+  - 067-endpoint-designer-request-size-limit
+  - 068-endpoint-designer-validate-json
+  - 069-endpoint-designer-virtual-endpoint
+  - 070-endpoint-designer-circuit-breaker
+  - 071-endpoint-designer-tracking-endpoints
+  - 072-endpoint-designer-enforced-timeout
+  - 073-endpoint-designer-ignore
+  - 074-endpoint-designer-internal
+  - 075-hands-on-workshop-configuring-body-transforms-virtual-endpoint-and-url-r
+  - 076-versioning-tyk-api-definition
+  - 077-versioning-tyk-api-definition-2
+  - 078-demo-quick-look-at-versioning-tyk-api-definitions
+  - 079-module-5-troubleshooting-understanding-support-channels-retrieving-logs
+  - 080-gold-sla-coverage-coverage-information-times-users-channels-response-tim
+  - 081-gold-sla-coverage-coverage-information-times-users-channels-response-tim-2
+  - 082-gold-sla-coverage-coverage-information-times-users-channels-response-tim-3
+  - 083-gold-sla-coverage-coverage-information-times-users-channels-response-tim-4
+  - 084-support-channels-support-manage-cases-product-advice-technical-analysis
+  - 085-gold-sla-contacting-support-the-best-ways-to-get-in-touch-are-support-po
+  - 086-support-ticket-submission-what-to-include-in-a-ticket-required-informati
+  - 087-retrieving-logs-retrieve-logs-depending-on-your-os-tyk-usually-stores-lo
+  - 088-logging-verbosity-via-environment-variables-to-affect-all-tyk-components
+  - 089-3rd-party-log-tools-sentry-logstash-graylog-syslog-out-of-the-box-integr
+  - 090-retrieving-configuration-files-each-component-has-configuration-file-gat
+  - 091-hands-on-workshop-retrieving-logs-and-configuration-files-setting-loggin
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

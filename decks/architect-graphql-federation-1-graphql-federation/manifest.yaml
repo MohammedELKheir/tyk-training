@@ -1,0 +1,46 @@
+id: architect-graphql-federation-1-graphql-federation
+slug: architect-graphql-federation-1-graphql-federation
+title: GraphQL Federation
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql-federation/1.-graphql-federation` with 18 converted slides.
+topics:
+  - graphql
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-module-2-graphql-federation
+  - 002-what-is-graphql-federation
+  - 003-graphql-federation-architecture
+  - 004-subgraphs-and-supergraphs
+  - 005-subgraph-examples-users-products
+  - 006-subgraph-examples-reviews
+  - 007-federated-supergraph-schema
+  - 008-subgraph-and-supergraphs-summary
+  - 009-creating-a-subgraph-via-the-dashboard-ui
+  - 010-creating-a-subgraph-via-the-dashboard-ui-continued
+  - 011-creating-a-supergraph-via-the-dashboard-ui
+  - 012-defining-global-headers-for-supergraphs
+  - 013-defining-global-headers-for-supergraphs-continued
+  - 014-entities-defining-the-base-entity
+  - 015-entities-extending-entities
+  - 016-entities-entity-stubs
+  - 017-shared-types-and-extending-shared-types
+  - 018-extension-orphans
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

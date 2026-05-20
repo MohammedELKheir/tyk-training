@@ -1,0 +1,4335 @@
+{
+  "slide_width": 9144000,
+  "slide_height": 5143500,
+  "slides": [
+    {
+      "slide": 1,
+      "notes": "",
+      "shapes": [
+        {
+          "name": "Google Shape;54;p13",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 1926900,
+          "top": 1419375,
+          "width": 5290200,
+          "height": 754200,
+          "text": "DataSources",
+          "paragraphs": [
+            {
+              "text": "DataSources",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "DataSources",
+                  "font_name": "Inter",
+                  "font_size": 37.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;55;p13",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 1926900,
+          "top": 1144125,
+          "width": 5290200,
+          "height": 369300,
+          "text": "Module 4",
+          "paragraphs": [
+            {
+              "text": "Module 4",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": [
+                {
+                  "text": "Module 4",
+                  "font_name": "Inter Medium",
+                  "font_size": 12.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "21E9BA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;56;p13",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 1926900,
+          "top": 2169975,
+          "width": 5290200,
+          "height": 400200,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "CENTER (2)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;57;p13",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;58;p13",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-001-5.png"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "notes": "Unified Data Graph in Tyk relies on datasources \u2014 these are your backend systems that provide the actual data.\nYou can attach a datasource to any field in the UDG schema, and even nest them, enabling complex data compositions.\nWhile you can add datasources quickly for testing or prototyping without creating a full Tyk API, this limits your access to key API management features.\nFor things like quotas, rate limiting, and transformations, we strongly recommend importing the backend API into Tyk first.\nTyk supports REST and GraphQL directly, SOAP via REST wrappers, and even Kafka for event-driven data access.",
+      "shapes": [
+        {
+          "name": "Google Shape;63;p14",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;64;p14",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-002-2.png"
+        },
+        {
+          "name": "Google Shape;65;p14",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Connect Data Sources",
+          "paragraphs": [
+            {
+              "text": "Connect Data Sources",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Connect Data Sources",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;66;p14",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 3655800,
+          "text": "Unified Data Graph (UDG) \u2013 Datasource Overview\n\nDatasources power your UDG and its schema\nCan be attached to any field in the UDG schema\nSupport nested configuration\nQuick Start vs Full Control\nYou can add datasources directly to UDG without registering them as APIs in Tyk\nFor advanced features (rate limits, quotas, transformations), import the API into Tyk first\nSupported Datasource Types:\nREST\nGraphQL\nSOAP (via REST Datasource)\nKafka\n",
+          "paragraphs": [
+            {
+              "text": "Unified Data Graph (UDG) \u2013 Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Unified Data Graph (UDG) \u2013 Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Datasources power your UDG and its schema",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Datasources power your UDG and its schema",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Can be attached to any field in the UDG schema",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Can be attached to any field in the UDG schema",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Support nested configuration",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Support nested configuration",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Quick Start vs Full Control",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Quick Start vs Full Control",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "You can add datasources directly to UDG without registering them as APIs in Tyk",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "You can add datasources directly to UDG without registering them as APIs in Tyk",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "For advanced features (rate limits, quotas, transformations), import the API into Tyk first",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "For advanced features (rate limits, quotas, transformations), import the API into Tyk first",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Supported Datasource Types:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Supported Datasource Types:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "REST",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "GraphQL",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "SOAP (via REST Datasource)",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "SOAP (via REST Datasource)",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Kafka",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "notes": "Tyk supports GraphQL Datasources which allow querying upstream GraphQL services. While the configuration is nearly identical to REST Datasources, there's a subtle but key difference in how GraphQL responses are handled, which we\u2019ll explore next.\nLet\u2019s walk through a typical example. This schema and query target an employee by ID. The query asks for id and name fields.",
+      "shapes": [
+        {
+          "name": "Google Shape;71;p15",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;72;p15",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-003-2.png"
+        },
+        {
+          "name": "Google Shape;73;p15",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "GraphQL Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "GraphQL Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;74;p15",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 1116000,
+          "text": "Makes GraphQL queries to upstream GraphQL services\nConfigured similarly to REST Datasource\nHandles query and response specifics automatically\n",
+          "paragraphs": [
+            {
+              "text": "Makes GraphQL queries to upstream GraphQL services",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Makes GraphQL queries to upstream GraphQL services",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Configured similarly to REST Datasource",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Configured similarly to REST Datasource",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Handles query and response specifics automatically",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Handles query and response specifics automatically",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;75;p15",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 622375,
+          "top": 2066800,
+          "width": 2372100,
+          "height": 1961100,
+          "text": "Schema Example:\n\ntype Query {\n    employee(id: Int!): Employee\n}\ntype Employee {\n    id: Int!\n    name: String!\n}",
+          "paragraphs": [
+            {
+              "text": "Schema Example:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Schema Example:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "type Query {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "type Query {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    employee(id: Int!): Employee",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    employee(id: Int!): Employee",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "type Employee {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "type Employee {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    id: Int!",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    id: Int!",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    name: String!",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    name: String!",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;76;p15",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 3136975,
+          "top": 2066800,
+          "width": 2372100,
+          "height": 1961100,
+          "text": "Example Query:\n\nquery TykCEO {\n    employee(id: 1) {\n        id\n        name\n    }\n}",
+          "paragraphs": [
+            {
+              "text": "Example Query:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Example Query:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "query TykCEO {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "query TykCEO {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    employee(id: 1) {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    employee(id: 1) {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "        id",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        id",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "        name",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        name",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    }",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    }",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 4,
+      "notes": "Unlike REST, GraphQL wraps responses inside a data object. Tyk automatically unwraps this for you, simplifying field mapping.",
+      "shapes": [
+        {
+          "name": "Google Shape;81;p16",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;82;p16",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-004-2.png"
+        },
+        {
+          "name": "Google Shape;83;p16",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "GraphQL Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "GraphQL Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;84;p16",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 608100,
+          "text": "GraphQL Response Parsing\n",
+          "paragraphs": [
+            {
+              "text": "GraphQL Response Parsing",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL Response Parsing",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;85;p16",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 622375,
+          "top": 1533400,
+          "width": 2372100,
+          "height": 1961100,
+          "text": "Actual Response:\n\n{\n  \"data\": {\n    \"employee\": {\n        \"id\": 1,\n        \"name\": \"Martin Buhr\"\n    }\n  }\n}",
+          "paragraphs": [
+            {
+              "text": "Actual Response:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Actual Response:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "{",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "{",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "  \"data\": {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "  \"data\": {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    \"employee\": {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    \"employee\": {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "        \"id\": 1,",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        \"id\": 1,",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "        \"name\": \"Martin Buhr\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        \"name\": \"Martin Buhr\"",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    }",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    }",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "  }",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "  }",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;86;p16",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 3213175,
+          "top": 1533400,
+          "width": 2372100,
+          "height": 1961100,
+          "text": "Tyk Extracts:\n\n{\n  \"employee\": {\n    \"id\": 1,\n    \"name\": \"Martin Buhr\"\n  }\n}",
+          "paragraphs": [
+            {
+              "text": "Tyk Extracts:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Tyk Extracts:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "{",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "{",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "  \"employee\": {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "  \"employee\": {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    \"id\": 1,",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    \"id\": 1,",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    \"name\": \"Martin Buhr\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    \"name\": \"Martin Buhr\"",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "  }",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "  }",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "notes": "One key takeaway: GraphQL responses include a wrapping field, while REST typically does not. Because of this, GraphQL field mapping is turned on by default.\nTyk\u2019s GraphQL engine sends standard-compliant queries. You can mix multiple REST and GraphQL datasources\u2014even nested\u2014and Tyk will handle query composition and resolution automatically.\nThe query planner follows field ownership: when it hits a field with a datasource, it uses that datasource. If a nested field has its own, ownership shifts until it exits that field.",
+      "shapes": [
+        {
+          "name": "Google Shape;91;p17",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;92;p17",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-005-2.png"
+        },
+        {
+          "name": "Google Shape;93;p17",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "GraphQL Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "GraphQL Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;94;p17",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 5179500,
+          "text": "REST vs GraphQL\nREST APIs do not wrap responses\nGraphQL APIs wrap responses in root fields (like data, employee)\nGraphQL field mapping is enabled by default\n\nWhy Use GraphQL Datasource?\nSpecification-compliant GraphQL requests\nSupports nested REST & GraphQL APIs in a single schema\nQuery planner sends correct queries to upstreams\n\nHow the Query Planner Works\nChecks if a field has a datasource\nThat datasource resolves the field and its children\nIf a nested field has its own datasource, ownership shifts\n\n\n\n\n\n",
+          "paragraphs": [
+            {
+              "text": "REST vs GraphQL",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST vs GraphQL",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "REST APIs do not wrap responses",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST APIs do not wrap responses",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "GraphQL APIs wrap responses in root fields (like data, employee)",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL APIs wrap responses in root fields (like data, employee)",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "GraphQL field mapping is enabled by default",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL field mapping is enabled by default",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Why Use GraphQL Datasource?",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Why Use GraphQL Datasource?",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Specification-compliant GraphQL requests",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Specification-compliant GraphQL requests",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Supports nested REST & GraphQL APIs in a single schema",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Supports nested REST & GraphQL APIs in a single schema",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Query planner sends correct queries to upstreams",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Query planner sends correct queries to upstreams",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "How the Query Planner Works",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "How the Query Planner Works",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Checks if a field has a datasource",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Checks if a field has a datasource",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "That datasource resolves the field and its children",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "That datasource resolves the field and its children",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "If a nested field has its own datasource, ownership shifts",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "If a nested field has its own datasource, ownership shifts",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "notes": "In summary, Tyk makes it simple to use GraphQL APIs as datasources, with support for automatic parsing, field-level attachments, and flexible query planning across services.",
+      "shapes": [
+        {
+          "name": "Google Shape;99;p18",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;100;p18",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-006-2.png"
+        },
+        {
+          "name": "Google Shape;101;p18",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "GraphQL Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "GraphQL Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;102;p18",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 2986200,
+          "text": "Summary\n\nTyk supports full GraphQL Datasource configuration\nAutomatic unwrapping of data field\nQuery planner handles mixed datasources\n\n\n\n\n",
+          "paragraphs": [
+            {
+              "text": "Summary",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Summary",
+                  "font_name": "Inter",
+                  "font_size": null,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Tyk supports full GraphQL Datasource configuration",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Tyk supports full GraphQL Datasource configuration",
+                  "font_name": "Inter",
+                  "font_size": null,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Automatic unwrapping of data field",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Automatic unwrapping of data field",
+                  "font_name": "Inter",
+                  "font_size": null,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Query planner handles mixed datasources",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Query planner handles mixed datasources",
+                  "font_name": "Inter",
+                  "font_size": null,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "notes": "Kafka is a distributed messaging system used for building real-time data pipelines and streaming applications. In Tyk, we can treat Kafka as a data source in our Universal Data Graph. This means developers can subscribe to topics and access streamed data using GraphQL queries. This is incredibly powerful for use cases involving live data such as product updates, financial tickers, IoT data, or live metrics.\nThe Tyk Kafka DataSource is built on top of Kafka consumer groups. This is key, because it means it supports all Kafka features such as load balancing, fault tolerance, and scalability. When integrated into your schema, fields using Kafka can continuously stream updated data to any client that subscribes.\n\nIn Kafka, a consumer group consists of multiple consumers that coordinate to consume messages from a topic. Each partition in a topic is consumed by only one consumer in a group, ensuring messages are processed exactly once per group.\n\nIf we add more consumers than partitions, the extra consumers will remain idle. This model allows for dynamic scaling \u2014 consumers can be added or removed at runtime, and Kafka will rebalance automatically. Tyk leverages this model so multiple APIs or instances can share the workload for high-volume streams.",
+      "shapes": [
+        {
+          "name": "Google Shape;107;p19",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;108;p19",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-007-2.png"
+        },
+        {
+          "name": "Google Shape;109;p19",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;110;p19",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 2131800,
+          "text": "Enables subscribing to Kafka topics and querying events with GraphQL.\nIntegrates Kafka's powerful pub/sub model into your Universal Data Graph.\nOperates based on Kafka\u2019s consumer group mechanism.\n\nKafka Consumer Groups\nA group of cooperating consumers that share processing load.\nKafka automatically manages membership and rebalances partitions.\nAllows for horizontal scaling and fault tolerance.",
+          "paragraphs": [
+            {
+              "text": "Enables subscribing to Kafka topics and querying events with GraphQL.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Enables subscribing to Kafka topics and querying events with GraphQL.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Integrates Kafka's powerful pub/sub model into your Universal Data Graph.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Integrates Kafka's powerful pub/sub model into your Universal Data Graph.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Operates based on Kafka\u2019s consumer group mechanism.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Operates based on Kafka\u2019s consumer group mechanism.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Kafka Consumer Groups",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Consumer Groups",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "A group of cooperating consumers that share processing load.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "A group of cooperating consumers that share processing load.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Kafka automatically manages membership and rebalances partitions.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka automatically manages membership and rebalances partitions.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Allows for horizontal scaling and fault tolerance.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Allows for horizontal scaling and fault tolerance.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "notes": "To configure a Kafka DataSource in Tyk, the following fields are required:\n\nbroker_addresses: This is where your Kafka brokers live. It\u2019s enough to supply just one broker; Kafka will discover the rest.\ntopics: These are the Kafka topics you want to subscribe to. All events must match the GraphQL schema.\ngroup_id: This defines your consumer group. Multiple APIs can share this ID, which lets them cooperate on event processing.\nclient_id: This is a unique identifier for the client, used in Kafka logs and metrics to trace requests.\n\nThis configuration is part of the Tyk API Definition object, allowing this setup to be version-controlled and automated.",
+      "shapes": [
+        {
+          "name": "Google Shape;115;p20",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;116;p20",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-008-2.png"
+        },
+        {
+          "name": "Google Shape;117;p20",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;118;p20",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 2131800,
+          "text": "Basic Kafka Configuration\n\nbroker_addresses: Kafka broker hosts\ntopics: Kafka topics to subscribe to\ngroup_id: Consumer group identifier\nclient_id: Optional identifier for logging and debugging\n\n",
+          "paragraphs": [
+            {
+              "text": "Basic Kafka Configuration",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Basic Kafka Configuration",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "broker_addresses: Kafka broker hosts",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "broker_addresses",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                },
+                {
+                  "text": ": Kafka broker hosts",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "topics: Kafka topics to subscribe to",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "topics",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                },
+                {
+                  "text": ": Kafka topics to subscribe to",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "group_id: Consumer group identifier",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "group_id",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                },
+                {
+                  "text": ": Consumer group identifier",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "client_id: Optional identifier for logging and debugging",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "client_id",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                },
+                {
+                  "text": ": Optional identifier for logging and debugging",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "notes": "Tyk provides an intuitive UI to configure Kafka DataSources. Simply select a field in your schema and choose the Kafka data source type. You\u2019ll be asked to input essential information like broker address and topic names.\nOptional fields let you further customize how the consumer behaves. These settings allow for advanced balancing and mapping if your data structure is more complex. Once saved, you\u2019ll see the data source type and name directly on the field, making schema maintenance easy.",
+      "shapes": [
+        {
+          "name": "Google Shape;123;p21",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;124;p21",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-009-2.png"
+        },
+        {
+          "name": "Google Shape;125;p21",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;126;p21",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 3655800,
+          "text": "Configuring via Tyk Dashboard\n\nClick the field to attach Kafka DataSource.\nIn Configure Data Source, choose KAFKA.\nProvide:\nData source name\nBroker addresses\nTopics\nGroup ID\nClient ID\n(Optional) Kafka version, balance strategy, field mappings\nClick Save.\n\n",
+          "paragraphs": [
+            {
+              "text": "Configuring via Tyk Dashboard",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Configuring via Tyk Dashboard",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Click the field to attach Kafka DataSource.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Click the field to attach Kafka DataSource.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "In Configure Data Source, choose KAFKA.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "In Configure Data Source, choose KAFKA.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Provide:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Provide:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Data source name",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Data source name",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Broker addresses",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Broker addresses",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Topics",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Topics",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Group ID",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Group ID",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Client ID",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Client ID",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "(Optional) Kafka version, balance strategy, field mappings",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "(Optional) Kafka version, balance strategy, field mappings",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Click Save.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Click Save.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "notes": "Tyk provides an intuitive UI to configure Kafka DataSources. Simply select a field in your schema and choose the Kafka data source type. You\u2019ll be asked to input essential information like broker address and topic names.\nOptional fields let you further customize how the consumer behaves. These settings allow for advanced balancing and mapping if your data structure is more complex. Once saved, you\u2019ll see the data source type and name directly on the field, making schema maintenance easy.",
+      "shapes": [
+        {
+          "name": "Google Shape;131;p22",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;132;p22",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-010-2.png"
+        },
+        {
+          "name": "Google Shape;133;p22",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;134;p22",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 861900,
+          "text": "\n\n",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;135;p22",
+          "shape_type": "PICTURE (13)",
+          "left": 827825,
+          "top": 1373625,
+          "width": 6447000,
+          "height": 2901150,
+          "asset": "slide-010-5.png"
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "notes": "Tyk provides an intuitive UI to configure Kafka DataSources. Simply select a field in your schema and choose the Kafka data source type. You\u2019ll be asked to input essential information like broker address and topic names.\nOptional fields let you further customize how the consumer behaves. These settings allow for advanced balancing and mapping if your data structure is more complex. Once saved, you\u2019ll see the data source type and name directly on the field, making schema maintenance easy.",
+      "shapes": [
+        {
+          "name": "Google Shape;140;p23",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;141;p23",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-011-2.png"
+        },
+        {
+          "name": "Google Shape;142;p23",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;143;p23",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 1369800,
+          "text": "Once done the field you just configured will show information about data source type and name:\n\n\n\n",
+          "paragraphs": [
+            {
+              "text": "Once done the field you just configured will show information about data source type and name:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Once done the field you just configured will show information about data source type and name:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;144;p23",
+          "shape_type": "PICTURE (13)",
+          "left": 566863,
+          "top": 1869325,
+          "width": 8113772,
+          "height": 2186775,
+          "asset": "slide-011-5.png"
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "notes": "GraphQL subscriptions are a powerful way to deliver real-time updates to clients. In Tyk, we can map Kafka topics to GraphQL subscription fields.\nWhen an event is published to the topic, all subscribed clients will receive the update instantly. This is done using the standard GraphQL subscription query type. Clients can use any compliant GraphQL client or library to consume these updates \u2014 no need for custom protocols or vendor-specific solutions.\nThis allows real-time data streams to be cleanly integrated into your unified API architecture.\n\nThis is how simple it is to subscribe to Kafka-powered fields in Tyk. This GraphQL query on the right subscribes to the productUpdated field, which will be populated with data from the Kafka topic.\nWhenever a new message comes through with product details, the client receives it immediately. This is ideal for use cases like e-commerce dashboards, live inventory trackers, or monitoring tools.\nDevelopers can integrate this into frontend apps using tools like Apollo Client or urql.",
+      "shapes": [
+        {
+          "name": "Google Shape;149;p24",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;150;p24",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-012-2.png"
+        },
+        {
+          "name": "Google Shape;151;p24",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;152;p24",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 4339500,
+          "height": 3962100,
+          "text": "GraphQL Subscriptions with Kafka\n\nReal-Time Subscriptions\nUse GraphQL subscription queries to listen to Kafka events.\nDefine Subscription type in your schema:\n\ntype Product {\n name: String\n price: Int\n inStock: Int\n}\n\ntype Subscription {\n productUpdated: Product\n}\n\nSubscribers will get real-time updates on every event.\n",
+          "paragraphs": [
+            {
+              "text": "GraphQL Subscriptions with Kafka",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL Subscriptions with Kafka",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Real-Time Subscriptions",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Real-Time Subscriptions",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Use GraphQL subscription queries to listen to Kafka events.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Use GraphQL subscription queries to listen to Kafka events.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Define Subscription type in your schema:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Define Subscription type in your schema:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "type Product {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "type",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "E36209"
+                },
+                {
+                  "text": " Product ",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "24292E"
+                },
+                {
+                  "text": "{",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "555555"
+                }
+              ]
+            },
+            {
+              "text": " name: String",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": " name: String",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "24292E"
+                }
+              ]
+            },
+            {
+              "text": " price: Int",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": " price: Int",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "24292E"
+                }
+              ]
+            },
+            {
+              "text": " inStock: Int",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": " ",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "24292E"
+                },
+                {
+                  "text": "in",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "D73A49"
+                },
+                {
+                  "text": "Stock: Int",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "24292E"
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "555555"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "type Subscription {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "type",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "E36209"
+                },
+                {
+                  "text": " Subscription ",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "24292E"
+                },
+                {
+                  "text": "{",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "555555"
+                }
+              ]
+            },
+            {
+              "text": " productUpdated: Product",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": " productUpdated: Product",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "24292E"
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "555555"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Subscribers will get real-time updates on every event.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Subscribers will get real-time updates on every event.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;153;p24",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 4804575,
+          "top": 1568300,
+          "width": 4067100,
+          "height": 2697900,
+          "text": "Example Subscription Query\n\nsubscription Products {\n    productUpdated {\n        name\n        price\n        inStock\n    }\n}\n\nAutomatically receives new product data when Kafka publishes an event.\nCompatible with most GraphQL clients.",
+          "paragraphs": [
+            {
+              "text": "Example Subscription Query",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Example Subscription Query",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "subscription Products {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "subscription Products {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "    productUpdated {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    productUpdated {",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "        name",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        name",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "        price",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        price",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "        inStock",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        inStock",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "    }",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    }",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Automatically receives new product data when Kafka publishes an event.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Automatically receives new product data when Kafka publishes an event.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Compatible with most GraphQL clients.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Compatible with most GraphQL clients.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 13,
+      "notes": "To test your setup, you can publish events manually to Kafka using tools like Kafka CLI, Postman + Kafka REST Proxy, or a Kafka GUI.\nHere we\u2019re sending a JSON message to the product-updates topic. When this happens, all GraphQL clients subscribed to productUpdated will receive the new product info instantly. This is a great way to validate your data mappings, consumer group configuration, and client subscriptions.\nThis enables full-cycle testing without needing a complete application stack.",
+      "shapes": [
+        {
+          "name": "Google Shape;158;p25",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;159;p25",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-013-2.png"
+        },
+        {
+          "name": "Google Shape;160;p25",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;161;p25",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 6253500,
+          "height": 3123000,
+          "text": "Publishing Test Events\n\nSimulating Kafka Events\nPublish event to product-updates topic:\n{\n    \"productUpdated\": {\n        \"name\": \"product1\",\n        \"price\": 1624,\n        \"inStock\": 219\n    }\n}\n\nUse any Kafka producer or GUI tool.\nUseful for testing subscriptions and schema mappings.\n",
+          "paragraphs": [
+            {
+              "text": "Publishing Test Events",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Publishing Test Events",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Simulating Kafka Events",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Simulating Kafka Events",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Publish event to product-updates topic:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Publish event to product-updates topic:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "{",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "{",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    \"productUpdated\": {",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    \"productUpdated\": {",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "        \"name\": \"product1\",",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        \"name\": \"product1\",",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "        \"price\": 1624,",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        \"price\": 1624,",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "        \"inStock\": 219",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "        \"inStock\": 219",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "    }",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    }",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 8.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": null
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Use any Kafka producer or GUI tool.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Use any Kafka producer or GUI tool.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Useful for testing subscriptions and schema mappings.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Useful for testing subscriptions and schema mappings.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 14,
+      "notes": "To wrap up: Tyk\u2019s Kafka DataSource is a powerful way to bring live streaming data into your Universal Data Graph. It leverages Kafka\u2019s proven scalability and fault-tolerance while giving developers a modern, flexible API layer using GraphQL.\nIt\u2019s ideal for dynamic use cases \u2014 from IoT and supply chain systems to product catalogs and user behavior tracking. You can manage everything in one place \u2014 Tyk Gateway \u2014 and still keep your architecture loosely coupled and event-driven.\nIf you\u2019re building anything real-time, Kafka with Tyk UDG is a compelling option.",
+      "shapes": [
+        {
+          "name": "Google Shape;166;p26",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;167;p26",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-014-2.png"
+        },
+        {
+          "name": "Google Shape;168;p26",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "Kafka Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "Kafka Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;169;p26",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 6253500,
+          "height": 2131800,
+          "text": "Summary\nKafka DataSource in Tyk\n\nSeamlessly integrates Kafka with GraphQL APIs.\nAllows real-time streaming via GraphQL subscriptions.\nScalable via Kafka consumer groups.\nEasy setup via Tyk Dashboard or API Definition.\n",
+          "paragraphs": [
+            {
+              "text": "Summary",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Summary",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Kafka DataSource in Tyk",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Kafka DataSource in Tyk",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Seamlessly integrates Kafka with GraphQL APIs.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Seamlessly integrates Kafka with GraphQL APIs.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Allows real-time streaming via GraphQL subscriptions.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Allows real-time streaming via GraphQL subscriptions.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Scalable via Kafka consumer groups.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Scalable via Kafka consumer groups.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Easy setup via Tyk Dashboard or API Definition.",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Easy setup via Tyk Dashboard or API Definition.",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 15,
+      "notes": "REST DataSources act as connectors between your GraphQL schema and existing REST endpoints. Instead of rewriting your APIs, you attach a REST DataSource to a GraphQL field, allowing that field to be resolved via a REST call. These can be external APIs or APIs already managed in your Tyk Gateway.\nIf we add more consumers than partitions, the extra consumers will remain idle. This model allows for dynamic scaling \u2014 consumers can be added or removed at runtime, and Kafka will rebalance automatically. Tyk leverages this model so multiple APIs or instances can share the workload for high-volume streams.",
+      "shapes": [
+        {
+          "name": "Google Shape;174;p27",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;175;p27",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-015-2.png"
+        },
+        {
+          "name": "Google Shape;176;p27",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "REST Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "REST Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;177;p27",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 861900,
+          "text": "REST DataSources connect REST APIs to your GraphQL schema\nEnables field-level resolution via REST endpoints\nSupported for both external APIs and Tyk-managed APIs",
+          "paragraphs": [
+            {
+              "text": "REST DataSources connect REST APIs to your GraphQL schema",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST DataSources connect REST APIs to your GraphQL schema",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Enables field-level resolution via REST endpoints",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Enables field-level resolution via REST endpoints",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Supported for both external APIs and Tyk-managed APIs",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Supported for both external APIs and Tyk-managed APIs",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 16,
+      "notes": "To attach an external REST API to a GraphQL field, start by selecting the field in the schema editor. Use the right-side configuration panel to define your DataSource details. This includes naming it, entering the REST URL, HTTP method, and optionally setting request headers and field mapping to align the response with your schema.",
+      "shapes": [
+        {
+          "name": "Google Shape;182;p28",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;183;p28",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-016-2.png"
+        },
+        {
+          "name": "Google Shape;184;p28",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "REST Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "REST Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;185;p28",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 2131800,
+          "text": "Select the field in your schema\nConfigure as External REST DataSource\nName\nURL\nMethod (GET, POST, etc.)\nOptional: Headers, Field Mapping\n\n",
+          "paragraphs": [
+            {
+              "text": "Select the field in your schema",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Select the field in your schema",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Configure as External REST DataSource",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Configure as External REST DataSource",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Name",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Name",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "URL",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "URL",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Method (GET, POST, etc.)",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Method (GET, POST, etc.)",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Optional: Headers, Field Mapping",
+              "level": 1,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Optional: Headers, Field Mapping",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;186;p28",
+          "shape_type": "PICTURE (13)",
+          "left": 4472300,
+          "top": 1028275,
+          "width": 3535324,
+          "height": 3476100,
+          "asset": "slide-016-5.png"
+        }
+      ]
+    },
+    {
+      "slide": 17,
+      "notes": "If your REST API is already managed by Tyk, the integration is even easier. Choose from the list of available Tyk APIs in the dropdown, then configure which endpoint and method to use. This method promotes reuse of existing API definitions and policies.\n\nOnce the DataSource configuration is complete, saving it will generate a resolver function under the hood. This resolver ensures that when your GraphQL field is queried, the corresponding REST call is made to retrieve the data dynamically.",
+      "shapes": [
+        {
+          "name": "Google Shape;191;p29",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;192;p29",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-017-2.png"
+        },
+        {
+          "name": "Google Shape;193;p29",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "REST Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "REST Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;194;p29",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 7305600,
+          "height": 3401700,
+          "text": "Attaching Tyk REST API\nSelect the field\nChoose REST | Tyk from the dropdown\nPick from existing Tyk APIs\nProvide endpoint and method\nOptional headers and mapping\n\nSave and Generate Resolver\nClick \"Save & Update API\"\nResolver is auto-generated\nGraphQL runtime will call the REST endpoint when the field is queried\n\n",
+          "paragraphs": [
+            {
+              "text": "Attaching Tyk REST API",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Attaching Tyk REST API",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Select the field",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Select the field",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Choose REST | Tyk from the dropdown",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Choose REST | Tyk from the dropdown",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Pick from existing Tyk APIs",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Pick from existing Tyk APIs",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Provide endpoint and method",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Provide endpoint and method",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Optional headers and mapping",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Optional headers and mapping",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "Save and Generate Resolver",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Save and Generate Resolver",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Click \"Save & Update API\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Click \"Save & Update API\"",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Resolver is auto-generated",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Resolver is auto-generated",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "GraphQL runtime will call the REST endpoint when the field is queried",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "GraphQL runtime will call the REST endpoint when the field is queried",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;195;p29",
+          "shape_type": "PICTURE (13)",
+          "left": 3788850,
+          "top": 1615313,
+          "width": 5166750,
+          "height": 1697276,
+          "asset": "slide-017-5.png"
+        }
+      ]
+    },
+    {
+      "slide": 18,
+      "notes": "To save time, Tyk allows you to auto-generate DataSource configurations from an OpenAPI (OAS) document. Just call the Dashboard API with the OAS content, and Tyk will generate and publish the corresponding GraphQL configuration. This is particularly useful for onboarding large REST APIs quickly.",
+      "shapes": [
+        {
+          "name": "Google Shape;200;p30",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;201;p30",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-018-2.png"
+        },
+        {
+          "name": "Google Shape;202;p30",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "REST Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "REST Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;203;p30",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 6173700,
+          "height": 4163700,
+          "text": "Auto-generate REST DataSource via OAS\nUse Tyk Dashboard API\nEndpoint: POST /api/data-graphs/data-sources/import\nRequest Body:\n{\n    \"type\": \"string\",\n    \"data\": \"string\"\n}\n\ntype is an enum with the following possible values:\nopenapi\nAsyncapi\n\nTo import an OAS specification you need to choose openapi\n\n",
+          "paragraphs": [
+            {
+              "text": "Auto-generate REST DataSource via OAS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Auto-generate REST DataSource via OAS",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Use Tyk Dashboard API",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Use Tyk Dashboard API",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Endpoint: POST /api/data-graphs/data-sources/import",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Endpoint: ",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                },
+                {
+                  "text": "POST /api/data-graphs/data-sources/import",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Request Body:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Request Body:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "{",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "{",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "    \"type\": \"string\",",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    \"type\": \"string\",",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "    \"data\": \"string\"",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "    \"data\": \"string\"",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "}",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "}",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "type is an enum with the following possible values:",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "type",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                },
+                {
+                  "text": " is an enum with the following possible values:",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "openapi",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "openapi",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Asyncapi",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Asyncapi",
+                  "font_name": "Courier New",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "To import an OAS specification you need to choose openapi",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "To import an OAS specification you need to choose openapi",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide": 19,
+      "notes": "To wrap up, REST DataSources provide a powerful way to integrate legacy REST APIs into your modern GraphQL layer. You can attach them to any field, choose external or internal APIs, and even use OpenAPI specs to automate the setup. This enhances development agility while leveraging existing infrastructure.",
+      "shapes": [
+        {
+          "name": "Google Shape;208;p31",
+          "shape_type": "AUTO_SHAPE (1)",
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300,
+          "text": "",
+          "paragraphs": [
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;209;p31",
+          "shape_type": "PICTURE (13)",
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "asset": "slide-019-2.png"
+        },
+        {
+          "name": "Google Shape;210;p31",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 339000,
+          "top": 309475,
+          "width": 8569500,
+          "height": 646500,
+          "text": "REST Datasource Overview",
+          "paragraphs": [
+            {
+              "text": "REST Datasource Overview",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST Datasource Overview",
+                  "font_name": "Inter",
+                  "font_size": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "5900CB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;211;p31",
+          "shape_type": "TEXT_BOX (17)",
+          "left": 398525,
+          "top": 1075650,
+          "width": 6173700,
+          "height": 1623900,
+          "text": "Summary\nREST DataSources make it easy to integrate legacy REST APIs\nBoth external and internal APIs are supported\nAutomatic configuration possible with OAS\n\n",
+          "paragraphs": [
+            {
+              "text": "Summary",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Summary",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": true,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "REST DataSources make it easy to integrate legacy REST APIs",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "REST DataSources make it easy to integrate legacy REST APIs",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Both external and internal APIs are supported",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Both external and internal APIs are supported",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "Automatic configuration possible with OAS",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": [
+                {
+                  "text": "Automatic configuration possible with OAS",
+                  "font_name": "Inter",
+                  "font_size": 11.0,
+                  "bold": null,
+                  "italic": null,
+                  "color": "03031C"
+                }
+              ]
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            },
+            {
+              "text": "",
+              "level": 0,
+              "alignment": "LEFT (1)",
+              "runs": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+id: foundation-apis-in-tyk-1-classic-api
+slug: foundation-apis-in-tyk-1-classic-api
+title: Classic API Definitions
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---1-classic-api` with 3 converted slides.
+topics:
+  - api-design
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-classic-api-definitions
+  - 002-tyk-classic-api-definition
+  - 003-necessary-fields
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

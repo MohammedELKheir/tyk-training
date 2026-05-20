@@ -1,0 +1,410 @@
+[
+  {
+    "slide": 1,
+    "width": 9144000,
+    "height": 5143500,
+    "shapes": [
+      {
+        "path": "root/1:Google Shape;54;p13",
+        "name": "Google Shape;54;p13",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 77.17,
+          "y": 123.7,
+          "w": 400.3,
+          "h": 169.57
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "GraphQL Complexity Limiting"
+          },
+          {
+            "level": 0,
+            "text": "Even with a simple schema, deeply nested or resource-heavy operations can overload your upstream services."
+          }
+        ]
+      },
+      {
+        "path": "root/2:Google Shape;55;p13",
+        "name": "Google Shape;55;p13",
+        "shape_type": "AUTO_SHAPE (1)",
+        "box": {
+          "x": 873.83,
+          "y": 474.69,
+          "w": 106.17,
+          "h": 76.55
+        }
+      },
+      {
+        "path": "root/3:Google Shape;56;p13",
+        "name": "Google Shape;56;p13",
+        "shape_type": "PICTURE (13)",
+        "box": {
+          "x": 902.83,
+          "y": 502.43,
+          "w": 56.56,
+          "h": 29.33
+        },
+        "asset_path": "/icons/slide-001-Google-Shape-56-p13.png"
+      },
+      {
+        "path": "root/4:Google Shape;57;p13",
+        "name": "Google Shape;57;p13",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 77.17,
+          "y": 33.17,
+          "w": 453.31,
+          "h": 70.93
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Complexity Limiting"
+          }
+        ]
+      },
+      {
+        "path": "root/5:Google Shape;58;p13",
+        "name": "Google Shape;58;p13",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 503.17,
+          "y": 133.06,
+          "w": 453.31,
+          "h": 310.08
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "type Query {"
+          },
+          {
+            "level": 0,
+            "text": "  continents: [Continent!]!"
+          },
+          {
+            "level": 0,
+            "text": "}"
+          },
+          {
+            "level": 0,
+            "text": "type Continent {"
+          },
+          {
+            "level": 0,
+            "text": "  name: String!"
+          },
+          {
+            "level": 0,
+            "text": "  countries: [Country!]!"
+          },
+          {
+            "level": 0,
+            "text": "}"
+          },
+          {
+            "level": 0,
+            "text": "type Country {"
+          },
+          {
+            "level": 0,
+            "text": "  name: String!"
+          },
+          {
+            "level": 0,
+            "text": "  continent: Continent!"
+          },
+          {
+            "level": 0,
+            "text": "}"
+          }
+        ]
+      }
+    ],
+    "notes": "\"GraphQL is incredibly powerful and flexible, allowing clients to request exactly the data they need. However, this flexibility comes with a risk \u2014 even with a simple schema, clients can craft deeply nested queries or request large amounts of data in a single operation. Such complex or resource-heavy queries can put significant strain on your upstream services, leading to slow response times, increased server load, and potentially downtime. To prevent this, GraphQL complexity limiting is a vital safeguard. It helps us define thresholds for query depth and resource usage, effectively protecting our backend from expensive or malicious queries. By enforcing complexity limits, we ensure our API remains responsive and stable for all users, while still giving clients the flexibility they need. In the next section, we\u2019ll explore how Tyk Universal Data Graph lets you set and enforce these complexity limits easily.\""
+  },
+  {
+    "slide": 2,
+    "width": 9144000,
+    "height": 5143500,
+    "shapes": [
+      {
+        "path": "root/1:Google Shape;63;p14",
+        "name": "Google Shape;63;p14",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 77.17,
+          "y": 123.7,
+          "w": 849.78,
+          "h": 41.25
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Deeply Nested Query Example"
+          }
+        ]
+      },
+      {
+        "path": "root/2:Google Shape;64;p14",
+        "name": "Google Shape;64;p14",
+        "shape_type": "AUTO_SHAPE (1)",
+        "box": {
+          "x": 873.83,
+          "y": 474.69,
+          "w": 106.17,
+          "h": 76.55
+        }
+      },
+      {
+        "path": "root/3:Google Shape;65;p14",
+        "name": "Google Shape;65;p14",
+        "shape_type": "PICTURE (13)",
+        "box": {
+          "x": 902.83,
+          "y": 502.43,
+          "w": 56.56,
+          "h": 29.33
+        },
+        "asset_path": "/screenshots/slide-002-Google-Shape-65-p14.png"
+      },
+      {
+        "path": "root/4:Google Shape;66;p14",
+        "name": "Google Shape;66;p14",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 77.17,
+          "y": 33.17,
+          "w": 453.31,
+          "h": 70.93
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Complexity Limiting"
+          }
+        ]
+      },
+      {
+        "path": "root/5:Google Shape;67;p14",
+        "name": "Google Shape;67;p14",
+        "shape_type": "PICTURE (13)",
+        "box": {
+          "x": 99.67,
+          "y": 164.95,
+          "w": 224.98,
+          "h": 337.48
+        },
+        "asset_path": "/screenshots/slide-002-Google-Shape-67-p14.png"
+      },
+      {
+        "path": "root/6:Google Shape;68;p14",
+        "name": "Google Shape;68;p14",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 386.88,
+          "y": 167.52,
+          "w": 511.48,
+          "h": 243.75
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "This query is valid, but heavily recursive and can stress your backend."
+          }
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide": 3,
+    "width": 9144000,
+    "height": 5143500,
+    "shapes": [
+      {
+        "path": "root/1:Google Shape;73;p15",
+        "name": "Google Shape;73;p15",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 77.17,
+          "y": 221.7,
+          "w": 229.21,
+          "h": 284.9
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Query Depth = 2"
+          },
+          {
+            "level": 0,
+            "text": "{"
+          },
+          {
+            "level": 0,
+            "text": "  continents {"
+          },
+          {
+            "level": 0,
+            "text": "    name"
+          },
+          {
+            "level": 0,
+            "text": "  }"
+          },
+          {
+            "level": 0,
+            "text": "}"
+          }
+        ]
+      },
+      {
+        "path": "root/2:Google Shape;74;p15",
+        "name": "Google Shape;74;p15",
+        "shape_type": "AUTO_SHAPE (1)",
+        "box": {
+          "x": 873.83,
+          "y": 474.69,
+          "w": 106.17,
+          "h": 76.55
+        }
+      },
+      {
+        "path": "root/3:Google Shape;75;p15",
+        "name": "Google Shape;75;p15",
+        "shape_type": "PICTURE (13)",
+        "box": {
+          "x": 902.83,
+          "y": 502.43,
+          "w": 56.56,
+          "h": 29.33
+        },
+        "asset_path": "/icons/slide-003-Google-Shape-75-p15.png"
+      },
+      {
+        "path": "root/4:Google Shape;76;p15",
+        "name": "Google Shape;76;p15",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 77.17,
+          "y": 33.17,
+          "w": 453.31,
+          "h": 70.93
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Complexity Limiting"
+          }
+        ]
+      },
+      {
+        "path": "root/5:Google Shape;77;p15",
+        "name": "Google Shape;77;p15",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 310.82,
+          "y": 221.7,
+          "w": 229.21,
+          "h": 367.21
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Query Depth = 3"
+          },
+          {
+            "level": 0,
+            "text": "{"
+          },
+          {
+            "level": 0,
+            "text": "  continents {"
+          },
+          {
+            "level": 0,
+            "text": "    countries {"
+          },
+          {
+            "level": 0,
+            "text": "      name"
+          },
+          {
+            "level": 0,
+            "text": "    }"
+          },
+          {
+            "level": 0,
+            "text": "  }"
+          },
+          {
+            "level": 0,
+            "text": "}"
+          }
+        ]
+      },
+      {
+        "path": "root/6:Google Shape;78;p15",
+        "name": "Google Shape;78;p15",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 621.15,
+          "y": 131.87,
+          "w": 266.64,
+          "h": 317.73
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "When Depth Limit is Exceeded:"
+          },
+          {
+            "level": 0,
+            "text": "Tyk will block the query and respond with:"
+          },
+          {
+            "level": 0,
+            "text": "{"
+          },
+          {
+            "level": 0,
+            "text": "  \"error\": \"depth limit exceeded\""
+          },
+          {
+            "level": 0,
+            "text": "}"
+          }
+        ]
+      },
+      {
+        "path": "root/7:Google Shape;79;p15",
+        "name": "Google Shape;79;p15",
+        "shape_type": "TEXT_BOX (17)",
+        "box": {
+          "x": 90.81,
+          "y": 96.16,
+          "w": 798.37,
+          "h": 70.93
+        },
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Limit query depth by setting a max depth in:"
+          },
+          {
+            "level": 0,
+            "text": "A Policy"
+          },
+          {
+            "level": 0,
+            "text": "An Individual Key"
+          }
+        ]
+      }
+    ],
+    "notes": "To protect your GraphQL API from overly complex or expensive queries, you can limit the query depth. This helps prevent performance issues and potential abuse. You can set a maximum query depth in two places: At the Policy level, which applies to all keys associated with that policy.\u000b Or at the individual API Key level, for more granular control.\u000b Setting these limits ensures your API stays performant and secure by restricting how deeply clients can nest their queries."
+  }
+]

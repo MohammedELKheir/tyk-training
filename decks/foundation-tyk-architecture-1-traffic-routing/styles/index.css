@@ -1,0 +1,10 @@
+:root {
+  --tyk-purple: #6517d9;
+  --tyk-title: #111322;
+  --tyk-text: #111111;
+  --tyk-gray: #6d6d6d;
+}
+
+.slidev-layout {
+  background: #ffffff;
+}

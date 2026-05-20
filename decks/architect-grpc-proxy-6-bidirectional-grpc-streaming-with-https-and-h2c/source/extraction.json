@@ -1,0 +1,373 @@
+{
+  "slide_size": {
+    "width": 9144000,
+    "height": 5143500
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "shapes": [
+        {
+          "name": "Google Shape;53;p13",
+          "shape_type": 17,
+          "left": 1415550,
+          "top": 1625100,
+          "width": 6312900,
+          "height": 1893300,
+          "paragraphs": [
+            {
+              "text": "Bidirectional gRPC Streaming with HTTPS & H2C",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;54;p13",
+          "shape_type": 1,
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300
+        },
+        {
+          "name": "Google Shape;55;p13",
+          "shape_type": 13,
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "image_ext": "png",
+          "sha1": "0c9c1f959afe1502b09f5e5e7a411590cc335f90"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "shapes": [
+        {
+          "name": "Google Shape;60;p14",
+          "shape_type": 17,
+          "left": 415200,
+          "top": 925600,
+          "width": 7738200,
+          "height": 323100
+        },
+        {
+          "name": "Google Shape;61;p14",
+          "shape_type": 1,
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300
+        },
+        {
+          "name": "Google Shape;62;p14",
+          "shape_type": 13,
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "image_ext": "png",
+          "sha1": "0c9c1f959afe1502b09f5e5e7a411590cc335f90"
+        },
+        {
+          "name": "Google Shape;63;p14",
+          "shape_type": 17,
+          "left": 720000,
+          "top": 233275,
+          "width": 7858800,
+          "height": 554100,
+          "paragraphs": [
+            {
+              "text": "Secure External + Efficient Internal Communication",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;64;p14",
+          "shape_type": 17,
+          "left": 863625,
+          "top": 1125700,
+          "width": 7738200,
+          "height": 4265400,
+          "paragraphs": [
+            {
+              "text": "External: gRPC over HTTPS via Tyk",
+              "level": 0
+            },
+            {
+              "text": "Internal: gRPC over H2C (plain HTTP/2)",
+              "level": 0
+            },
+            {
+              "text": "Common in Kubernetes environments",
+              "level": 0
+            },
+            {
+              "text": "TLS termination at ingress",
+              "level": 1
+            },
+            {
+              "text": "Plain HTTP inside cluster",
+              "level": 1
+            },
+            {
+              "text": "gRPC client \u2194 Tyk Gateway (HTTPS) \u2194 gRPC Server (H2C)",
+              "level": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "\"This example demonstrates a common pattern in Kubernetes deployments \u2014 securing external traffic with TLS while using HTTP/2 Cleartext (H2C) for internal service-to-service communication. Tyk terminates the TLS connection, then forwards gRPC traffic to the upstream server using H2C, enabling efficient bidirectional streaming.\""
+      ]
+    },
+    {
+      "slide": 3,
+      "shapes": [
+        {
+          "name": "Google Shape;69;p15",
+          "shape_type": 17,
+          "left": 415200,
+          "top": 925600,
+          "width": 7738200,
+          "height": 323100
+        },
+        {
+          "name": "Google Shape;70;p15",
+          "shape_type": 1,
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300
+        },
+        {
+          "name": "Google Shape;71;p15",
+          "shape_type": 13,
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "image_ext": "png",
+          "sha1": "0c9c1f959afe1502b09f5e5e7a411590cc335f90"
+        },
+        {
+          "name": "Google Shape;72;p15",
+          "shape_type": 17,
+          "left": 720000,
+          "top": 233275,
+          "width": 7858800,
+          "height": 692700,
+          "paragraphs": [
+            {
+              "text": "Prerequisites",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;73;p15",
+          "shape_type": 17,
+          "left": 863625,
+          "top": 1125700,
+          "width": 7738200,
+          "height": 4265400,
+          "paragraphs": [
+            {
+              "text": "A gRPC server (e.g. route_guide)",
+              "level": 0
+            },
+            {
+              "text": "Exposed at localhost:10000, TLS disabled",
+              "level": 1
+            },
+            {
+              "text": "A gRPC client (sample or your app)",
+              "level": 0
+            },
+            {
+              "text": "A valid certificate for HTTPS",
+              "level": 0
+            },
+            {
+              "text": "Tyk Gateway and Dashboard",
+              "level": 0
+            },
+            {
+              "text": "Set flush_interval = 1 ms in tyk.conf",
+              "level": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "\"Before configuring Tyk, make sure your gRPC server is running with TLS disabled. This is intentional so that we can connect over H2C. Also, the Tyk Gateway\u2019s flush_interval should be set to 1 millisecond to ensure data is forwarded immediately, which is critical for bidirectional streaming.\""
+      ]
+    },
+    {
+      "slide": 4,
+      "shapes": [
+        {
+          "name": "Google Shape;78;p16",
+          "shape_type": 17,
+          "left": 415200,
+          "top": 925600,
+          "width": 7738200,
+          "height": 323100
+        },
+        {
+          "name": "Google Shape;79;p16",
+          "shape_type": 1,
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300
+        },
+        {
+          "name": "Google Shape;80;p16",
+          "shape_type": 13,
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "image_ext": "png",
+          "sha1": "0c9c1f959afe1502b09f5e5e7a411590cc335f90"
+        },
+        {
+          "name": "Google Shape;81;p16",
+          "shape_type": 17,
+          "left": 720000,
+          "top": 233275,
+          "width": 7858800,
+          "height": 692700,
+          "paragraphs": [
+            {
+              "text": "Tyk API Configuration",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;82;p16",
+          "shape_type": 17,
+          "left": 863625,
+          "top": 1125700,
+          "width": 7738200,
+          "height": 4265400,
+          "paragraphs": [
+            {
+              "text": "Protocol: HTTPS",
+              "level": 0
+            },
+            {
+              "text": "Upload SSL certificate",
+              "level": 0
+            },
+            {
+              "text": "Custom domain: tyk.com",
+              "level": 0
+            },
+            {
+              "text": "Listen path: /routeguide.RouteGuide",
+              "level": 0
+            },
+            {
+              "text": "RouteChat method will be used (bidirectional)",
+              "level": 0
+            },
+            {
+              "text": "Target URL: h2c://localhost:10000",
+              "level": 0
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "\"In the Tyk Dashboard, create a new API definition. Set the protocol to HTTPS so clients can connect securely. Then, point the target URL to the internal gRPC server using the h2c:// prefix. This instructs Tyk to forward requests using HTTP/2 without TLS, ideal for intra-cluster calls.\""
+      ]
+    },
+    {
+      "slide": 5,
+      "shapes": [
+        {
+          "name": "Google Shape;87;p17",
+          "shape_type": 17,
+          "left": 415200,
+          "top": 925600,
+          "width": 7738200,
+          "height": 323100
+        },
+        {
+          "name": "Google Shape;88;p17",
+          "shape_type": 1,
+          "left": 8153400,
+          "top": 4429125,
+          "width": 990600,
+          "height": 714300
+        },
+        {
+          "name": "Google Shape;89;p17",
+          "shape_type": 13,
+          "left": 8423988,
+          "top": 4687950,
+          "width": 527775,
+          "height": 273675,
+          "image_ext": "png",
+          "sha1": "0c9c1f959afe1502b09f5e5e7a411590cc335f90"
+        },
+        {
+          "name": "Google Shape;90;p17",
+          "shape_type": 17,
+          "left": 720000,
+          "top": 233275,
+          "width": 7858800,
+          "height": 692700,
+          "paragraphs": [
+            {
+              "text": "Testing Bidirectional Streaming",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "name": "Google Shape;91;p17",
+          "shape_type": 17,
+          "left": 863625,
+          "top": 1125700,
+          "width": 7738200,
+          "height": 4265400,
+          "paragraphs": [
+            {
+              "text": "Point client to https://tyk.com:8000",
+              "level": 0
+            },
+            {
+              "text": "Use the RouteChat service",
+              "level": 0
+            },
+            {
+              "text": "Client sends and receives data simultaneously",
+              "level": 0
+            },
+            {
+              "text": "Traffic:",
+              "level": 0
+            },
+            {
+              "text": "External = Encrypted",
+              "level": 1
+            },
+            {
+              "text": "Internal = Plain H2C",
+              "level": 1
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "\"Once everything is configured, point your client to the custom domain you\u2019ve set on Tyk \u2014 in this case, https://tyk.com:8000. Initiate a RouteChat session and you should see bidirectional messages flowing in real time. This setup allows for secure ingress and efficient, low-latency internal communication.\""
+      ]
+    }
+  ]
+}

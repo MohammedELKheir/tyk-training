@@ -1,0 +1,40 @@
+id: foundation-tyk-architecture-1-traffic-routing
+slug: foundation-tyk-architecture-1-traffic-routing
+title: Traffic Routing
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---1-traffic-routing` with 10 converted slides.
+topics:
+  - architecture
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-traffic-routing
+  - 002-api-request-flow
+  - 003-api-request-flow-2
+  - 004-api-request-flow-3
+  - 005-api-request-flow-4
+  - 006-api-request-flow-5
+  - 007-api-request-flow-6
+  - 008-api-request-flow-7
+  - 009-api-request-flow-8
+  - 010-traffic-routing-example
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

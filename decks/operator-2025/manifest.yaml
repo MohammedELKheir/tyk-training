@@ -1,0 +1,89 @@
+id: operator-2025
+slug: operator-2025
+title: Tyk Operator 2025 Training
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---operator` with 60 converted slides.
+topics:
+  - kubernetes
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+  - tyk-operator
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-onboarding-rahmat-sr-customer-solutions-architect
+  - 002-module-1-tyk-operator-understanding-api-management-in-kubernetes-with-ty
+  - 003-imperative-vs-declarative
+  - 004-kubernetes-orchestration
+  - 005-tyk-operator
+  - 006-custom-resources
+  - 007-tyk-operator-2
+  - 008-custom-resources-2
+  - 009-tyk-operator-crds
+  - 010-kubernetes-controllers
+  - 011-kubernetes-operator
+  - 012-reconciliation
+  - 013-reconciliation-2
+  - 014-drift-detection
+  - 015-summary
+  - 016-module-2-operator-deep-dive-diving-into-tyk-operator
+  - 017-authentication-with-tyk-dashboard-tyk-operator-as-a-system-user-acts-as
+  - 018-multi-tenancy-in-tyk-run-multiple-isolated-teams-or-departments-on-a-sin
+  - 019-multi-tenancy-in-tyk-operator-operatorcontext-allows-isolated-api-manage
+  - 020-multi-tenancy-in-tyk-operator
+  - 021-tls-certificate-management
+  - 022-tls-certificate-management-2
+  - 023-module-3-installing-tyk-operator-configuring-and-installing-tyk-operator
+  - 024-installing-and-configuring-tyk-operator
+  - 025-admission-webhooks
+  - 026-cert-manager
+  - 027-installing-tyk-operator
+  - 028-installing-tyk-operator-via-umbrella-helm-chart
+  - 029-installing-tyk-operator-via-stand-alone-helm-chart
+  - 030-secret-envvars-key-values
+  - 031-module-4-managing-apis-with-tyk-operator-advanced-features-of-tyk-operat
+  - 032-onboarding-a-tyk-oas-api
+  - 033-onboarding-a-tyk-oas-api-2
+  - 034-onboarding-a-tyk-oas-api-3
+  - 035-onboarding-a-tyk-oas-api-4
+  - 036-onboarding-a-tyk-oas-api-5
+  - 037-hands-on-workshop-onboarding-an-oas-api-using-operator
+  - 038-onboarding-a-tyk-oas-api-6
+  - 039-onboarding-a-tyk-oas-api-7
+  - 040-onboarding-a-tyk-oas-api-8
+  - 041-onboarding-a-tyk-oas-api-9
+  - 042-onboarding-a-tyk-oas-api-10
+  - 043-onboarding-a-tyk-oas-api-11
+  - 044-onboarding-a-tyk-oas-api-12
+  - 045-securing-a-tyk-oas-api
+  - 046-securing-a-tyk-oas-api-components-securityschemes-defines-the-authentica
+  - 047-securing-a-tyk-oas-api-2
+  - 048-hands-on-workshop-updating-and-securing-an-api-using-tyk-operator
+  - 049-securing-a-tyk-oas-api-3
+  - 050-securing-a-tyk-oas-api-4
+  - 051-securing-a-tyk-oas-api-5
+  - 052-securing-a-tyk-oas-api-6
+  - 053-securing-a-tyk-oas-api-7
+  - 054-module-5-advanced-tyk-operator-advanced-features-of-tyk-operator
+  - 055-control-kubernetes-ingress-resources
+  - 056-key-concepts
+  - 057-key-concepts-how-tyk-operator-handles-ingress
+  - 058-key-concepts-the-referenced-template-myapideftemplate-is-a-tyk-api-confi
+  - 059-key-concepts-2
+  - 060-key-concepts-3
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

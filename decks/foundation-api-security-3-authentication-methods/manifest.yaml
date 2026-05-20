@@ -1,0 +1,53 @@
+id: foundation-api-security-3-authentication-methods
+slug: foundation-api-security-3-authentication-methods
+title: API Security with Tyk: Authentication Methods
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--3-authentication-methods` with 22 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-api-security-with-tyk-authentication-methods
+  - 002-authn-and-authz
+  - 003-how-authn-and-authz-works-in-tyk
+  - 004-auth-tokens
+  - 005-auth-tokens-2
+  - 006-basic-authentication
+  - 007-basic-authentication-2
+  - 008-basic-authentication-3
+  - 009-hmac
+  - 010-hmac-2
+  - 011-hmac-3
+  - 012-json-web-tokens
+  - 013-jwt-flow-diagram
+  - 014-json-web-tokens-2
+  - 015-json-web-tokens-3
+  - 016-oauth-2-0
+  - 017-oauth-2-0-2
+  - 018-oauth-2-0-3
+  - 019-oauth-2-0-4
+  - 020-oauth-2-0-5
+  - 021-oauth-2-0-6
+  - 022-oauth-2-0-7
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

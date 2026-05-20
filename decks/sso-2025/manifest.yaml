@@ -1,0 +1,48 @@
+id: sso-2025
+slug: sso-2025
+title: Tyk Onboarding: Single Sign-On
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---sso` with 18 converted slides.
+topics:
+  - api-design
+  - security
+categories:
+  - fundamentals
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - onboarding
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-onboarding-rahmat-sr-customer-solutions-architect
+  - 002-module-2-single-sign-on
+  - 003-single-sign-on
+  - 004-tyk-identity-broker
+  - 005-sso-flow
+  - 006-authentication-flow
+  - 007-tib-architecture
+  - 008-identity-providers
+  - 009-identity-handlers
+  - 010-profiles
+  - 011-anatomy-of-a-profile
+  - 012-provider-specific-fields
+  - 013-profile-configuration-example
+  - 014-hands-on-workshop-sso-configuration-with-keycloak
+  - 015-hands-on-workshop
+  - 016-hands-on-workshop-2
+  - 017-hands-on-workshop-3
+  - 018-hands-on-workshop-4
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

@@ -1,0 +1,86 @@
+[
+  {
+    "slide": 1,
+    "texts": [
+      {
+        "name": "Google Shape;63;p15",
+        "text": "API Security with Tyk:\nRate Limiting Algorithms"
+      },
+      {
+        "name": "Google Shape;64;p15",
+        "text": "Tyk supports various types of algorithms. Discover how different algorithms help to smooth traffic spikes, enforce usage limits, and maintain API reliability under load."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide": 2,
+    "texts": [
+      {
+        "name": "Google Shape;71;p16",
+        "text": "Why Multiple Algorithms?"
+      },
+      {
+        "name": "Google Shape;72;p16",
+        "text": "Not all API traffic are the same.\n\nExamples:\nAPIs get a lot off traffic\nAPIs get bursts\nAPIs need fair sharing\nAPIs need to stay simple and light\n\n Tyk offers various algorithms\nDistributed Rate Limited (DRL) - Default\nRedis Rate Limiter (RRL) - sliding window log\nFixed Window Rate Limiter - basic & simple\nRedis Sentinel Rate Limiter - low latency + sliding log"
+      }
+    ],
+    "notes": "Now let\u2019s dive one level deeper \u2014 into endpoint-level rate limiting.\n\nThis type of rate limiting lets you control how often a specific path or function in your API can be accessed. So instead of limiting an entire API or a whole user, you can target just one endpoint.\n\nWhy is this useful?\nIt helps protect critical or sensitive operations from being overloaded \u2014 such as payment gateways, account updates, or resource-intensive database queries.\n\nHere\u2019s a simple example:\nYou might allow a user to make 10 requests per minute to the /checkout/pay endpoint \u2014 even if they\u2019re allowed more requests overall.\n\nIn Tyk, you configure this under key-level policies, where you can define custom limits for individual endpoints."
+  },
+  {
+    "slide": 3,
+    "texts": [
+      {
+        "name": "Google Shape;81;p17",
+        "text": "Types of Rate Limiting"
+      },
+      {
+        "name": "Google Shape;82;p17",
+        "text": "The Gateway implements the rate limiter, of which there are three types:\nTransactional\nNon-transactional\nDistributed\n\nDefault choice is Distributed, but this can be overridden through tyk.conf:\nSet enable_redis_rolling_limiter to true for transactional\nIn addition, set enable_non_transactional_rate_limiter to true for non-transactional"
+      }
+    ],
+    "notes": "Encapsulation of rules\nPolicies give you a way to encapsulate security and other access settings into a pre-defined entity.\nPurpose is to make your life easier when managing lots of tokens.\nThe important thing to understand about policies is that a single policy can apply to many tokens, so having a few policies can let you manage very large numbers of tokens easily.\n\nThey allow you to define:\nAn access control list, which sets which APIs, versions, endpoints and methods the policy can access.\nRate limit\nQuota\n\nDynamically attached\nWhen a policy is saved on the Dashboard, it only takes around 10 seconds for it to take effect on the server.\nPolicies are attached to request sessions at the start of the Tyk processing pipeline, so updates are take effect immediately.\n\nPartitioning\nOnce a policy is assigned to a token it will override the settings of that token. \nHowever, with policy partitioning it is possible to override only a particular part of the token \u2013 the ACL, rate limit, or quota (or any combination of the three).\n\nNo effect on open APIs \nPolicies have no effect one APIs which have been configured to be open.\nThis is because the Tyk pipeline skips all authentication so does not process any tokens provided."
+  },
+  {
+    "slide": 4,
+    "texts": [
+      {
+        "name": "Google Shape;87;p18",
+        "text": "Distributed Rate Limiter (DRL)"
+      },
+      {
+        "name": "Google Shape;88;p18",
+        "text": "Think of this like having buckets on each gateway, and you divide the total allowed requests between them.\n\nImplemented using token bucket implementation that does not use redis\nDivides the configured rate limit between the number of gateway instances\n\nExample:\nYou set 100 requests per minute, and you have 2 gateways.\nEach gateway gets 50 requests/minute.\n\nIf traffic is evenly distributed, this works great. But if one gateway gets more traffic than the other (due to sticky sessions or bad load balancing), it may rate limit early, even though the other gateway is idle."
+      }
+    ],
+    "notes": "Now let\u2019s dive one level deeper \u2014 into endpoint-level rate limiting.\n\nThis type of rate limiting lets you control how often a specific path or function in your API can be accessed. So instead of limiting an entire API or a whole user, you can target just one endpoint.\n\nWhy is this useful?\nIt helps protect critical or sensitive operations from being overloaded \u2014 such as payment gateways, account updates, or resource-intensive database queries.\n\nHere\u2019s a simple example:\nYou might allow a user to make 10 requests per minute to the /checkout/pay endpoint \u2014 even if they\u2019re allowed more requests overall.\n\nIn Tyk, you configure this under key-level policies, where you can define custom limits for individual endpoints."
+  },
+  {
+    "slide": 5,
+    "texts": [
+      {
+        "name": "Google Shape;95;p19",
+        "text": "Redis Rate Limiter (RRL)"
+      },
+      {
+        "name": "Google Shape;96;p19",
+        "text": "This algorithm implements a sliding window log algorithm\n\nSpike arrest: \nIt won\u2019t allow traffic again until the rate falls below the limit for a full window\nUses a lot of Redis CPU, since every request is logged.\nKeeps a log of every request in Redis, If too many requests come in over the set time, it blocks them\n\nExample:\nYou set 3000 requests/min.\nIf a client sends 4000 requests in one minute, they get blocked.\nEven if they slow down, the system waits until the whole minute passes with fewer than 3000 requests before allowing access again."
+      }
+    ],
+    "notes": "Now let\u2019s dive one level deeper \u2014 into endpoint-level rate limiting.\n\nThis type of rate limiting lets you control how often a specific path or function in your API can be accessed. So instead of limiting an entire API or a whole user, you can target just one endpoint.\n\nWhy is this useful?\nIt helps protect critical or sensitive operations from being overloaded \u2014 such as payment gateways, account updates, or resource-intensive database queries.\n\nHere\u2019s a simple example:\nYou might allow a user to make 10 requests per minute to the /checkout/pay endpoint \u2014 even if they\u2019re allowed more requests overall.\n\nIn Tyk, you configure this under key-level policies, where you can define custom limits for individual endpoints."
+  },
+  {
+    "slide": 6,
+    "texts": [
+      {
+        "name": "Google Shape;103;p20",
+        "text": "Fixed Window Rate Limiter"
+      },
+      {
+        "name": "Google Shape;104;p20",
+        "text": "Fixed Window Rate Limiter will limit the number of requests in a particular window in time.\nOnce the defined rate limit has been reached, the requests will be blocked for the remainder of the configured window duration.\n\nUses a simple counter per time window (e.g., per minute)\nOnce the limit is hit, it blocks all further requests for that window\n\nExample:\nSet 100 requests per minute\nClient sends 100 quickly \u2192 they're blocked for the rest of the minute\nNew minute starts \u2192 they can send 100 again"
+      }
+    ],
+    "notes": "Now let\u2019s dive one level deeper \u2014 into endpoint-level rate limiting.\n\nThis type of rate limiting lets you control how often a specific path or function in your API can be accessed. So instead of limiting an entire API or a whole user, you can target just one endpoint.\n\nWhy is this useful?\nIt helps protect critical or sensitive operations from being overloaded \u2014 such as payment gateways, account updates, or resource-intensive database queries.\n\nHere\u2019s a simple example:\nYou might allow a user to make 10 requests per minute to the /checkout/pay endpoint \u2014 even if they\u2019re allowed more requests overall.\n\nIn Tyk, you configure this under key-level policies, where you can define custom limits for individual endpoints."
+  }
+]

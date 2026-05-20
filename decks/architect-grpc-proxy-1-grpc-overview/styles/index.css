@@ -1,0 +1,101 @@
+.tyk-slide-root {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+.tyk-title {
+  color: #5c10d6;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.tyk-bullets {
+  color: #0c1022;
+  font-size: 1.18rem;
+  line-height: 1.45;
+}
+
+.tyk-bullets > li {
+  margin-bottom: 0.3rem;
+}
+
+.tyk-bullets ul {
+  margin-top: 0.15rem;
+  padding-left: 2rem;
+  font-size: 1.02rem;
+  line-height: 1.32;
+}
+
+.tyk-bullets ul > li {
+  margin-bottom: 0.1rem;
+}
+
+.tyk-code-inline {
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.98em;
+  letter-spacing: 0.01em;
+}
+
+.tyk-code-block {
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #23283b;
+  margin: 0.35rem 0 0.65rem 2.05rem;
+}
+
+.tyk-footer-badge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 6.7rem;
+  height: 3.62rem;
+  background: #04051c;
+  border-top-left-radius: 1.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tyk-footer-badge .accent {
+  width: 0.46rem;
+  height: 0.46rem;
+  background: #20edba;
+  border-radius: 0.12rem;
+  margin-right: 0.22rem;
+  transform: translateY(0.16rem);
+}
+
+.tyk-footer-badge .wordmark {
+  color: white;
+  font-size: 1.62rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.tyk-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #8438FA 0%, #8438FA 35%, #BB11FF 100%);
+  overflow: hidden;
+}
+
+.tyk-cover-title {
+  color: white;
+  font-size: 3.95rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.tyk-cover .tyk-footer-badge {
+  width: 6.7rem;
+  height: 3.62rem;
+}

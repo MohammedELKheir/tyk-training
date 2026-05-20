@@ -1,0 +1,12 @@
+:root {
+  --tyk-title: #0b1020;
+  --tyk-body: #111827;
+}
+
+.slidev-layout h1 {
+  letter-spacing: -0.02em;
+}
+
+.slidev-layout ul li {
+  margin-bottom: 0.35rem;
+}

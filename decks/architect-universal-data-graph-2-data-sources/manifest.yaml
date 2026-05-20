@@ -1,0 +1,47 @@
+id: architect-universal-data-graph-2-data-sources
+slug: architect-universal-data-graph-2-data-sources
+title: Data Sources
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/2.-data-sources` with 19 converted slides.
+topics:
+  - graphql
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-module-4-datasources
+  - 002-connect-data-sources-unified-data-graph-udg-datasource-overview-datasour
+  - 003-graphql-datasource-overview-makes-graphql-queries-to-upstream-graphql-se
+  - 004-graphql-datasource-overview-graphql-response-parsing-actual-response-dat
+  - 005-graphql-datasource-overview-rest-vs-graphql-rest-apis-do-not-wrap-respon
+  - 006-graphql-datasource-overview-summary-tyk-supports-full-graphql-datasource
+  - 007-kafka-datasource-overview-enables-subscribing-to-kafka-topics-and-queryi
+  - 008-kafka-datasource-overview-basic-kafka-configuration-broker-addresses-kaf
+  - 009-kafka-datasource-overview-configuring-via-tyk-dashboard-click-the-field
+  - 010-kafka-datasource-overview
+  - 011-kafka-datasource-overview-once-done-the-field-you-just-configured-will-s
+  - 012-kafka-datasource-overview-graphql-subscriptions-with-kafka-real-time-sub
+  - 013-kafka-datasource-overview-publishing-test-events-simulating-kafka-events
+  - 014-kafka-datasource-overview-summary-kafka-datasource-in-tyk-seamlessly-int
+  - 015-rest-datasource-overview-rest-datasources-connect-rest-apis-to-your-grap
+  - 016-rest-datasource-overview-select-the-field-in-your-schema-configure-as-ex
+  - 017-rest-datasource-overview-attaching-tyk-rest-api-select-the-field-choose
+  - 018-rest-datasource-overview-auto-generate-rest-datasource-via-oas-use-tyk-d
+  - 019-rest-datasource-overview-summary-rest-datasources-make-it-easy-to-integr
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

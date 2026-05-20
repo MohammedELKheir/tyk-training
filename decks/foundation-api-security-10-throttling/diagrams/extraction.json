@@ -1,0 +1,225 @@
+[
+  {
+    "slide": 1,
+    "elements": [
+      {
+        "depth": 0,
+        "name": "Google Shape;63;p15",
+        "shape_type": "TEXT_BOX (17)",
+        "x": 40.34,
+        "y": 103.12,
+        "w": 902.96,
+        "h": 145.17,
+        "kind": "text",
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "API Security with Tyk:"
+          },
+          {
+            "level": 0,
+            "text": "Request Throttling"
+          }
+        ]
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;64;p15",
+        "shape_type": "TEXT_BOX (17)",
+        "x": 186.37,
+        "y": 240.73,
+        "w": 608.67,
+        "h": 122.56,
+        "kind": "text",
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Learn how request throttling in Tyk controls the speed of incoming API requests to prevent overload. It ensures backend stability by spacing out traffic bursts and enforcing real-time rate limits per user or key"
+          }
+        ]
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;66;p15",
+        "shape_type": "PICTURE (13)",
+        "x": 902.83,
+        "y": 502.43,
+        "w": 56.56,
+        "h": 29.33,
+        "kind": "picture",
+        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-001-0c9c1f959afe.png"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide": 2,
+    "elements": [
+      {
+        "depth": 0,
+        "name": "Google Shape;72;p16",
+        "shape_type": "PICTURE (13)",
+        "x": 902.83,
+        "y": 502.43,
+        "w": 56.56,
+        "h": 29.33,
+        "kind": "picture",
+        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-002-0c9c1f959afe.png"
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;73;p16",
+        "shape_type": "TEXT_BOX (17)",
+        "x": 77.17,
+        "y": 16.83,
+        "w": 752.72,
+        "h": 82.47,
+        "kind": "text",
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Throttling"
+          }
+        ]
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;74;p16",
+        "shape_type": "AUTO_SHAPE (1)",
+        "x": 93.24,
+        "y": 146.49,
+        "w": 820.91,
+        "h": 335.51,
+        "kind": "text",
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Throttling enables requests which exceed their rate limit to be retried by the API Gateway"
+          },
+          {
+            "level": 0,
+            "text": "The Gateway will retry the request a number of times until it either succeeds or fails too many times"
+          },
+          {
+            "level": 0,
+            "text": "This process can reduce the number of rate limit error responses received by API Clients"
+          },
+          {
+            "level": 0,
+            "text": "The throttling process is hidden from the API Client, as their connection is kept open during the throttling process"
+          }
+        ]
+      }
+    ],
+    "notes": "Encapsulation of rules\nPolicies give you a way to encapsulate security and other access settings into a pre-defined entity.\nPurpose is to make your life easier when managing lots of tokens.\nThe important thing to understand about policies is that a single policy can apply to many tokens, so having a few policies can let you manage very large numbers of tokens easily.\n\nThey allow you to define:\nAn access control list, which sets which APIs, versions, endpoints and methods the policy can access.\nRate limit\nQuota\n\nDynamically attached\nWhen a policy is saved on the Dashboard, it only takes around 10 seconds for it to take effect on the server.\nPolicies are attached to request sessions at the start of the Tyk processing pipeline, so updates are take effect immediately.\n\nPartitioning\nOnce a policy is assigned to a token it will override the settings of that token. \nHowever, with policy partitioning it is possible to override only a particular part of the token – the ACL, rate limit, or quota (or any combination of the three).\n\nNo effect on open APIs \nPolicies have no effect one APIs which have been configured to be open.\nThis is because the Tyk pipeline skips all authentication so does not process any tokens provided."
+  },
+  {
+    "slide": 3,
+    "elements": [
+      {
+        "depth": 0,
+        "name": "Google Shape;80;p17",
+        "shape_type": "PICTURE (13)",
+        "x": 902.83,
+        "y": 502.43,
+        "w": 56.56,
+        "h": 29.33,
+        "kind": "picture",
+        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-003-0c9c1f959afe.png"
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;81;p17",
+        "shape_type": "TEXT_BOX (17)",
+        "x": 77.17,
+        "y": 16.83,
+        "w": 752.72,
+        "h": 82.47,
+        "kind": "text",
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Throttling"
+          }
+        ]
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;82;p17",
+        "shape_type": "AUTO_SHAPE (1)",
+        "x": 93.24,
+        "y": 146.49,
+        "w": 820.91,
+        "h": 335.51,
+        "kind": "text",
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Throttling can be configured on Keys and Policies by setting a throttling interval and retry limit:"
+          },
+          {
+            "level": 0,
+            "text": "Interval: Number of seconds to wait between retries, defined by the throttle_interval property"
+          },
+          {
+            "level": 0,
+            "text": "Retry limit: Number of retries to attempt, defined by the throttle_retry_limit property"
+          },
+          {
+            "level": 0,
+            "text": "Policies can define separate throttling configurations for each API they grant access to"
+          },
+          {
+            "level": 0,
+            "text": "Setting the properties to -1 will disable throttling, which is the default setting"
+          }
+        ]
+      }
+    ],
+    "notes": "Encapsulation of rules\nPolicies give you a way to encapsulate security and other access settings into a pre-defined entity.\nPurpose is to make your life easier when managing lots of tokens.\nThe important thing to understand about policies is that a single policy can apply to many tokens, so having a few policies can let you manage very large numbers of tokens easily.\n\nThey allow you to define:\nAn access control list, which sets which APIs, versions, endpoints and methods the policy can access.\nRate limit\nQuota\n\nDynamically attached\nWhen a policy is saved on the Dashboard, it only takes around 10 seconds for it to take effect on the server.\nPolicies are attached to request sessions at the start of the Tyk processing pipeline, so updates are take effect immediately.\n\nPartitioning\nOnce a policy is assigned to a token it will override the settings of that token. \nHowever, with policy partitioning it is possible to override only a particular part of the token – the ACL, rate limit, or quota (or any combination of the three).\n\nNo effect on open APIs \nPolicies have no effect one APIs which have been configured to be open.\nThis is because the Tyk pipeline skips all authentication so does not process any tokens provided."
+  },
+  {
+    "slide": 4,
+    "elements": [
+      {
+        "depth": 0,
+        "name": "Google Shape;88;p18",
+        "shape_type": "PICTURE (13)",
+        "x": 902.83,
+        "y": 502.43,
+        "w": 56.56,
+        "h": 29.33,
+        "kind": "picture",
+        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-004-0c9c1f959afe.png"
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;89;p18",
+        "shape_type": "TEXT_BOX (17)",
+        "x": 77.17,
+        "y": 16.83,
+        "w": 752.72,
+        "h": 82.47,
+        "kind": "text",
+        "paragraphs": [
+          {
+            "level": 0,
+            "text": "Throttling"
+          }
+        ]
+      },
+      {
+        "depth": 0,
+        "name": "Google Shape;90;p18",
+        "shape_type": "PICTURE (13)",
+        "x": 394.56,
+        "y": 15.24,
+        "w": 499.73,
+        "h": 520.77,
+        "kind": "picture",
+        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-004-ce022e7b5f60.png"
+      }
+    ],
+    "notes": "Encapsulation of rules\nPolicies give you a way to encapsulate security and other access settings into a pre-defined entity.\nPurpose is to make your life easier when managing lots of tokens.\nThe important thing to understand about policies is that a single policy can apply to many tokens, so having a few policies can let you manage very large numbers of tokens easily.\n\nThey allow you to define:\nAn access control list, which sets which APIs, versions, endpoints and methods the policy can access.\nRate limit\nQuota\n\nDynamically attached\nWhen a policy is saved on the Dashboard, it only takes around 10 seconds for it to take effect on the server.\nPolicies are attached to request sessions at the start of the Tyk processing pipeline, so updates are take effect immediately.\n\nPartitioning\nOnce a policy is assigned to a token it will override the settings of that token. \nHowever, with policy partitioning it is possible to override only a particular part of the token – the ACL, rate limit, or quota (or any combination of the three).\n\nNo effect on open APIs \nPolicies have no effect one APIs which have been configured to be open.\nThis is because the Tyk pipeline skips all authentication so does not process any tokens provided."
+  }
+]

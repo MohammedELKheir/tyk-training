@@ -1,0 +1,32 @@
+id: architect-grpc-proxy-4-example-of-grpc-proxy-using-h2c
+slug: architect-grpc-proxy-4-example-of-grpc-proxy-using-h2c
+title: Example of gRPC proxy using H2C
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/4.-example-of-grpc-proxy-using-h2c-` with 4 converted slides.
+topics:
+  - grpc
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-example-of-grpc-proxy-using-h2c-tyk
+  - 002-grpc-proxy-example-using-h2c-use-case-local-setup-for-development-or-int
+  - 003-tyk-grpc-h2c-proxy-setup-steps-1-start-your-hellowworld-grpc-server-e-g
+  - 004-testing-the-proxy-command-example-grpcurl-plaintext-proto-helloworld-pro
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

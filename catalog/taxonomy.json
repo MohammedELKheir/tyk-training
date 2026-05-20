@@ -11,6 +11,34 @@
     "architecture": {
       "label": "Architecture",
       "description": "System structure, planes, and component boundaries."
+    },
+    "security": {
+      "label": "Security",
+      "description": "Authentication, authorization, policies, quotas, and API protection."
+    },
+    "graphql": {
+      "label": "GraphQL",
+      "description": "GraphQL gateway, federation, schema, and UDG concepts."
+    },
+    "kubernetes": {
+      "label": "Kubernetes",
+      "description": "Kubernetes-native deployment and operator workflows."
+    },
+    "observability": {
+      "label": "Observability",
+      "description": "Analytics, tracing, monitoring, and operational insight."
+    },
+    "streaming": {
+      "label": "Streaming",
+      "description": "Streaming APIs, SSE, and event-driven integrations."
+    },
+    "api-design": {
+      "label": "API Design",
+      "description": "API definitions, onboarding, schemas, versions, and endpoint design."
+    },
+    "grpc": {
+      "label": "gRPC",
+      "description": "gRPC proxying, streaming, and transport-specific API gateway behavior."
     }
   },
   "categories": {
@@ -52,6 +80,15 @@
     },
     "tyk-dashboard": {
       "label": "Tyk Dashboard"
+    },
+    "tyk-operator": {
+      "label": "Tyk Operator"
+    },
+    "tyk-streams": {
+      "label": "Tyk Streams"
+    },
+    "tyk-mdcb": {
+      "label": "Tyk MDCB"
     }
   }
 }

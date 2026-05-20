@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import os from 'node:os';
 import path from 'node:path';
-import { mkdtemp, cp, mkdir, writeFile, readFile, access } from 'node:fs/promises';
+import { mkdtemp, cp, mkdir, writeFile, readFile, access, readdir, rm } from 'node:fs/promises';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 
@@ -22,6 +22,15 @@ async function makeTempRepo() {
       return !relative.startsWith('.git') && !relative.startsWith('node_modules') && !relative.startsWith('site/dist');
     },
   });
+
+  const decksDir = path.join(repoCopy, 'decks');
+  const deckEntries = await readdir(decksDir, { withFileTypes: true });
+  for (const entry of deckEntries) {
+    if (!entry.isDirectory()) continue;
+    if (entry.name === 'api-gateway-fundamentals') continue;
+    await rm(path.join(decksDir, entry.name), { recursive: true, force: true });
+  }
+
   return { tempRoot, repoCopy };
 }
 
@@ -132,6 +141,7 @@ test('writeComposedDeck emits repo-ready output with provenance and copied asset
     ['api-gateway-fundamentals/001-title', 'api-gateway-fundamentals/002-what-is-tyk'],
   );
   await access(path.join(result.deckDir, 'assets', 'api-gateway-fundamentals', 'architecture-diagram.txt'));
+  assert.equal(plan.selectedSlides.length, 3);
 });
 
 test('compose CLI writes output and prints JSON summary', async () => {

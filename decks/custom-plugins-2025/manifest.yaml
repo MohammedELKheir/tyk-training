@@ -1,0 +1,46 @@
+id: custom-plugins-2025
+slug: custom-plugins-2025
+title: Custom Plugins
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---custom-plugins` with 18 converted slides.
+topics:
+  - api-design
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-onboarding
+  - 002-custom-plugins
+  - 003-custom-plugins-in-tyk
+  - 004-custom-middleware
+  - 005-plugin-types
+  - 006-how-it-works
+  - 007-plugin-deployment-options-in-tyk
+  - 008-local-plugins
+  - 009-plugin-bundles
+  - 010-grpc-plugins
+  - 011-plugin-development-flow
+  - 012-deploying-plugins-tyk-classic-def
+  - 013-bundling-plugins
+  - 014-bundling-plugins-2
+  - 015-bundler-cli-tool
+  - 016-bundles-manifest-files
+  - 017-javascript-custom-plugin
+  - 018-jsvm-custom-plugin-w-bundles
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

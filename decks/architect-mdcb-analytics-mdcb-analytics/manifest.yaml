@@ -1,0 +1,38 @@
+id: architect-mdcb-analytics-mdcb-analytics
+slug: architect-mdcb-analytics-mdcb-analytics
+title: MDCB Analytics
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/mdcb-analytics/mdcb-analytics` with 7 converted slides.
+topics:
+  - architecture
+  - observability
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-dashboard
+  - tyk-gateway
+  - tyk-mdcb
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-tyk-mdcb-analytics
+  - 002-handling-analytics-data-gateways-record-analytics-in-redis-when-they-are
+  - 003-mdcb-deployments-have-four-approaches-for-handling-analytics-mdcb-direct
+  - 004-mdcb-direct-original-approach-for-handling-mdcb-analytics-does-not-use-p
+  - 005-cp-pump-reinstates-the-pump-into-analytics-workflow-improving-storage-op
+  - 006-edge-pump-localises-analytics-processing-in-edge-data-centres-avoids-tra
+  - 007-edge-pump-hybrid-forward-edge-pump-includes-config-for-a-hybrid-type-pum
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

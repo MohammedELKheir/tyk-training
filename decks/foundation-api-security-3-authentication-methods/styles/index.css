@@ -1,0 +1,74 @@
+.bullet-tight li {
+  margin-bottom: 0.35rem;
+}
+
+.code-card {
+  background: #f8f8fb;
+  border: 1px solid #d8d8e8;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+}
+
+.code-card pre {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  white-space: pre-wrap;
+  color: #303050;
+}
+
+.token-box {
+  border: 1px solid #d7d7e5;
+  border-radius: 10px;
+  padding: 0.8rem 0.9rem;
+  background: white;
+  color: #6f778f;
+  font-size: 0.72rem;
+  word-break: break-all;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #5900CB;
+  text-transform: uppercase;
+}
+
+.term-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.term-table th,
+.term-table td {
+  border: 1px solid #b9b9c8;
+  padding: 0.65rem 0.8rem;
+  vertical-align: top;
+}
+
+.term-table th {
+  font-size: 1rem;
+  color: #111;
+  background: #fff;
+}
+
+.term-table .term {
+  color: #7a3cff;
+  font-weight: 700;
+  width: 30%;
+}
+
+.flow-pill {
+  border: 2px solid #cfc9f4;
+  border-radius: 18px;
+  background: #fff;
+  color: #4e4e74;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+}
+
+.callout-list li {
+  margin-bottom: 0.55rem;
+}

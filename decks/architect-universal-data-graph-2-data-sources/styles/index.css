@@ -1,0 +1,13 @@
+:root {
+  --tyk-title: #5c21d4;
+  --tyk-text: #101018;
+}
+
+.slidev-layout {
+  background: #ffffff;
+}
+
+code,
+pre {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

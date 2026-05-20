@@ -1,0 +1,9 @@
+:root {
+  --tyk-heading: #5900CB;
+  --tyk-text: #03031C;
+  --tyk-purple: #5b16d0;
+}
+
+.slidev-layout {
+  background: white;
+}

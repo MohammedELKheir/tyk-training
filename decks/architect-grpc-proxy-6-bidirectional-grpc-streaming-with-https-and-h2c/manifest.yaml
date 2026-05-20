@@ -1,0 +1,35 @@
+id: architect-grpc-proxy-6-bidirectional-grpc-streaming-with-https-and-h2c
+slug: architect-grpc-proxy-6-bidirectional-grpc-streaming-with-https-and-h2c
+title: Bidirectional gRPC Streaming with HTTPS & H2C
+status: active
+version: 1
+owners:
+  - training-team
+summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/6.-bidirectional-grpc-streaming-with-https-and-h2c-` with 5 converted slides.
+topics:
+  - grpc
+  - streaming
+categories:
+  - deep-dive
+audiences:
+  - platform-engineer
+  - solutions-architect
+use_cases:
+  - workshop
+products:
+  - tyk-gateway
+  - tyk-streams
+prerequisites: []
+related_decks: []
+canonical_order:
+  - 001-bidirectional-grpc-streaming-with-https-and-h2c-tyk
+  - 002-secure-external-efficient-internal-communication-external-grpc-over-http
+  - 003-prerequisites-a-grpc-server-e-g-route-guide-exposed-at-localhost-10000-t
+  - 004-tyk-api-configuration-protocol-https-upload-ssl-certificate-custom-domai
+  - 005-testing-bidirectional-streaming-point-client-to-https-tyk-com-8000-use-t
+extraction_defaults:
+  standalone_safe_default: true
+  inherit_deck_tags: true
+publishing:
+  github_pages: true
+  catalog_visibility: public

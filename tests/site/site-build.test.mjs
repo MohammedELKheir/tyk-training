@@ -6,20 +6,24 @@ import { promisify } from 'node:util';
 
 const execFileAsync = promisify(execFile);
 
-test('site build creates landing page assets and deck links', async () => {
-  await execFileAsync(process.execPath, ['site/build.mjs'], {
+test('site build creates a lightweight redirect landing page and published deck assets', async () => {
+  await execFileAsync('npm', ['run', 'build:catalog'], {
+    cwd: new URL('../../', import.meta.url),
+  });
+  await execFileAsync('npm', ['run', 'build:site'], {
     cwd: new URL('../../', import.meta.url),
   });
 
   const html = await readFile(new URL('../../site/dist/index.html', import.meta.url), 'utf8');
-  assert.match(html, /Find relevant content/);
-  assert.match(html, /Plan a composition/);
-  assert.match(html, /Taxonomy overview/);
-
-  const mainJs = await readFile(new URL('../../site/dist/main.js', import.meta.url), 'utf8');
-  assert.match(mainJs, /use_cases/);
-  assert.match(mainJs, /compositionCandidates/);
+  assert.match(html, /Redirecting to the README deck index/);
+  assert.match(html, /github\.com\/MohammedELKheir\/tyk-training#deck-inventory/);
+  assert.doesNotMatch(html, /Find relevant content/);
+  assert.doesNotMatch(html, /Search decks and slides/);
 
   await access(new URL('../../site/dist/decks/api-gateway-fundamentals/deck.md', import.meta.url));
-  await access(new URL('../../site/dist/decks/api-gateway-fundamentals/manifest.yaml', import.meta.url));
+  await access(new URL('../../site/dist/decks/api-gateway-fundamentals/presentation/index.html', import.meta.url));
+  await access(new URL('../../site/dist/decks/foundational-onboarding/manifest.yaml', import.meta.url));
+  await access(new URL('../../site/dist/decks/foundational-onboarding/presentation/index.html', import.meta.url));
+  await access(new URL('../../site/dist/decks/graphql-2025/manifest.yaml', import.meta.url));
+  await access(new URL('../../site/dist/decks/graphql-2025/presentation/index.html', import.meta.url));
 });

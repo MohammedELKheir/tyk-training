@@ -5,7 +5,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 
 import { loadRepositoryMetadata } from '../validate/metadata.mjs';
-import { parseBuildDeckOptions, selectDecksToBuild } from './lib.mjs';
+import { parseBuildDeckOptions, resolveChangedFileSource, selectDecksToBuild } from './lib.mjs';
 
 const execFileAsync = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -96,8 +96,20 @@ async function buildDeck(deck) {
 }
 
 async function getChangedFiles() {
+  const source = resolveChangedFileSource({ env: process.env, options });
+
   try {
+    if (source.type === 'diff') {
+      const { stdout } = await execFileAsync('git', ['diff', '--name-only', '--diff-filter=ACMRTUXB', source.range], { cwd: root });
+      console.log(`Detected changed files from ${source.label}.`);
+      return stdout
+        .split('\n')
+        .map((line) => line.trim())
+        .filter(Boolean);
+    }
+
     const { stdout } = await execFileAsync('git', ['status', '--porcelain'], { cwd: root });
+    console.log(`Detected changed files from ${source.label}.`);
     return stdout
       .split('\n')
       .map((line) => line.trimEnd())
@@ -105,7 +117,7 @@ async function getChangedFiles() {
       .map(parsePorcelainPath)
       .filter(Boolean);
   } catch (error) {
-    console.warn(`Failed to read git status for changed-only deck build; falling back to full build. ${error.message}`);
+    console.warn(`Failed to read changed files from ${source.label}; falling back to full build. ${error.message}`);
     return publishableDecks.map((deck) => `decks/${deck.slug}/manifest.yaml`);
   }
 }

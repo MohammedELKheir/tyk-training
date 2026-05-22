@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
@@ -33,11 +35,22 @@ jobs:
       - name: Build catalog artifacts
         run: npm run build:catalog
 
-      - name: Build publishable Slidev decks
-        run: npm run build:decks
+      - name: Build changed publishable Slidev decks
+        if: github.event_name == 'pull_request'
+        run: npm run build:decks:changed -- --concurrency=4
+
+      - name: Build all publishable Slidev decks
+        if: github.event_name != 'pull_request'
+        run: npm run build:decks -- --concurrency=4
 
       - name: Run test suite
+        if: github.event_name != 'pull_request'
         run: npm test
 
+      - name: Run test suite without full-site publish checks
+        if: github.event_name == 'pull_request'
+        run: npm run test:ci:changed
+
       - name: Build GitHub Pages site scaffold
+        if: github.event_name != 'pull_request'
         run: npm run build:site

@@ -5,6 +5,7 @@ import {
   GLOBAL_DECK_BUILD_TRIGGERS,
   defaultOptions,
   parseBuildDeckOptions,
+  resolveChangedFileSource,
   selectDecksToBuild,
 } from '../../tools/build-slidev/lib.mjs';
 
@@ -24,6 +25,15 @@ test('parseBuildDeckOptions reads changed flag and explicit concurrency', () => 
   assert.deepEqual(parseBuildDeckOptions(['--changed', '--concurrency=3']), {
     changedOnly: true,
     concurrency: 3,
+    diffRange: '',
+  });
+});
+
+test('parseBuildDeckOptions accepts an explicit diff range', () => {
+  assert.deepEqual(parseBuildDeckOptions(['--changed', '--diff=main...HEAD']), {
+    changedOnly: true,
+    concurrency: 2,
+    diffRange: 'main...HEAD',
   });
 });
 
@@ -70,4 +80,55 @@ test('selectDecksToBuild returns no decks when changed-only mode finds no releva
   });
 
   assert.deepEqual(selected, []);
+});
+
+test('resolveChangedFileSource uses explicit diff before environment inference', () => {
+  assert.deepEqual(resolveChangedFileSource({
+    env: { GITHUB_EVENT_NAME: 'pull_request', GITHUB_BASE_REF: 'main' },
+    options: { ...defaultOptions(), changedOnly: true, diffRange: 'release...HEAD' },
+  }), {
+    type: 'diff',
+    range: 'release...HEAD',
+    label: 'explicit diff release...HEAD',
+  });
+});
+
+test('resolveChangedFileSource uses pull request base branch in GitHub Actions', () => {
+  assert.deepEqual(resolveChangedFileSource({
+    env: { GITHUB_EVENT_NAME: 'pull_request', GITHUB_BASE_REF: 'main' },
+    options: { ...defaultOptions(), changedOnly: true },
+  }), {
+    type: 'diff',
+    range: 'origin/main...HEAD',
+    label: 'pull request diff against origin/main',
+  });
+});
+
+test('resolveChangedFileSource uses push before and sha in GitHub Actions', () => {
+  assert.deepEqual(resolveChangedFileSource({
+    env: {
+      GITHUB_EVENT_NAME: 'push',
+      GITHUB_EVENT_BEFORE: 'abc123',
+      GITHUB_SHA: 'def456',
+    },
+    options: { ...defaultOptions(), changedOnly: true },
+  }), {
+    type: 'diff',
+    range: 'abc123...def456',
+    label: 'push diff abc123...def456',
+  });
+});
+
+test('resolveChangedFileSource falls back to local status for first push events', () => {
+  assert.deepEqual(resolveChangedFileSource({
+    env: {
+      GITHUB_EVENT_NAME: 'push',
+      GITHUB_EVENT_BEFORE: '0000000000000000000000000000000000000000',
+      GITHUB_SHA: 'def456',
+    },
+    options: { ...defaultOptions(), changedOnly: true },
+  }), {
+    type: 'status',
+    label: 'local git status',
+  });
 });

@@ -4,7 +4,7 @@ deck_id: architect-universal-data-graph-3-hands-on-1-setting-up-udg
 order: 7
 slug: test-the-api-in-graphql-playground-navigate-to-the-playground-tab-in-tyk
 title: "Test the API in GraphQL Playground Navigate to the Playground tab in Tyk Dashboa"
-summary: "rd and run: query getUser { user(id: \"1\") { username id reviews { text } } } Expected Response: { \"data\": { \"user\": { \"username\": \"John Doe\", \"id\": \"1\", \"reviews\": null } } } At th"
+summary: "rd and run: query getUser { user(id: \"1\") { username id reviews { text } } } Expected Response: { \"data\": { \"user\": { \"username\": \"User 1\", \"id\": \"1\", \"reviews\": null } } } At th"
 standalone_safe: true
 reusable: true
 requires_context: []
@@ -38,7 +38,7 @@ layout: default
     <pre v-pre style="margin:0; font-size:0.9rem; line-height:1.72; color:#23233d; font-family:'Courier New', Menlo, Monaco, Consolas, monospace; background:transparent; white-space:pre;">{
   "data": {
     "user": {
-      "username": "John Doe",
+      "username": "User 1",
       "id": "1",
       "reviews": null
     }

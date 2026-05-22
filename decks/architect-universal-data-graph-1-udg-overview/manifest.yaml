@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/1.-udg-overview` with 16 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_architect/universal-data-graph/1.-udg-overview` with 16 converted slides.
 topics:
   - graphql
 categories:
@@ -33,7 +33,7 @@ canonical_order:
   - 010-key-concepts-reusing-response-fields-chaining-data-across-apis-you-can-u
   - 011-key-concepts-defining-data-source-urls-static-and-dynamic-url-templates
   - 012-key-concepts-defining-data-source-urls-graphql-query-people-id-name-age
-  - 013-response-example-data-people-id-1-name-john-doe-age
+  - 013-response-example-data-people-id-1-name-user-1-age
   - 014-udg-header-management-two-levels-of-header-control-global-headers-define
   - 015-udg-header-management-data-source-headers-and-context-variables-example
   - 016-udg-header-management-header-precedence-rules-when-header-keys-overlap-t

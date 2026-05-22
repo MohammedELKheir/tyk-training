@@ -339,7 +339,7 @@ layout: default
     "people": [
       {
         "id": 1,
-        "name": "John Doe",
+        "name": "User 1",
         "age": 40,
         "driverLicense": {
           "id": "DL1234",
@@ -349,7 +349,7 @@ layout: default
       },
       {
         "id": 2,
-        "name": "Jane Doe",
+        "name": "User 2",
         "age": 30,
         "driverLicense": {
           "id": "DL5555",

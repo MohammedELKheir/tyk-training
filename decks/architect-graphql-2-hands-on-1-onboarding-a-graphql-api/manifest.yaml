@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/2.-hands-on-1--onboarding-a-graphql-api` with 2 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/2.-hands-on-1--onboarding-a-graphql-api` with 2 converted slides.
 topics:
   - api-design
   - graphql

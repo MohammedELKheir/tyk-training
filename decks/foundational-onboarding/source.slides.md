@@ -14,7 +14,7 @@ title: "Tyk Onboarding"
 <div style="position: absolute; top: 0; left: 0; width: 60%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding-left: 3rem;">
 <img src="./images/icons/tyk-logo.png" style="width: 5rem; margin-bottom: 2rem; filter: brightness(10);" />
 <h1 style="font-size: 3.5rem; font-weight: 700; color: white; margin: 0 0 0.5rem 0;">Tyk Onboarding</h1>
-<p style="font-size: 1.2rem; color: rgba(255,255,255,0.85); margin: 0;">Rahmat - Sr. Customer Solutions Architect</p>
+<p style="font-size: 1.2rem; color: rgba(255,255,255,0.85); margin: 0;">Sr. Customer Solutions Architect</p>
 </div>
 
 <div style="position: absolute; top: 0; right: 0; width: 42%; height: 100%; overflow: hidden;">
@@ -1915,8 +1915,8 @@ layout: default
     <td style="padding:8px 12px; color:#03031C;">https://support.tyk.io/</td>
   </tr>
   <tr style="border-bottom:1px solid #ddd;">
-    <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Support email</td>
-    <td style="padding:8px 12px; color:#03031C;">support@tyk.io</td>
+    <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Support contact</td>
+    <td style="padding:8px 12px; color:#03031C;">Contact via support portal</td>
   </tr>
   <tr style="border-bottom:1px solid #ddd;">
     <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Hotline</td>
@@ -1924,11 +1924,11 @@ layout: default
   </tr>
   <tr style="border-bottom:1px solid #ddd;">
     <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Account Manager</td>
-    <td style="padding:8px 12px; color:#03031C;">neha@tyk.io</td>
+    <td style="padding:8px 12px; color:#03031C;">Contact via support portal</td>
   </tr>
   <tr>
     <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Solutions Architect</td>
-    <td style="padding:8px 12px; color:#03031C;">rahmat@tyk.io</td>
+    <td style="padding:8px 12px; color:#03031C;">Contact via support portal</td>
   </tr>
   </tbody>
 </table>

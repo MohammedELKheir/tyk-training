@@ -6,6 +6,6 @@ title: Field Based Permissions
 
 Imported canonical deck with 5 converted slides.
 
-- Source: `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/5.-field-based-permissions`
+- Source: `training_materials/scripts/converted_architect/graphql/5.-field-based-permissions`
 - Rendered presentation path after build: `./presentation/#/1`
 - Slide source fragments: `./slides/`

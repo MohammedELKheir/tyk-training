@@ -9,7 +9,7 @@ standalone_safe: true
 reusable: true
 requires_context: []
 builds_on: []
-recommended_next: [graphql-2025/058-response-example-data-people-id-1-name-john-doe]
+recommended_next: [graphql-2025/058-response-example-data-people-id-1-name-user-1]
 customer_visible: true
 notes_visibility: customer-safe
 ---

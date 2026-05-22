@@ -16,7 +16,7 @@ background: url('./images/icons/slide-001-Google-Shape;67;p16.png')
   <img src="./images/icons/tyk-logo.png" style="position:absolute; left:1.2rem; top:1rem; width:3.8rem;" />
   <div style="position:absolute; left:2rem; top:7.3rem; width:24rem;">
     <h1 style="font-size:2.5rem; line-height:1.05; font-weight:800; color:white; margin:0; border:0;">Tyk<br>Onboarding</h1>
-    <p style="margin-top:2rem; font-size:0.95rem; color:white; opacity:0.9;">Rahmat - Sr. Customer Solutions Architect</p>
+    <p style="margin-top:2rem; font-size:0.95rem; color:white; opacity:0.9;">Sr. Customer Solutions Architect</p>
   </div>
 </div>
 

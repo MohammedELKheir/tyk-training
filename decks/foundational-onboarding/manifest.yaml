@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/foundational/converted_foundational` with 91 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/foundational/converted_foundational` with 91 converted slides.
 topics:
   - api-design
 categories:
@@ -22,7 +22,7 @@ products:
 prerequisites: []
 related_decks: []
 canonical_order:
-  - 001-tyk-onboarding-rahmat-sr-customer-solutions-architect
+  - 001-tyk-onboarding-cover
   - 002-agenda-foundational-01-apis-and-security-in-tyk-foundational-usage-of-ty
   - 003-module-2-apis-and-api-security-explore-the-foundation-of-tyk-managing-ap
   - 004-tyk-api-definition-tyk-stores-api-configurations-as-json-objects-called

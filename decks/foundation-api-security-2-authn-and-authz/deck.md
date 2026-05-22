@@ -6,6 +6,6 @@ title: API Security with Tyk: Authentication & Authorization
 
 Imported canonical deck with 9 converted slides.
 
-- Source: `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--2-authn-and-authz`
+- Source: `training_materials/scripts/converted_foundation/foundational---api-security--2-authn-and-authz`
 - Rendered presentation path after build: `./presentation/#/1`
 - Slide source fragments: `./slides/`

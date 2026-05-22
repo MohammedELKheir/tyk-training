@@ -22,7 +22,7 @@ title: "Tyk Onboarding: Introduction to OpenTelemetry"
 </div>
 
 <div style="position:absolute; bottom:60px; left:77px; width:455px;">
-  <p style="font-size:1rem; color:rgba(255,255,255,0.9); margin:0;">Rahmat - Sr. Customer Solutions Architect</p>
+  <p style="font-size:1rem; color:rgba(255,255,255,0.9); margin:0;">Sr. Customer Solutions Architect</p>
 </div>
 
 ---

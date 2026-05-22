@@ -1,10 +1,10 @@
 ---
-id: architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-john-doe-age
+id: architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-user-1-age
 deck_id: architect-universal-data-graph-1-udg-overview
 order: 13
-slug: response-example-data-people-id-1-name-john-doe-age
-title: "Response Example: { \"data\": { \"people\": [ { \"id\": 1, \"name\": \"John Doe\", \"age\":"
-summary: "40, \"driverLicense\": { \"id\": \"DL1234\", \"issuedBy\": \"United Kingdom\", \"validUntil\": \"2040-01-01\" } }, { \"id\": 2, \"name\": \"Jane Doe\", \"age\": 30, \"driverLicense\": { \"id\": \"DL5555\", \"i"
+slug: response-example-data-people-id-1-name-user-1-age
+title: "Response Example: { \"data\": { \"people\": [ { \"id\": 1, \"name\": \"User 1\", \"age\":"
+summary: "40, \"driverLicense\": { \"id\": \"DL1234\", \"issuedBy\": \"United Kingdom\", \"validUntil\": \"2040-01-01\" } }, { \"id\": 2, \"name\": \"User 2\", \"age\": 30, \"driverLicense\": { \"id\": \"DL5555\", \"i"
 standalone_safe: true
 reusable: true
 requires_context: []
@@ -24,7 +24,7 @@ layout: default
     "people": [
       {
         "id": 1,
-        "name": "John Doe",
+        "name": "User 1",
         "age": 40,
         "driverLicense": {
           "id": "DL1234",
@@ -34,7 +34,7 @@ layout: default
       },
       {
         "id": 2,
-        "name": "Jane Doe",
+        "name": "User 2",
         "age": 30,
         "driverLicense": {
           "id": "DL5555",

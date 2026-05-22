@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---opentelemetry` with 11 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_2025---opentelemetry` with 11 converted slides.
 topics:
   - api-design
   - observability

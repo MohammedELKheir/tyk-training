@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T09:42:52.957Z",
+  "generated_at": "2026-05-22T16:44:50.740Z",
   "slides": [
     {
       "id": "api-gateway-fundamentals/001-title",
@@ -4144,7 +4144,7 @@
       "order": 4,
       "slug": "testing-the-proxy-command-example-grpcurl-plaintext-proto-helloworld-pro",
       "title": "Testing the Proxy • Command Example: grpcurl -plaintext \\\\ -proto helloworld.prot",
-      "summary": "o \\\\ -d '{\\\"name\\\": \\\"joe\\\"}' \\\\ tyk-gateway:8080 \\\\ helloworld.Greeter/SayHello • Expected Response: {\\\"message\\\": \\\"Hello joe\\\"} Tyk",
+      "summary": "o \\\\ -d '{\\\"name\\\": \\\"user\\\"}' \\\\ tyk-gateway:8080 \\\\ helloworld.Greeter/SayHello • Expected Response: {\\\"message\\\": \\\"Hello user\\\"} Tyk",
       "topics": [
         "grpc"
       ],
@@ -5576,7 +5576,7 @@
       "requires_context": [],
       "builds_on": [],
       "recommended_next": [
-        "architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-john-doe-age"
+        "architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-user-1-age"
       ],
       "customer_visible": true,
       "notes_visibility": "customer-safe",
@@ -5584,12 +5584,12 @@
       "source_file": "decks/architect-universal-data-graph-1-udg-overview/slides/012-key-concepts-defining-data-source-urls-graphql-query-people-id-name-age.md"
     },
     {
-      "id": "architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-john-doe-age",
+      "id": "architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-user-1-age",
       "deck_id": "architect-universal-data-graph-1-udg-overview",
       "order": 13,
-      "slug": "response-example-data-people-id-1-name-john-doe-age",
-      "title": "Response Example: { \\\"data\\\": { \\\"people\\\": [ { \\\"id\\\": 1, \\\"name\\\": \\\"John Doe\\\", \\\"age\\\":",
-      "summary": "40, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL1234\\\", \\\"issuedBy\\\": \\\"United Kingdom\\\", \\\"validUntil\\\": \\\"2040-01-01\\\" } }, { \\\"id\\\": 2, \\\"name\\\": \\\"Jane Doe\\\", \\\"age\\\": 30, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL5555\\\", \\\"i",
+      "slug": "response-example-data-people-id-1-name-user-1-age",
+      "title": "Response Example: { \\\"data\\\": { \\\"people\\\": [ { \\\"id\\\": 1, \\\"name\\\": \\\"User 1\\\", \\\"age\\\":",
+      "summary": "40, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL1234\\\", \\\"issuedBy\\\": \\\"United Kingdom\\\", \\\"validUntil\\\": \\\"2040-01-01\\\" } }, { \\\"id\\\": 2, \\\"name\\\": \\\"User 2\\\", \\\"age\\\": 30, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL5555\\\", \\\"i",
       "topics": [
         "graphql"
       ],
@@ -5617,7 +5617,7 @@
       "customer_visible": true,
       "notes_visibility": "customer-safe",
       "assets": [],
-      "source_file": "decks/architect-universal-data-graph-1-udg-overview/slides/013-response-example-data-people-id-1-name-john-doe-age.md"
+      "source_file": "decks/architect-universal-data-graph-1-udg-overview/slides/013-response-example-data-people-id-1-name-user-1-age.md"
     },
     {
       "id": "architect-universal-data-graph-1-udg-overview/014-udg-header-management-two-levels-of-header-control-global-headers-define",
@@ -6464,7 +6464,7 @@
       "order": 3,
       "slug": "clone-and-run-example-rest-apis-we-ll-first-set-up-the-example-services",
       "title": "Clone and Run Example REST APIs We’ll first set up the example services locally.",
-      "summary": "git clone https://github.com/jay-deshmukh/example-rest-api-for-udg.git cd example-rest-api-for-udg npm install npm run build npm start You should see: Users Service Running on http",
+      "summary": "git clone https://github.com/example-org/example-rest-api-for-udg.git cd example-rest-api-for-udg npm install npm run build npm start You should see: Users Service Running on http",
       "topics": [
         "graphql"
       ],
@@ -6604,7 +6604,7 @@
       "order": 7,
       "slug": "test-the-api-in-graphql-playground-navigate-to-the-playground-tab-in-tyk",
       "title": "Test the API in GraphQL Playground Navigate to the Playground tab in Tyk Dashboa",
-      "summary": "rd and run: query getUser { user(id: \\\"1\\\") { username id reviews { text } } } Expected Response: { \\\"data\\\": { \\\"user\\\": { \\\"username\\\": \\\"John Doe\\\", \\\"id\\\": \\\"1\\\", \\\"reviews\\\": null } } } At th",
+      "summary": "rd and run: query getUser { user(id: \\\"1\\\") { username id reviews { text } } } Expected Response: { \\\"data\\\": { \\\"user\\\": { \\\"username\\\": \\\"User 1\\\", \\\"id\\\": \\\"1\\\", \\\"reviews\\\": null } } } At th",
       "topics": [
         "graphql"
       ],
@@ -6672,7 +6672,7 @@
       "order": 1,
       "slug": "tyk-onboarding",
       "title": "Tyk Onboarding",
-      "summary": "Rahmat - Sr. Customer Solutions Architect",
+      "summary": "Sr. Customer Solutions Architect",
       "topics": [
         "api-design"
       ],
@@ -13765,12 +13765,12 @@
       "source_file": "decks/foundation-tyk-components-4-mdcb/slides/007-tyk-mdcb-data-plane-control-plane-data-plane-worker-gateway-s-local-redi.md"
     },
     {
-      "id": "foundational-onboarding/001-tyk-onboarding-rahmat-sr-customer-solutions-architect",
+      "id": "foundational-onboarding/001-tyk-onboarding-cover",
       "deck_id": "foundational-onboarding",
       "order": 1,
-      "slug": "tyk-onboarding-rahmat-sr-customer-solutions-architect",
-      "title": "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect",
-      "summary": "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect",
+      "slug": "tyk-onboarding-cover",
+      "title": "Tyk Onboarding Sr. Customer Solutions Architect",
+      "summary": "Tyk Onboarding Sr. Customer Solutions Architect",
       "topics": [
         "api-design"
       ],
@@ -13798,7 +13798,7 @@
       "customer_visible": true,
       "notes_visibility": "customer-safe",
       "assets": [],
-      "source_file": "decks/foundational-onboarding/slides/001-tyk-onboarding-rahmat-sr-customer-solutions-architect.md"
+      "source_file": "decks/foundational-onboarding/slides/001-tyk-onboarding-cover.md"
     },
     {
       "id": "foundational-onboarding/002-agenda-foundational-01-apis-and-security-in-tyk-foundational-usage-of-ty",
@@ -16794,7 +16794,7 @@
       "order": 85,
       "slug": "gold-sla-contacting-support-the-best-ways-to-get-in-touch-are-support-po",
       "title": "GOLD SLA Contacting support The best ways to get in touch are: Support Portal (Z",
-      "summary": "endesk) https://support.tyk.io/ Support email support@tyk.io Hotline Tel: +65 67976883 Account Manager neha@tyk.io Solutions Architect rahmat@tyk.io",
+      "summary": "endesk) https://support.tyk.io/ Support contact Contact via support portal Hotline Tel: +65 67976883 Account Manager Contact via support portal Solutions Architect Contact via support portal",
       "topics": [
         "api-design"
       ],
@@ -17044,7 +17044,7 @@
       "order": 1,
       "slug": "tyk-onboarding",
       "title": "Tyk Onboarding",
-      "summary": "Rahmat - Sr. Customer Solutions Architect",
+      "summary": "Sr. Customer Solutions Architect",
       "topics": [
         "graphql"
       ],
@@ -17359,7 +17359,7 @@
       "order": 10,
       "slug": "onboarding-a-graphql-api-via-operator",
       "title": "Onboarding a GraphQL API via Operator",
-      "summary": "Onboarding a GraphQL API via Operator is similar to a Classic API Definition: Run git clone https://github.com/rahmatlatif/graphql-operator-tutorial Run cd graphql-operator-tutoria",
+      "summary": "Onboarding a GraphQL API via Operator is similar to a Classic API Definition: Run git clone https://github.com/example-org/graphql-operator-tutorial Run cd graphql-operator-tutoria",
       "topics": [
         "graphql"
       ],
@@ -19026,7 +19026,7 @@
       "requires_context": [],
       "builds_on": [],
       "recommended_next": [
-        "graphql-2025/058-response-example-data-people-id-1-name-john-doe"
+        "graphql-2025/058-response-example-data-people-id-1-name-user-1"
       ],
       "customer_visible": true,
       "notes_visibility": "customer-safe",
@@ -19034,12 +19034,12 @@
       "source_file": "decks/graphql-2025/slides/057-key-concepts-defining-data-source-urls-2.md"
     },
     {
-      "id": "graphql-2025/058-response-example-data-people-id-1-name-john-doe",
+      "id": "graphql-2025/058-response-example-data-people-id-1-name-user-1",
       "deck_id": "graphql-2025",
       "order": 58,
-      "slug": "response-example-data-people-id-1-name-john-doe",
-      "title": "Response Example: { \\\"data\\\": { \\\"people\\\": [ { \\\"id\\\": 1, \\\"name\\\": \\\"John Doe\\\",",
-      "summary": "\\\"age\\\": 40, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL1234\\\", \\\"issuedBy\\\": \\\"United Kingdom\\\", \\\"validUntil\\\": \\\"2040-01-01\\\" } }, { \\\"id\\\": 2, \\\"name\\\": \\\"Jane Doe\\\", \\\"age\\\": 30, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL55",
+      "slug": "response-example-data-people-id-1-name-user-1",
+      "title": "Response Example: { \\\"data\\\": { \\\"people\\\": [ { \\\"id\\\": 1, \\\"name\\\": \\\"User 1\\\",",
+      "summary": "\\\"age\\\": 40, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL1234\\\", \\\"issuedBy\\\": \\\"United Kingdom\\\", \\\"validUntil\\\": \\\"2040-01-01\\\" } }, { \\\"id\\\": 2, \\\"name\\\": \\\"User 2\\\", \\\"age\\\": 30, \\\"driverLicense\\\": { \\\"id\\\": \\\"DL55",
       "topics": [
         "graphql"
       ],
@@ -19066,7 +19066,7 @@
       "customer_visible": true,
       "notes_visibility": "customer-safe",
       "assets": [],
-      "source_file": "decks/graphql-2025/slides/058-response-example-data-people-id-1-name-john-doe.md"
+      "source_file": "decks/graphql-2025/slides/058-response-example-data-people-id-1-name-user-1.md"
     },
     {
       "id": "graphql-2025/059-udg-header-management",
@@ -19914,7 +19914,7 @@
       "order": 83,
       "slug": "clone-and-run-example-rest-apis",
       "title": "Clone and Run Example REST APIs",
-      "summary": "We’ll first set up the example services locally. git clone https://github.com/jay-deshmukh/example-rest-api-for-udg.git cd example-rest-api-for-udg npm install npm run build npm st",
+      "summary": "We’ll first set up the example services locally. git clone https://github.com/example-org/example-rest-api-for-udg.git cd example-rest-api-for-udg npm install npm run build npm st",
       "topics": [
         "graphql"
       ],
@@ -20927,7 +20927,7 @@
       "order": 1,
       "slug": "tyk-onboarding",
       "title": "Tyk Onboarding",
-      "summary": "Rahmat - Sr. Customer Solutions Architect",
+      "summary": "Sr. Customer Solutions Architect",
       "topics": [
         "api-design"
       ],
@@ -23085,7 +23085,7 @@
       "order": 1,
       "slug": "tyk-onboarding-cover",
       "title": "Tyk Onboarding (Cover)",
-      "summary": "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect",
+      "summary": "Tyk Onboarding Sr. Customer Solutions Architect",
       "topics": [
         "api-design",
         "observability"
@@ -23485,12 +23485,12 @@
       "source_file": "decks/opentelemetry-2025/slides/011-detailed-tracing-for-troubleshooting.md"
     },
     {
-      "id": "operator-2025/001-tyk-onboarding-rahmat-sr-customer-solutions-architect",
+      "id": "operator-2025/001-tyk-onboarding-cover",
       "deck_id": "operator-2025",
       "order": 1,
-      "slug": "tyk-onboarding-rahmat-sr-customer-solutions-architect",
-      "title": "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect",
-      "summary": "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect",
+      "slug": "tyk-onboarding-cover",
+      "title": "Tyk Onboarding Sr. Customer Solutions Architect",
+      "summary": "Tyk Onboarding Sr. Customer Solutions Architect",
       "topics": [
         "kubernetes"
       ],
@@ -23517,7 +23517,7 @@
       "customer_visible": true,
       "notes_visibility": "customer-safe",
       "assets": [],
-      "source_file": "decks/operator-2025/slides/001-tyk-onboarding-rahmat-sr-customer-solutions-architect.md"
+      "source_file": "decks/operator-2025/slides/001-tyk-onboarding-cover.md"
     },
     {
       "id": "operator-2025/002-module-1-tyk-operator-understanding-api-management-in-kubernetes-with-ty",
@@ -25583,12 +25583,12 @@
       "source_file": "decks/operator-2025/slides/060-key-concepts-3.md"
     },
     {
-      "id": "sso-2025/001-tyk-onboarding-rahmat-sr-customer-solutions-architect",
+      "id": "sso-2025/001-tyk-onboarding-cover",
       "deck_id": "sso-2025",
       "order": 1,
-      "slug": "tyk-onboarding-rahmat-sr-customer-solutions-architect",
-      "title": "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect",
-      "summary": "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect",
+      "slug": "tyk-onboarding-cover",
+      "title": "Tyk Onboarding Sr. Customer Solutions Architect",
+      "summary": "Tyk Onboarding Sr. Customer Solutions Architect",
       "topics": [
         "api-design",
         "security"
@@ -25617,7 +25617,7 @@
       "customer_visible": true,
       "notes_visibility": "customer-safe",
       "assets": [],
-      "source_file": "decks/sso-2025/slides/001-tyk-onboarding-rahmat-sr-customer-solutions-architect.md"
+      "source_file": "decks/sso-2025/slides/001-tyk-onboarding-cover.md"
     },
     {
       "id": "sso-2025/002-module-2-single-sign-on",

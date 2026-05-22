@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T09:42:52.957Z",
+  "generated_at": "2026-05-22T16:44:50.740Z",
   "decks": [
     {
       "id": "api-gateway-fundamentals",
@@ -48,7 +48,7 @@
       "title": "API Security with Tyk: Authentication & Authorization",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/api-security-with-tyk` with 9 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/api-security-with-tyk` with 9 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -89,7 +89,7 @@
       "title": "Tyk Deployment Models",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/1.-architecture/1.-deployment-models` with 16 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/1.-architecture/1.-deployment-models` with 16 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -128,7 +128,7 @@
       "title": "Circuit Breaker Overview",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/1.-circuit-breaker-overview` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/circuit-breakers/1.-circuit-breaker-overview` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -168,7 +168,7 @@
       "title": "How Circuit Breakers Work",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/2.-how-circuit-breakers-work` with 3 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/circuit-breakers/2.-how-circuit-breakers-work` with 3 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -207,7 +207,7 @@
       "title": "Configuring Circuit Breakers",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/3.-configuring-circuit-breakers` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/circuit-breakers/3.-configuring-circuit-breakers` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -246,7 +246,7 @@
       "title": "Multiple Upstreams & Gateways",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/4.-multiple-upstreams-and-gateways` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/circuit-breakers/4.-multiple-upstreams-and-gateways` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -287,7 +287,7 @@
       "title": "Circuit Breaker Events",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/5.-circuit-breaker-events` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/circuit-breakers/5.-circuit-breaker-events` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -326,7 +326,7 @@
       "title": "Configuring Circuit Breaker on Tyk OAS API",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/6.-configuring-circuit-breakers-on-tyk-oas-` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/circuit-breakers/6.-configuring-circuit-breakers-on-tyk-oas-` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -366,7 +366,7 @@
       "title": "GraphQL Introduction",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/1.-graphql-introduction` with 6 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/1.-graphql-introduction` with 6 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -406,7 +406,7 @@
       "title": "Headers",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/10.-headers` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/10.-headers` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -445,7 +445,7 @@
       "title": "Persisting GraphQL queries",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/11.-persisting-graphql-queries` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/11.-persisting-graphql-queries` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -484,7 +484,7 @@
       "title": "Dynamic Variables",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/12.-dynamic-variables` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/12.-dynamic-variables` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -523,7 +523,7 @@
       "title": "Hands-On: Onboarding a GraphQL API",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/2.-hands-on-1--onboarding-a-graphql-api` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/2.-hands-on-1--onboarding-a-graphql-api` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -564,7 +564,7 @@
       "title": "GraphQL Proxy Only",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/3.-graphql-proxy-only` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/3.-graphql-proxy-only` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -603,7 +603,7 @@
       "title": "Managing Schema",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/4.-managing-schema` with 1 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/4.-managing-schema` with 1 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -643,7 +643,7 @@
       "title": "Field Based Permissions",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/5.-field-based-permissions` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/5.-field-based-permissions` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -682,7 +682,7 @@
       "title": "Hands-On: Setting Up Field Based Permissions",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/6.-hands-on-2--setting-up-field-based-permissions` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/6.-hands-on-2--setting-up-field-based-permissions` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -721,7 +721,7 @@
       "title": "Complexity Limiting",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/7.-complexity-limiting` with 3 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/7.-complexity-limiting` with 3 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -760,7 +760,7 @@
       "title": "Introspection",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/8.-introspection` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/8.-introspection` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -799,7 +799,7 @@
       "title": "Validation",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/9.-validation` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/9.-validation` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -838,7 +838,7 @@
       "title": "GraphQL Federation",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql-federation/1.-graphql-federation` with 18 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql-federation/1.-graphql-federation` with 18 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -877,7 +877,7 @@
       "title": "gRPC Proxy",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/1.-grpc-overview` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/1.-grpc-overview` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -917,7 +917,7 @@
       "title": "Advanced gRPC Proxying Concepts",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/2.-advanced-grpc-proxying-concepts` with 3 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/2.-advanced-grpc-proxying-concepts` with 3 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -956,7 +956,7 @@
       "title": "Authentication with gRPC",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/3.-authentication-with-grpc-` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/3.-authentication-with-grpc-` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -996,7 +996,7 @@
       "title": "Example of gRPC proxy using H2C",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/4.-example-of-grpc-proxy-using-h2c-` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/4.-example-of-grpc-proxy-using-h2c-` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1035,7 +1035,7 @@
       "title": "Secure gRPC Proxy Setup with Tyk and HTTPS",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/5.-secure-grpc-proxy-setup-with-tyk-and-https-` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/5.-secure-grpc-proxy-setup-with-tyk-and-https-` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1074,7 +1074,7 @@
       "title": "Bidirectional gRPC Streaming with HTTPS & H2C",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/6.-bidirectional-grpc-streaming-with-https-and-h2c-` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/6.-bidirectional-grpc-streaming-with-https-and-h2c-` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1115,7 +1115,7 @@
       "title": "MDCB Analytics",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/mdcb-analytics/mdcb-analytics` with 7 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/mdcb-analytics/mdcb-analytics` with 7 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1157,7 +1157,7 @@
       "title": "Server-Sent Events (SSE)",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/server-side-events/server-side-events` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/server-side-events/server-side-events` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1197,7 +1197,7 @@
       "title": "TCP Proxy",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/tcp-proxy/1.-tcp-proxy` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/tcp-proxy/1.-tcp-proxy` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1236,7 +1236,7 @@
       "title": "TCP Proxy: Advanced Configurations",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/tcp-proxy/2.-advanced-configurations` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/tcp-proxy/2.-advanced-configurations` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1275,7 +1275,7 @@
       "title": "Universal Data Graph",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/1.-udg-overview` with 16 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/universal-data-graph/1.-udg-overview` with 16 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1315,7 +1315,7 @@
       "title": "Data Sources",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/2.-data-sources` with 19 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/universal-data-graph/2.-data-sources` with 19 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1354,7 +1354,7 @@
       "title": "Hands-On 1: Setting Up UDG",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/universal-data-graph/3.-hands-on-1--setting-up-udg` with 8 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_architect/universal-data-graph/3.-hands-on-1--setting-up-udg` with 8 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1393,7 +1393,7 @@
       "title": "Custom Plugins",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---custom-plugins` with 18 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_2025---custom-plugins` with 18 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1432,7 +1432,7 @@
       "title": "Security with Tyk: Access Rights",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--1-access-rights-and-policies` with 9 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--1-access-rights-and-policies` with 9 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1474,7 +1474,7 @@
       "title": "API Security with Tyk: Request Throttling",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--10-throttling` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--10-throttling` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1516,7 +1516,7 @@
       "title": "API Security with Tyk: Request Quotas",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--11-quotas` with 7 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--11-quotas` with 7 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1558,7 +1558,7 @@
       "title": "API Security with Tyk: Authentication & Authorization",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--2-authn-and-authz` with 9 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--2-authn-and-authz` with 9 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1600,7 +1600,7 @@
       "title": "API Security with Tyk: Authentication Methods",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--3-authentication-methods` with 22 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--3-authentication-methods` with 22 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1642,7 +1642,7 @@
       "title": "API Security with Tyk: Policies in Tyk",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--4-policies-in-tyk` with 15 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--4-policies-in-tyk` with 15 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1684,7 +1684,7 @@
       "title": "API Security with Tyk: Session Objects",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--5-api-keys` with 14 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--5-api-keys` with 14 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1726,7 +1726,7 @@
       "title": "API Security with Tyk: What is Rate Limiting",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--6-rate-limiting-introduction` with 7 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--6-rate-limiting-introduction` with 7 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1768,7 +1768,7 @@
       "title": "API Security with Tyk: Rate Limiting in Tyk",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--7-rate-limiting` with 6 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--7-rate-limiting` with 6 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1810,7 +1810,7 @@
       "title": "API Security with Tyk: Rate Limiting Scopes",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--8-rate-limiting-scopes` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--8-rate-limiting-scopes` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1852,7 +1852,7 @@
       "title": "API Security with Tyk: Rate Limiting Algorithms",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---api-security--9-rate-limiting-algorithms` with 6 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---api-security--9-rate-limiting-algorithms` with 6 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1894,7 +1894,7 @@
       "title": "Classic API Definitions",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---1-classic-api` with 3 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---apis-in-tyk---1-classic-api` with 3 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1935,7 +1935,7 @@
       "title": "Tyk OAS API Definitions",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---2-oas-api` with 8 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---apis-in-tyk---2-oas-api` with 8 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -1976,7 +1976,7 @@
       "title": "API Deployment",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---3-api-deployment` with 6 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---apis-in-tyk---3-api-deployment` with 6 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2017,7 +2017,7 @@
       "title": "Onboarding APIs into Tyk",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---4-onboarding-an-api` with 7 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---apis-in-tyk---4-onboarding-an-api` with 7 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2058,7 +2058,7 @@
       "title": "APIs in Tyk",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---apis-in-tyk---introduction-to-api-definitions` with 2 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---apis-in-tyk---introduction-to-api-definitions` with 2 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2099,7 +2099,7 @@
       "title": "Tyk Foundational Certification",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/introduction` with 7 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/introduction` with 7 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2140,7 +2140,7 @@
       "title": "Tyk Product Components: Gateway & Redis",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---1-gateway-and-redis` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---tyk-architecture---1-gateway-and-redis` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2181,7 +2181,7 @@
       "title": "Traffic Routing",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---1-traffic-routing` with 10 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---tyk-architecture---1-traffic-routing` with 10 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2222,7 +2222,7 @@
       "title": "Tyk Architecture & Ecosystem",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---2-tyk-architecture-and-ecosystem` with 7 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---tyk-architecture---2-tyk-architecture-and-ecosystem` with 7 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2263,7 +2263,7 @@
       "title": "Tyk Database: MongoDB & PostgreSQL",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-architecture---3-mongodb-postgres` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---tyk-architecture---3-mongodb-postgres` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2304,7 +2304,7 @@
       "title": "Tyk Product Components: Dashboard",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---1-dashboard` with 5 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---tyk-components---1-dashboard` with 5 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2345,7 +2345,7 @@
       "title": "Tyk Product Components: Pump",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---3-pump` with 4 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---tyk-components---3-pump` with 4 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2386,7 +2386,7 @@
       "title": "Tyk Product Components: MDCB (Multi Data Centre Bridge)",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_foundation/foundational---tyk-components---4-mdcb` with 7 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_foundation/foundational---tyk-components---4-mdcb` with 7 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2429,7 +2429,7 @@
       "title": "Tyk Onboarding",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/foundational/converted_foundational` with 91 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/foundational/converted_foundational` with 91 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2470,7 +2470,7 @@
       "title": "Tyk Training - GraphQL",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---graphql` with 111 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_2025---graphql` with 111 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2509,7 +2509,7 @@
       "title": "Tyk Training Slides 2024 - Maintaining",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2024---maintaining` with 60 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_2024---maintaining` with 60 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2550,7 +2550,7 @@
       "title": "Tyk Onboarding: Introduction to OpenTelemetry",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---opentelemetry` with 11 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_2025---opentelemetry` with 11 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2591,7 +2591,7 @@
       "title": "Tyk Operator 2025 Training",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---operator` with 60 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_2025---operator` with 60 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2631,7 +2631,7 @@
       "title": "Tyk Onboarding: Single Sign-On",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---sso` with 18 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_2025---sso` with 18 converted slides.",
       "owners": [
         "training-team"
       ],
@@ -2672,7 +2672,7 @@
       "title": "Tyk Streams",
       "status": "active",
       "version": 1,
-      "summary": "Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---tyk-streams` with 19 converted slides.",
+      "summary": "Imported legacy Slidev deck from `training_materials/scripts/converted_2025---tyk-streams` with 19 converted slides.",
       "owners": [
         "training-team"
       ],

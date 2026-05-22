@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/graphql/7.-complexity-limiting` with 3 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_architect/graphql/7.-complexity-limiting` with 3 converted slides.
 topics:
   - graphql
 categories:

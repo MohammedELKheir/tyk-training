@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/5.-secure-grpc-proxy-setup-with-tyk-and-https-` with 5 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/5.-secure-grpc-proxy-setup-with-tyk-and-https-` with 5 converted slides.
 topics:
   - grpc
 categories:

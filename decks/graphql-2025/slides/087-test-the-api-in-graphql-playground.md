@@ -33,7 +33,7 @@ Expected Response:
 {
   "data": {
     "user": {
-      "username": "John Doe",
+      "username": "User 1",
       "id": "1",
       "reviews": null
     }

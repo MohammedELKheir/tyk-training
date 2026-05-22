@@ -8,7 +8,7 @@ SLIDE 1 - FULL NOTES
   [Google Shape;68;p16]:
     Tyk Onboarding
   [Google Shape;70;p16]:
-    Rahmat - Sr. Customer Solutions Architect
+    Sr. Customer Solutions Architect
 
 ============================================================
 SLIDE 2 - FULL NOTES

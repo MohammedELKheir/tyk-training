@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/circuit-breakers/5.-circuit-breaker-events` with 2 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_architect/circuit-breakers/5.-circuit-breaker-events` with 2 converted slides.
 topics:
   - architecture
 categories:

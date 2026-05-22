@@ -4,7 +4,7 @@ deck_id: graphql-2025
 order: 83
 slug: clone-and-run-example-rest-apis
 title: "Clone and Run Example REST APIs"
-summary: "We’ll first set up the example services locally. git clone https://github.com/jay-deshmukh/example-rest-api-for-udg.git cd example-rest-api-for-udg npm install npm run build npm st"
+summary: "We’ll first set up the example services locally. git clone https://github.com/example-org/example-rest-api-for-udg.git cd example-rest-api-for-udg npm install npm run build npm st"
 standalone_safe: true
 reusable: true
 requires_context: []
@@ -23,7 +23,7 @@ layout: default
 
 <div style="background:#1a1a2e; border-radius:8px; padding:12px 16px; margin-top:0.5rem; overflow:auto;">
   <pre style="color:#e0e0e0; font-size:0.6rem; margin:0; font-family:monospace; line-height:1.5; white-space:pre;">We’ll first set up the example services locally.
-git clone https://github.com/jay-deshmukh/example-rest-api-for-udg.git
+git clone https://github.com/example-org/example-rest-api-for-udg.git
 cd example-rest-api-for-udg
 npm install
 npm run build

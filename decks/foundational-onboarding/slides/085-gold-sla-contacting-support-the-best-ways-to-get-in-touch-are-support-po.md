@@ -4,7 +4,7 @@ deck_id: foundational-onboarding
 order: 85
 slug: gold-sla-contacting-support-the-best-ways-to-get-in-touch-are-support-po
 title: "GOLD SLA Contacting support The best ways to get in touch are: Support Portal (Z"
-summary: "endesk) https://support.tyk.io/ Support email support@tyk.io Hotline Tel: +65 67976883 Account Manager neha@tyk.io Solutions Architect rahmat@tyk.io"
+summary: "endesk) https://support.tyk.io/ Support contact Contact via support portal Hotline Tel: +65 67976883 Account Manager Contact via support portal Solutions Architect Contact via support portal"
 standalone_safe: true
 reusable: true
 requires_context: []
@@ -31,8 +31,8 @@ layout: default
     <td style="padding:8px 12px; color:#03031C;">https://support.tyk.io/</td>
   </tr>
   <tr style="border-bottom:1px solid #ddd;">
-    <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Support email</td>
-    <td style="padding:8px 12px; color:#03031C;">support@tyk.io</td>
+    <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Support contact</td>
+    <td style="padding:8px 12px; color:#03031C;">Contact via support portal</td>
   </tr>
   <tr style="border-bottom:1px solid #ddd;">
     <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Hotline</td>
@@ -40,11 +40,11 @@ layout: default
   </tr>
   <tr style="border-bottom:1px solid #ddd;">
     <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Account Manager</td>
-    <td style="padding:8px 12px; color:#03031C;">neha@tyk.io</td>
+    <td style="padding:8px 12px; color:#03031C;">Contact via support portal</td>
   </tr>
   <tr>
     <td style="padding:8px 12px; color:#8438FA; font-weight:bold;">Solutions Architect</td>
-    <td style="padding:8px 12px; color:#03031C;">rahmat@tyk.io</td>
+    <td style="padding:8px 12px; color:#03031C;">Contact via support portal</td>
   </tr>
   </tbody>
 </table>

@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_2025---graphql` with 111 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_2025---graphql` with 111 converted slides.
 topics:
   - graphql
 categories:
@@ -77,7 +77,7 @@ canonical_order:
   - 055-key-concepts-reusing-response-fields
   - 056-key-concepts-defining-data-source-urls
   - 057-key-concepts-defining-data-source-urls-2
-  - 058-response-example-data-people-id-1-name-john-doe
+  - 058-response-example-data-people-id-1-name-user-1
   - 059-udg-header-management
   - 060-udg-header-management-2
   - 061-udg-header-management-3

@@ -47,7 +47,7 @@
         "w": 56.56,
         "h": 29.33,
         "kind": "picture",
-        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-001-0c9c1f959afe.png"
+        "file": ".hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-001-0c9c1f959afe.png"
       }
     ],
     "notes": ""
@@ -64,7 +64,7 @@
         "w": 56.56,
         "h": 29.33,
         "kind": "picture",
-        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-002-0c9c1f959afe.png"
+        "file": ".hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-002-0c9c1f959afe.png"
       },
       {
         "depth": 0,
@@ -125,7 +125,7 @@
         "w": 56.56,
         "h": 29.33,
         "kind": "picture",
-        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-003-0c9c1f959afe.png"
+        "file": ".hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-003-0c9c1f959afe.png"
       },
       {
         "depth": 0,
@@ -190,7 +190,7 @@
         "w": 56.56,
         "h": 29.33,
         "kind": "picture",
-        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-004-0c9c1f959afe.png"
+        "file": ".hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-004-0c9c1f959afe.png"
       },
       {
         "depth": 0,
@@ -217,7 +217,7 @@
         "w": 499.73,
         "h": 520.77,
         "kind": "picture",
-        "file": "/Users/mohammedelkheir/.hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-004-ce022e7b5f60.png"
+        "file": ".hermes/kanban/workspaces/t_2f0b73e5/extract/images/slide-004-ce022e7b5f60.png"
       }
     ],
     "notes": "Encapsulation of rules\nPolicies give you a way to encapsulate security and other access settings into a pre-defined entity.\nPurpose is to make your life easier when managing lots of tokens.\nThe important thing to understand about policies is that a single policy can apply to many tokens, so having a few policies can let you manage very large numbers of tokens easily.\n\nThey allow you to define:\nAn access control list, which sets which APIs, versions, endpoints and methods the policy can access.\nRate limit\nQuota\n\nDynamically attached\nWhen a policy is saved on the Dashboard, it only takes around 10 seconds for it to take effect on the server.\nPolicies are attached to request sessions at the start of the Tyk processing pipeline, so updates are take effect immediately.\n\nPartitioning\nOnce a policy is assigned to a token it will override the settings of that token. \nHowever, with policy partitioning it is possible to override only a particular part of the token – the ACL, rate limit, or quota (or any combination of the three).\n\nNo effect on open APIs \nPolicies have no effect one APIs which have been configured to be open.\nThis is because the Tyk pipeline skips all authentication so does not process any tokens provided."

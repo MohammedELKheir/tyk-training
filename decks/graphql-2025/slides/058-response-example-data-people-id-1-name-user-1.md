@@ -1,10 +1,10 @@
 ---
-id: graphql-2025/058-response-example-data-people-id-1-name-john-doe
+id: graphql-2025/058-response-example-data-people-id-1-name-user-1
 deck_id: graphql-2025
 order: 58
-slug: response-example-data-people-id-1-name-john-doe
-title: "Response Example: { \"data\": { \"people\": [ { \"id\": 1, \"name\": \"John Doe\","
-summary: "\"age\": 40, \"driverLicense\": { \"id\": \"DL1234\", \"issuedBy\": \"United Kingdom\", \"validUntil\": \"2040-01-01\" } }, { \"id\": 2, \"name\": \"Jane Doe\", \"age\": 30, \"driverLicense\": { \"id\": \"DL55"
+slug: response-example-data-people-id-1-name-user-1
+title: "Response Example: { \"data\": { \"people\": [ { \"id\": 1, \"name\": \"User 1\","
+summary: "\"age\": 40, \"driverLicense\": { \"id\": \"DL1234\", \"issuedBy\": \"United Kingdom\", \"validUntil\": \"2040-01-01\" } }, { \"id\": 2, \"name\": \"User 2\", \"age\": 30, \"driverLicense\": { \"id\": \"DL55"
 standalone_safe: true
 reusable: true
 requires_context: []
@@ -23,7 +23,7 @@ layout: default
     "people": [
       {
         "id": 1,
-        "name": "John Doe",
+        "name": "User 1",
         "age": 40,
         "driverLicense": {
           "id": "DL1234",
@@ -33,7 +33,7 @@ layout: default
       },
       {
         "id": 2,
-        "name": "Jane Doe",
+        "name": "User 2",
         "age": 30,
         "driverLicense": {
           "id": "DL5555",

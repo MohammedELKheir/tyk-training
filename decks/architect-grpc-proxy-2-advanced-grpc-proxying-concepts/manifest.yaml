@@ -5,7 +5,7 @@ status: active
 version: 1
 owners:
   - training-team
-summary: Imported legacy Slidev deck from `/Users/mohammedelkheir/playground/training_materials/scripts/converted_architect/grpc-proxy/2.-advanced-grpc-proxying-concepts` with 3 converted slides.
+summary: Imported legacy Slidev deck from `training_materials/scripts/converted_architect/grpc-proxy/2.-advanced-grpc-proxying-concepts` with 3 converted slides.
 topics:
   - grpc
 categories:

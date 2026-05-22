@@ -1,10 +1,10 @@
 ---
-id: foundational-onboarding/001-tyk-onboarding-rahmat-sr-customer-solutions-architect
+id: foundational-onboarding/001-tyk-onboarding-cover
 deck_id: foundational-onboarding
 order: 1
-slug: tyk-onboarding-rahmat-sr-customer-solutions-architect
-title: "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect"
-summary: "Tyk Onboarding Rahmat - Sr. Customer Solutions Architect"
+slug: tyk-onboarding-cover
+title: "Tyk Onboarding Sr. Customer Solutions Architect"
+summary: "Tyk Onboarding Sr. Customer Solutions Architect"
 standalone_safe: true
 reusable: true
 requires_context: []
@@ -18,7 +18,7 @@ notes_visibility: customer-safe
 <div style="position: absolute; top: 0; left: 0; width: 60%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding-left: 3rem;">
 <img src="./images/icons/tyk-logo.png" style="width: 5rem; margin-bottom: 2rem; filter: brightness(10);" />
 <h1 style="font-size: 3.5rem; font-weight: 700; color: white; margin: 0 0 0.5rem 0;">Tyk Onboarding</h1>
-<p style="font-size: 1.2rem; color: rgba(255,255,255,0.85); margin: 0;">Rahmat - Sr. Customer Solutions Architect</p>
+<p style="font-size: 1.2rem; color: rgba(255,255,255,0.85); margin: 0;">Sr. Customer Solutions Architect</p>
 </div>
 
 <div style="position: absolute; top: 0; right: 0; width: 42%; height: 100%; overflow: hidden;">

@@ -357,7 +357,7 @@ layout: default
       <div class="section-label" style="margin-bottom:0.3rem;">Payload: data</div>
       <pre>{
   "sub": "1234567890",
-  "name": "John Doe",
+  "name": "User 1",
   "iat": 1516239022,
   "sub": "identifier-id",
   "pol": "policy-id"

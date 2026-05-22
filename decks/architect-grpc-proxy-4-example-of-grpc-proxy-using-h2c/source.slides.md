@@ -126,7 +126,7 @@ layout: default
 
 <pre style="margin:0 0 0 4.55rem; color:#23233f; font-size:0.84rem; line-height:1.56; font-family:'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace; white-space:pre; background:transparent;">grpcurl -plaintext \
   -proto helloworld.proto \
-  -d '&#123;"name": "joe"&#125;' \
+  -d '&#123;"name": "user"&#125;' \
   tyk-gateway:8080 \
   helloworld.Greeter/SayHello</pre>
 
@@ -137,11 +137,11 @@ layout: default
   </div>
 </div>
 
-<pre style="margin:0 0 0 4.55rem; color:#23233f; font-size:0.84rem; line-height:1.56; font-family:'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace; white-space:pre; background:transparent;">&#123;"message": "Hello joe"&#125;</pre>
+<pre style="margin:0 0 0 4.55rem; color:#23233f; font-size:0.84rem; line-height:1.56; font-family:'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace; white-space:pre; background:transparent;">&#123;"message": "Hello user"&#125;</pre>
 
 <div style="position:absolute; right:0; bottom:0; width:107px; height:77px; background:#050325; border-top-left-radius:34px; display:flex; align-items:center; justify-content:center; gap:6px; padding-left:12px; box-sizing:border-box;">
   <div style="width:14px; height:14px; border-radius:4px; background:#22e9bc;"></div>
   <div style="color:#ffffff; font-size:1.15rem; font-weight:800; letter-spacing:-0.04em; line-height:1;">Tyk</div>
 </div>
 
-<!-- Notes: "Once the setup is done, you can use grpcurl to send a test request through the Tyk Gateway. The -plaintext flag is important—it tells grpcurl not to use TLS, aligning with our h2c setup. If everything’s configured correctly, you'll see a friendly message returned: 'Hello joe'." -->
+<!-- Notes: "Once the setup is done, you can use grpcurl to send a test request through the Tyk Gateway. The -plaintext flag is important—it tells grpcurl not to use TLS, aligning with our h2c setup. If everything’s configured correctly, you'll see a friendly message returned: 'Hello user'." -->

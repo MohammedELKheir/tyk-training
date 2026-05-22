@@ -9,7 +9,7 @@ standalone_safe: true
 reusable: true
 requires_context: []
 builds_on: []
-recommended_next: [architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-john-doe-age]
+recommended_next: [architect-universal-data-graph-1-udg-overview/013-response-example-data-people-id-1-name-user-1-age]
 customer_visible: true
 notes_visibility: customer-safe
 ---

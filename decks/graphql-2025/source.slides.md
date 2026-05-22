@@ -17,7 +17,7 @@ background: 'linear-gradient(135deg, #8438FA 0%, #8438FA 35%, #BB11FF 100%)'
 <div style="position:absolute; top:0; left:0; width:60%; height:100%; display:flex; flex-direction:column; justify-content:center; padding-left:3rem;">
 <img src="./images/icons/tyk-logo.png" style="width:5rem; margin-bottom:2rem; filter:brightness(10);" />
 <h1 style="font-size:3.5rem; font-weight:700; color:white; margin:0 0 0.5rem 0;">Tyk Onboarding</h1>
-<p style="font-size:1.2rem; color:rgba(255,255,255,0.85); margin:0;">Rahmat - Sr. Customer Solutions Architect</p>
+<p style="font-size:1.2rem; color:rgba(255,255,255,0.85); margin:0;">Sr. Customer Solutions Architect</p>
 </div>
 
 <div style="position:absolute; top:0; right:0; width:42%; height:100%; overflow:hidden;">
@@ -248,7 +248,7 @@ layout: default
 <div style="display:flex; gap:1rem; margin-top:0.5rem; align-items:flex-start;">
   <div style="flex:1; background:#1a1a2e; border-radius:8px; padding:12px 16px; overflow:auto;">
     <pre style="color:#e0e0e0; font-size:0.55rem; margin:0; font-family:monospace; line-height:1.5; white-space:pre;">Onboarding a GraphQL API via Operator is similar to a Classic API Definition:
-Run git clone  https://github.com/rahmatlatif/graphql-operator-tutorial
+Run git clone  https://github.com/example-org/graphql-operator-tutorial
 Run cd graphql-operator-tutorial 
 Run kubectl apply -f graphql-example.yaml -n tyk-cp 
 Verify with kubectl get tykapis -n tyk-cp 
@@ -1534,7 +1534,7 @@ layout: default
     "people": [
       {
         "id": 1,
-        "name": "John Doe",
+        "name": "User 1",
         "age": 40,
         "driverLicense": {
           "id": "DL1234",
@@ -1544,7 +1544,7 @@ layout: default
       },
       {
         "id": 2,
-        "name": "Jane Doe",
+        "name": "User 2",
         "age": 30,
         "driverLicense": {
           "id": "DL5555",
@@ -2064,7 +2064,7 @@ layout: default
 
 <div style="background:#1a1a2e; border-radius:8px; padding:12px 16px; margin-top:0.5rem; overflow:auto;">
   <pre style="color:#e0e0e0; font-size:0.6rem; margin:0; font-family:monospace; line-height:1.5; white-space:pre;">We’ll first set up the example services locally.
-git clone https://github.com/jay-deshmukh/example-rest-api-for-udg.git
+git clone https://github.com/example-org/example-rest-api-for-udg.git
 cd example-rest-api-for-udg
 npm install
 npm run build
@@ -2156,7 +2156,7 @@ Expected Response:
 {
   "data": {
     "user": {
-      "username": "John Doe",
+      "username": "User 1",
       "id": "1",
       "reviews": null
     }

@@ -4,7 +4,7 @@ deck_id: maintaining-2024
 order: 41
 slug: postgres-sizing-ram
 title: "Postgres - Sizing RAM"
-summary: "MongoDB RAM is used for a number of processes in Postgres - Shared Buffers - Maintenance Work Memory - Sorting and Index Operations - Connection-related Memory"
+summary: "Postgres RAM is used for a number of processes - Shared Buffers - Maintenance Work Memory - Sorting and Index Operations - Connection-related Memory"
 standalone_safe: true
 reusable: true
 requires_context: []
@@ -19,7 +19,7 @@ layout: default
 
 # Postgres - Sizing RAM
 
-- MongoDB RAM is used for a number of processes in Postgres
+- Postgres RAM is used for a number of processes
 - Shared Buffers
 - Maintenance Work Memory
 - Sorting and Index Operations

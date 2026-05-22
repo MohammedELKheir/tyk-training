@@ -1030,7 +1030,7 @@ layout: default
 Step 2: Create a ConfigMap from the OAS file
 Upload the API definition into Kubernetes as a ConfigMap:
 kubectl create configmap tyk-oas-api-config --from-file=oas-api-definition.json
-tyk-oas-api-config is the name of the ConfigMap.
+tyk-oas-api-config is the name of the ConfigMap.
 -n tyk specifies the namespace; replace tyk if your Tyk Operator runs in a different namespace.
 ```
 
@@ -1062,7 +1062,7 @@ layout: default
 # Onboarding a Tyk OAS API
 
 ```yaml
-Step 3: Create the TykOasApiDefinition Custom Resource manifest
+Step 3: Create the TykOasApiDefinition Custom Resource manifest
 Create a YAML file called tyk-oas-api-definition.yaml:
 apiVersion: tyk.tyk.io/v1alpha1
 kind: TykOasApiDefinition
@@ -1333,8 +1333,8 @@ layout: default
 ```
 Step 1: Update your oas-api-definition.json
 Changes from the previous example:
-Add API key authentication to your OAS under components.securitySchemes
-Add global security requirement in security
+Add API key authentication to your OAS under components.securitySchemes
+Add global security requirement in security
 Enable authentication in the Tyk extension x-tyk-api-gateway.server.authentication
 ```
 
@@ -1547,8 +1547,8 @@ annotations:
   kubernetes.io/ingress.class: tyk
   tyk.io/template: myapideftemplate
   tyk.io/template-kind: ApiDefinition
-ingress.class: tyk: tells Kubernetes to use Tyk Operator
-template: the name of a Tyk ApiDefinition or TykOasApiDefinition that acts as a config template
+ingress.class: tyk: tells Kubernetes to use Tyk Operator
+template: the name of a Tyk ApiDefinition or TykOasApiDefinition that acts as a config template
 template-kind: which type of template is being referenced
 ```
 

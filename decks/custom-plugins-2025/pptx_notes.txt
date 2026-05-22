@@ -362,7 +362,7 @@ Step 2: Write the Plugin
 "The core of the plugin development lies in writing your custom logic."
 Plugin Structure:
 "The plugin must have a Go main package."
-"Within the package, create an exported function. For example:"func AddFooBarHeader() {
+"Within the package, create an exported function. For example:" func AddFooBarHeader() {
     // Custom logic here
 }
 "This function will contain the code you want the Tyk Gateway to execute, like modifying requests, responses, or performing authentication."
@@ -377,7 +377,7 @@ Step 4: Build the Plugin
 Using Docker:
 "Use Tyk’s official plugin compiler Docker image
 Using Go Build Commands:
-"Alternatively, you can build the .so file directly using Go:"go build -buildmode=plugin -o plugin.so
+"Alternatively, you can build the .so file directly using Go:" go build -buildmode=plugin -o plugin.so
 
 "This process generates a plugin.so file, which Tyk will load as part of the plugin execution."
 
@@ -481,7 +481,7 @@ Performance Optimization – "Tyk caches plugins locally, reducing network calls
 ============================================================
 SLIDE 14 - FULL NOTES
 ============================================================
-Introduction"Let's dive into how bundling plugins works in Tyk. Bundling plugins enables efficient management and execution of custom middleware across Tyk Gateways."
+Introduction "Let's dive into how bundling plugins works in Tyk. Bundling plugins enables efficient management and execution of custom middleware across Tyk Gateways."
 
 How Plugin Bundles Work
 "A plugin bundle is a ZIP file that contains the source code and the manifest.json file."
@@ -533,7 +533,7 @@ These are the actual code files (e.g., .py for Python, .so for Go) that implemen
 Certificate Key (Optional):
 Certificates can be used to sign the bundle
 How to Build a Bundle
-Run the Command:"To create a plugin bundle, you can run the following command:"$ tyk bundle build
+Run the Command: "To create a plugin bundle, you can run the following command:"  $ tyk bundle build
 What Happens After?
 "The resulting ZIP file will include:
 All specified files (based on the manifest).
@@ -563,16 +563,16 @@ It ensures the plugin is packaged securely and ready for execution by the Tyk Ga
 ============================================================
 SLIDE 16 - FULL NOTES
 ============================================================
-Introduction"Next, we’ll discuss the manifest files within plugin bundles and their importance in configuring plugins for Tyk."
+Introduction "Next, we’ll discuss the manifest files within plugin bundles and their importance in configuring plugins for Tyk."
 What is a Manifest File?
 "A manifest file is a critical configuration file for your plugin bundle."
 "It defines which source code files are included in the bundle
 "If a file isn’t listed in the manifest, it will be ignored, even if it’s present in the plugin directory."
 Key Components of the Manifest File
 file_list Block
-"This block specifies the source files to include in the plugin bundle. 
+"This block specifies the source files to include in the plugin bundle.
 custom_middleware Block
-"This block allows you to define pre and post execution middleware.For instance:"custom_middleware": {
+"This block allows you to define pre and post execution middleware. For instance: "custom_middleware": {
     "pre": [ { "name": "PreMiddleware" } ],
     "post": [ { "name": "PostMiddleware" } ]
 }

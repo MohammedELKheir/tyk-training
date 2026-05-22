@@ -835,7 +835,7 @@ layout: default
 
 # Postgres - Sizing RAM
 
-- MongoDB RAM is used for a number of processes in Postgres
+- Postgres RAM is used for a number of processes
 - Shared Buffers
 - Maintenance Work Memory
 - Sorting and Index Operations

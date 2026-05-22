@@ -9,7 +9,7 @@ test('catalog JSON loads and README links every deck presentation', async () => 
   const readme = await readFile(new URL('../../README.md', import.meta.url), 'utf8');
 
   assert.ok(parsed.decks.length >= 67, 'expected the imported training decks to be indexed');
-  assert.match(readme, /## Deck inventory/);
+  assert.match(readme, /## Deck Inventory/);
   assert.match(readme, /Total decks: \*\*67\*\*/);
 
   for (const deck of parsed.decks) {

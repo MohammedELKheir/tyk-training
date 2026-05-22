@@ -58,7 +58,7 @@ SLIDE 6
 Step-by-Step Explanation:
 Step 1: The Client Sends a Request
 "The process starts with a client sending an HTTP request to an API managed by the Tyk Gateway."
-"This could 
+"This could
   TEXT | Google Shape;103;p21 | {'x': 77.17, 'y': 16.83, 'w': 906.92, 'h': 82.47} | 'How it works'
   PICTURE | Google Shape;104;p21 | {'x': 464.76, 'y': 125.9, 'w': 474.65, 'h': 333.26} | /icons/slide-006-Google-Shape;104;p21.png
   TEXT | Google Shape;105;p21 | {'x': 72.95, 'y': 138.25, 'w': 391.81, 'h': 393.58} | 'The client sends request to API on Tyk Gateway.\nTyk processes the request and forwards it to one or more plugins implemented and configured for that API.\nA plugin performs operations (e.g., custom authentication, data transformation).\nThe processed request is then returned to Tyk Gateway, which forwards it upstream.\nFinally, the upstream response is sent back to the client.'
@@ -121,7 +121,7 @@ This is an example of a plugin dev flow using go plugins
 "First, you need to set up your plugin’s workspace. Start by creating a folder for your plugin."
 "Next, initialize Go modules
 "This command prepares your workspace for dependency management."
-Step 2: Write the 
+Step 2: Write the
   TEXT | Google Shape;134;p26 | {'x': 77.17, 'y': 16.83, 'w': 906.92, 'h': 82.47} | 'Plugin Development Flow'
   TEXT | Google Shape;135;p26 | {'x': 72.95, 'y': 138.25, 'w': 859.53, 'h': 393.58} | 'Step 1: Initialize Go Module\nCreate a folder for your plugin.\nInitialize Go modules - go mod init tyk-plugin\nStep 2: Write the Plugin\nPlugin structure:\nA Go main package.\nAn exported function like AddFooBarHeader() for custom logic.\nStep 3: Sync Dependencies\nRun go mod tidy\nStep 4: Build the Plugin\nBuild the Go plugin as a shared library (.so) using Tyk’s Docker image or Go commands.\ndocker run --rm -v `pwd`:/plugin-source \\\ntykio/tyk-plugin-compiler:v5.2.1 plugin.so'
 
@@ -133,7 +133,7 @@ SLIDE 12
 "Click on View Raw Definition to access the API Definition editor."
 "This editor allows you to see and modify the entire API configuration in JSON format."
 
-Step 2: Edit 
+Step 2: Edit
   TEXT | Google Shape;140;p27 | {'x': 77.17, 'y': 16.83, 'w': 906.92, 'h': 82.47} | 'Deploying Plugins Tyk Classic Def'
   TEXT | Google Shape;141;p27 | {'x': 72.95, 'y': 138.25, 'w': 859.53, 'h': 393.58} | 'Step 1: Open Tyk Classic API Definition Editor\nSelect your API from the list of created APIs.\nClick View Raw Definition to access the API Definition editor.\nStep 2: Edit API Definition\nIn the editor, navigate to the custom_middleware section.\nConfigure the plugins by updating this section with the necessary plugin settings.\nStep 3: Save Changes\nClick Update to apply the changes to your Tyk Classic API Definition\n\t"custom_middleware": {\n    "pre": [\n        {\n            "name": "myCustomPlugin",'
 
@@ -143,14 +143,14 @@ SLIDE 13
 [NOTES]: Introduction: "Let’s now discuss the process of bundling plugins in Tyk. Bundling is an efficient way to manage custom plugins by centralizing and distributing them across multiple Tyk Gateways."
 Step 1: Plugin Creation
 "First, you write the plugin source code and create a manifest.json file."
-"The 
+"The
   TEXT | Google Shape;146;p28 | {'x': 77.17, 'y': 16.83, 'w': 906.92, 'h': 82.47} | 'Bundling Plugins'
   PICTURE | Google Shape;147;p28 | {'x': 16.33, 'y': 189.14, 'w': 947.33, 'h': 227.36} | /icons/slide-013-Google-Shape;147;p28.png
 
 ============================================================
 SLIDE 14
 ============================================================
-[NOTES]: Introduction"Let's dive into how bundling plugins works in Tyk. Bundling plugins enables efficient management and execution of custom middleware across Tyk Gateways."
+[NOTES]: Introduction "Let's dive into how bundling plugins works in Tyk. Bundling plugins enables efficient management and execution of custom middleware across Tyk Gateways."
 
 How Plugin Bundles Work
 "A plugin bundle is a ZIP file that contains the source code and the manifest.json file."
@@ -172,7 +172,7 @@ Manife
 ============================================================
 SLIDE 16
 ============================================================
-[NOTES]: Introduction"Next, we’ll discuss the manifest files within plugin bundles and their importance in configuring plugins for Tyk."
+[NOTES]: Introduction "Next, we’ll discuss the manifest files within plugin bundles and their importance in configuring plugins for Tyk."
 What is a Manifest File?
 "A manifest file is a critical configuration file for your plugin bundle."
 "It defines which source code files are included in the bundle

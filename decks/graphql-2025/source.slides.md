@@ -96,7 +96,7 @@ Structured JSON response</pre>
   </div>
 </div>
 
-<!-- Notes: Let’s start by understanding how GraphQL differs from REST. In REST, getting related data often means making multiple requests — one for user info, another for posts, etc. This causes over-fetching, especially for mobile devices with limited bandwidth.
+<!-- Notes: Let’s start by understanding how GraphQL differs from REST.  In REST, getting related data often means making multiple requests — one for user info, another for posts, etc. This causes over-fetching, especially for mobile devices with limited bandwidth.
 With GraphQL, you can ask for exactly what you need in one request — here, both user details and their posts — and get back only that data.
 This eliminates redundant calls and makes the API feel snappier and more efficient.
 
@@ -249,9 +249,9 @@ layout: default
   <div style="flex:1; background:#1a1a2e; border-radius:8px; padding:12px 16px; overflow:auto;">
     <pre style="color:#e0e0e0; font-size:0.55rem; margin:0; font-family:monospace; line-height:1.5; white-space:pre;">Onboarding a GraphQL API via Operator is similar to a Classic API Definition:
 Run git clone  https://github.com/example-org/graphql-operator-tutorial
-Run cd graphql-operator-tutorial 
-Run kubectl apply -f graphql-example.yaml -n tyk-cp 
-Verify with kubectl get tykapis -n tyk-cp 
+Run cd graphql-operator-tutorial
+Run kubectl apply -f graphql-example.yaml -n tyk-cp
+Verify with kubectl get tykapis -n tyk-cp
 Go to ‘Playgrounds’ in the Tyk Dashboard
 Send the following query:</pre>
   </div>
@@ -376,7 +376,7 @@ layout: default
 
 
 <div style="background:#1a1a2e; border-radius:8px; padding:12px 16px; margin-top:0.5rem; overflow:auto;">
-  <pre style="color:#e0e0e0; font-size:0.6rem; margin:0; font-family:monospace; line-height:1.5; white-space:pre;">Definition: GraphQL Proxy Only is a type of GraphQL API in Tyk that:
+  <pre style="color:#e0e0e0; font-size:0.6rem; margin:0; font-family:monospace; line-height:1.5; white-space:pre;">Definition:  GraphQL Proxy Only is a type of GraphQL API in Tyk that:
 Uses a single data source
 Has a read-only schema
 Automatically loads schema from the upstream using introspection queries
@@ -388,15 +388,15 @@ Minimal configuration — no schema stitching or data merging</pre>
 </div>
 
 <!-- Notes: Let's talk about GraphQL Proxy Only, one of the modes available for managing GraphQL APIs in Tyk.
-Definition GraphQL Proxy Only is a simplified way of exposing an existing GraphQL service through Tyk. In this mode:
-Tyk acts as a pass-through — it proxies a single data source.
-It’s read-only from a schema perspective — meaning we don’t define or modify the schema in Tyk.
-Instead, Tyk automatically pulls the schema from the upstream using introspection queries.
+Definition  GraphQL Proxy Only is a simplified way of exposing an existing GraphQL service through Tyk. In this mode:
+Tyk acts as a pass-through — it proxies a single data source.
+It’s read-only from a schema perspective — meaning we don’t define or modify the schema in Tyk.
+Instead, Tyk automatically pulls the schema from the upstream using introspection queries.
 Key Characteristics
-Because Tyk relies on introspection, the upstream GraphQL service must support introspection.
-This is especially useful when you want to securely expose an existing GraphQL service without making changes to its implementation.
-You still get the full benefits of Tyk’s API management features — like rate limiting, authentication, policies, analytics, and more.
-Configuration is minimal. There’s no need to stitch multiple schemas or do complex data merging — making it ideal for quick exposure and governance.
+Because Tyk relies on introspection, the upstream GraphQL service must support introspection.
+This is especially useful when you want to securely expose an existing GraphQL service without making changes to its implementation.
+You still get the full benefits of Tyk’s API management features — like rate limiting, authentication, policies, analytics, and more.
+Configuration is minimal. There’s no need to stitch multiple schemas or do complex data merging — making it ideal for quick exposure and governance.
 This is a great option for teams looking to add governance and control to a GraphQL API that’s already up and running. -->
 
 ---
@@ -412,32 +412,32 @@ Provide a name and the upstream URL
 If the upstream is protected:
 Select Upstream Protected
 Add Authorization header or Certificate
-Optionally tick Persist headers for future use to avoid re-entering them
+Optionally tick Persist headers for future use to avoid re-entering them
 Final Steps:
 Click Configure API
 Make any additional configuration changes
 Click Save
-Your GraphQL Proxy Only API is now set up and ready to use.
+Your GraphQL Proxy Only API is now set up and ready to use.
 
 <!-- Notes: Now, let’s go through the steps to create a GraphQL Proxy Only API in Tyk. This is a straightforward process using the Tyk Dashboard.
 Step-by-Step:
-Log in to the Tyk Dashboard Start by accessing your Tyk Dashboard.
-Navigate to: APIs → Add New API → GraphQL You’ll see multiple API types — choose GraphQL.
-Provide Basic Info
-Enter a name for your API.
-Set the upstream URL — this is the URL of your existing GraphQL service.
-If the upstream is protected
-Tick “Upstream Protected”.
-Then either:
-Add the Authorization header (e.g., Bearer token), or
-Upload a Client Certificate, depending on the upstream’s security method.
-Optionally, tick “Persist headers” so you don’t need to re-enter them when updating the schema later.
+Log in to the Tyk Dashboard  Start by accessing your Tyk Dashboard.
+Navigate to: APIs → Add New API → GraphQL  You’ll see multiple API types — choose GraphQL.
+Provide Basic Info
+Enter a name for your API.
+Set the upstream URL — this is the URL of your existing GraphQL service.
+If the upstream is protected
+Tick “Upstream Protected”.
+Then either:
+Add the Authorization header (e.g., Bearer token), or
+Upload a Client Certificate, depending on the upstream’s security method.
+Optionally, tick “Persist headers” so you don’t need to re-enter them when updating the schema later.
 Final Steps:
-Click “Configure API” This will validate and load the schema from the upstream using introspection.
-Make any additional changes
-You can apply rate limiting, set access policies, or configure OpenTelemetry if needed.
-Click “Save”
-And that’s it! Your GraphQL Proxy Only API is now live and managed by Tyk.
+Click “Configure API”  This will validate and load the schema from the upstream using introspection.
+Make any additional changes
+You can apply rate limiting, set access policies, or configure OpenTelemetry if needed.
+Click “Save”
+And that’s it! Your GraphQL Proxy Only API is now live and managed by Tyk.
 This setup allows you to quickly expose and govern an existing GraphQL service with minimal configuration. -->
 
 ---
@@ -459,15 +459,15 @@ Add your Authorization Header (e.g., bearer token or basic auth).
 <!-- Notes: Once your GraphQL Proxy Only API is set up, it’s important to keep the schema in sync with your upstream service.
 Over time, your upstream GraphQL service may evolve — maybe new queries are added, fields are removed, or types are renamed. Tyk doesn’t automatically update the schema on your behalf — you’ll need to manually re-sync it to reflect those changes.
 To help with this, the Tyk Dashboard displays the last sync timestamp for the schema. This makes it easy to tell if it’s been a while since the last update.
-Go to your API in the Tyk Dashboard.
-Click “Get latest version” — this will run a fresh introspection query against your upstream.
-Once the schema loads, click “Update” in the top-right corner to apply the new schema to your Tyk API.
+Go to your API in the Tyk Dashboard.
+Click “Get latest version” — this will run a fresh introspection query against your upstream.
+Once the schema loads, click “Update” in the top-right corner to apply the new schema to your Tyk API.
 And just like that, your API is now working with the latest schema from your backend.
 Now, if your upstream service is protected — for example, it requires an authorization token — you need to make sure Tyk can authenticate before fetching the schema.
 To do this:
-Navigate to your API in the Dashboard.
-Go to Advanced Options &gt; Upstream Auth Headers.
-Add your Authorization header — for example, a Bearer token or Basic Auth credentials.
+Navigate to your API in the Dashboard.
+Go to Advanced Options &gt; Upstream Auth Headers.
+Add your Authorization header — for example, a Bearer token or Basic Auth credentials.
 Tyk will then include this header whenever it runs an introspection query or forwards requests to the upstream — ensuring everything continues to work securely. -->
 
 ---
@@ -483,7 +483,7 @@ accounts returns a list of Account objects
 Account Type:
 owner: Name of account holder
 number: Unique account number
-balance: Sensitive field showing current balance 
+balance: Sensitive field showing current balance
   </div>
   <div style="flex:1; background:#1a1a2e; border-radius:8px; padding:12px 16px; overflow:auto;">
     <pre style="color:#e0e0e0; font-size:0.6rem; margin:0; font-family:monospace; line-height:1.5; white-space:pre;">Understanding the GraphQL Schema
@@ -500,12 +500,12 @@ type Account {
 
 <!-- Notes: Let’s take a look at a basic GraphQL query structure for our API.
 The entry point for this API is a query called accounts.
-When this query is executed, it returns a list of Account objects.
+When this query is executed, it returns a list of Account objects.
 Now, what does an Account object look like?
 Here are its key fields:
-owner: This is the name of the account holder — a simple string field.
-number: This is the unique account number, which identifies the account.
-balance: This is a sensitive field — it shows the current balance in the account.
+owner: This is the name of the account holder — a simple string field.
+number: This is the unique account number, which identifies the account.
+balance: This is a sensitive field — it shows the current balance in the account.
 Depending on your use case, you may want to apply fine-grained access control to fields like balance, especially if different users or roles should see different levels of information.
 This is where Tyk’s GraphQL security features — like field-level permissions and policies — can really shine. -->
 
@@ -543,7 +543,7 @@ query {
 <!-- Notes: In GraphQL, it's easy to request only the data you need — which is a powerful feature.
 But with that power comes a risk: Not every API consumer should be able to see everything.
 For example:
-An internal user — like a back-office system — might be allowed to query all fields of the Account type, including sensitive data like the account balance.
+An internal user — like a back-office system — might be allowed to query all fields of the Account type, including sensitive data like the account balance.
 query {
   accounts {
     owner
@@ -569,9 +569,9 @@ CopyEdit
 This is the result of field-based permissions configured in Tyk.
 
 Why This Matters:
-It enforces least privilege access — consumers only see what they’re allowed to.
-It reduces the risk of data leakage.
-And it helps you comply with data protection and regulatory requirements, especially when exposing APIs to third parties.
+It enforces least privilege access — consumers only see what they’re allowed to.
+It reduces the risk of data leakage.
+And it helps you comply with data protection and regulatory requirements, especially when exposing APIs to third parties.
 So, field-based permissions are an essential part of a secure and well-governed GraphQL API strategy. -->
 
 ---
@@ -591,17 +591,17 @@ You can restrict or allow access to specific types and fields using either a blo
 Here’s how you can set it up:
 
 Step 1: Define Access via a Policy (Optional)
-Navigate to: System Management &gt; Policies &gt; Add Policy
-In the policy, select your GraphQL API — it’ll be marked clearly as a GraphQL type.
-You’ll see two switches: Block list and Allow list.
+Navigate to:  System Management &gt; Policies &gt; Add Policy
+In the policy, select your GraphQL API — it’ll be marked clearly as a GraphQL type.
+You’ll see two switches:  Block list and Allow list.
 Important note: You can enable either the block list or the allow list — not both. Turning on one will automatically disable the other.
-Use the UI to select which fields or types to block or allow.
+Use the UI to select which fields or types to block or allow.
 
 Step 2: Apply the Policy to a Key
-Go to: System Management &gt; Keys &gt; Add Key
-You can either:
-Attach the policy you just created, or
-Directly define GraphQL permissions for this key in the interface.
+Go to:  System Management &gt; Keys &gt; Add Key
+You can either:
+Attach the policy you just created, or
+Directly define GraphQL permissions for this key in the interface.
 This allows you to customize access per client, ensuring internal and external users only see what they’re allowed to.
 
 Why This Matters
@@ -623,8 +623,8 @@ latt and longt fields in Coordinates type.
 This means everything is allowed unless you explicitly block something.
 When you check a Type or Field, you’re telling Tyk to disallow access to that part of the schema for any GraphQL operations made using the associated API key.
 For example, in the settings shown here:
-The fields code and countries on the Continent type are blocked.
-The fields latt and longt on the Coordinates type are blocked as well.
+The fields code and countries on the Continent type are blocked.
+The fields latt and longt on the Coordinates type are blocked as well.
 So if a client tries to query these blocked fields, they will get an error — access will be denied.
 This allows you to precisely control which parts of your GraphQL API clients can access, helping secure sensitive or irrelevant data without modifying your backend. -->
 
@@ -643,8 +643,8 @@ code and name fields in Language type.
 In this case, that means nothing is allowed until you explicitly allow access.
 When you check a Type or Field, you are granting permission for that part of the schema to be used in any GraphQL operation associated with the API key.
 For example, in the settings shown here:
-Only the code field on the Continent type is allowed.
-And for the Language type, only the code and name fields are allowed.
+Only the code field on the Continent type is allowed.
+And for the Language type, only the code and name fields are allowed.
 Any attempt by the client to query fields outside of these allowed ones will be blocked.
 This approach is useful when you want a strict allow-list policy to tightly control what data clients can access, ensuring maximum security and compliance. -->
 
@@ -771,8 +771,8 @@ An Individual Key
 <!-- Notes: To protect your GraphQL API from overly complex or expensive queries, you can limit the query depth.
 This helps prevent performance issues and potential abuse.
 You can set a maximum query depth in two places:
-At the Policy level, which applies to all keys associated with that policy.
-Or at the individual API Key level, for more granular control.
+At the Policy level, which applies to all keys associated with that policy.
+Or at the individual API Key level, for more granular control.
 Setting these limits ensures your API stays performant and secure by restricting how deeply clients can nest their queries. -->
 
 ---
@@ -884,12 +884,12 @@ Retrieves the possible values for an enum type, including descriptions and depre
 Interface and Union Types Query
 Provides information on the possible types that implement an interface or belong to a union.
 
-<!-- Notes: GraphQL introspection allows you to explore the schema dynamically by sending different types of queries.
-The Schema Overview Query gives a broad picture of everything the API offers, useful for initial exploration.
-Single Type Details Query zooms into one type to understand its structure and relationships, essential for detailed API consumption.
-Field Arguments Query helps when you want to know what inputs a particular field accepts, aiding in precise query construction.
-Enum Values Query is handy when working with fields that have a fixed set of possible values, ensuring you use valid inputs.
-Finally, Interface and Union Types Query helps understand polymorphic types, clarifying what concrete types to expect.
+<!-- Notes: GraphQL introspection allows you to explore the schema dynamically by sending different types of queries.
+The Schema Overview Query gives a broad picture of everything the API offers, useful for initial exploration.
+Single Type Details Query zooms into one type to understand its structure and relationships, essential for detailed API consumption.
+Field Arguments Query helps when you want to know what inputs a particular field accepts, aiding in precise query construction.
+Enum Values Query is handy when working with fields that have a fixed set of possible values, ensuring you use valid inputs.
+Finally, Interface and Union Types Query helps understand polymorphic types, clarifying what concrete types to expect.
 Knowing these query types helps you debug, document, and build better GraphQL clients and tools. -->
 
 ---
@@ -932,9 +932,9 @@ If schema validation fails via the API, a 400 Bad Request is returned with detai
 <!-- Notes: "Schema validation is a crucial feature in Tyk’s Universal Data Graph that helps maintain the integrity and reliability of your GraphQL APIs.
 When you create or update a schema—whether through the Tyk Dashboard or the Dashboard API—Tyk automatically validates it to prevent broken or invalid schemas from being saved.
 This validation checks for common errors such as:
-Duplicate operation types like multiple Queries or Mutations defined,
-Duplicate type names, field names, or enum values,
-And the usage of unknown or undefined types.
+Duplicate operation types like multiple Queries or Mutations defined,
+Duplicate type names, field names, or enum values,
+And the usage of unknown or undefined types.
 If any of these issues are found, the system will reject the schema update and return a 400 Bad Request response with detailed error messages.
 This safeguard ensures that your API schemas remain consistent and error-free, preventing runtime failures and unexpected behaviors downstream.
 Overall, schema validation acts as an early warning system, catching issues before they impact your users." -->
@@ -1044,11 +1044,11 @@ enable_context_vars must be set to true.</pre>
 <!-- Notes: Tyk allows you to expose a GraphQL query as a REST endpoint using the persist_graphql feature inside extended_paths.
 This is configured on an HTTP-type API definition, not a GraphQL type.
 It’s especially useful for:
-Creating simple, cacheable REST endpoints from complex GraphQL queries.
-Providing predefined access to specific GraphQL operations without exposing the full schema.
+Creating simple, cacheable REST endpoints from complex GraphQL queries.
+Providing predefined access to specific GraphQL operations without exposing the full schema.
 To use this feature, two requirements must be met:
-The target_url must point to a valid GraphQL upstream.
-enable_context_vars must be set to true.
+The target_url must point to a valid GraphQL upstream.
+enable_context_vars must be set to true.
 This approach lets you combine the flexibility of GraphQL with the simplicity and caching benefits of REST. -->
 
 ---
@@ -1074,12 +1074,12 @@ GraphQL to REST middleware lives inside extended_paths.persist_graphql.</pre>
 </div>
 
 <!-- Notes: Here’s a basic example of an API definition for a GraphQL proxy in Tyk:
-The listen_path is set to /trevorblades/.
-The target_url points to the upstream GraphQL service at https://countries.trevorblades.com.
-We enable strip_listen_path to remove the prefix before forwarding requests upstream.
+The listen_path is set to /trevorblades/.
+The target_url points to the upstream GraphQL service at https://countries.trevorblades.com.
+We enable strip_listen_path to remove the prefix before forwarding requests upstream.
 To enable versioning with this setup:
-Set use_extended_paths to true — this allows more granular path handling.
-Set not_versioned to true if you want to disable automatic versioning behavior.
+Set use_extended_paths to true — this allows more granular path handling.
+Set not_versioned to true if you want to disable automatic versioning behavior.
 The important piece for GraphQL-to-REST conversion is that the middleware handling this logic lives inside the extended_paths.persist_graphql section.
 This modular approach gives you flexibility to manage your API versions and expose GraphQL queries as REST endpoints with fine control -->
 
@@ -1327,8 +1327,8 @@ APIs not (yet) managed in Tyk
 <!-- Notes: In traditional GraphQL, you often write resolvers — small functions that handle fetching data for each field in your schema. These need to be implemented manually and tied to specific types and fields.
 Tyk’s Universal Data Graph replaces resolvers with a more streamlined approach: DataSources. These are config-based, meaning you don’t have to write code — you just tell the engine where and how to get the data.
 There are two kinds of DataSources:
-Internal: These are your existing Tyk-managed APIs, like REST or SOAP. You can apply Tyk’s built-in middleware — for example, for auth, transformation, or rate limiting.
-External: These are APIs you haven’t added to Tyk yet. UDG allows you to include them in your graph right away. Later, if you want to bring them into Tyk to use middleware or analytics, that transition is easy.
+Internal: These are your existing Tyk-managed APIs, like REST or SOAP. You can apply Tyk’s built-in middleware — for example, for auth, transformation, or rate limiting.
+External: These are APIs you haven’t added to Tyk yet. UDG allows you to include them in your graph right away. Later, if you want to bring them into Tyk to use middleware or analytics, that transition is easy.
 This flexibility gives you a low-code way to build powerful, secure, and scalable GraphQL endpoints. -->
 
 ---
@@ -1376,7 +1376,7 @@ Tip: You can dynamically inject any GraphQL argument or field this way.</pre>
 </div>
 
 <!-- Notes: When configuring your DataSource, Tyk provides a flexible way to map GraphQL arguments into your REST call.
-In this case, to hit an endpoint like /user/123, you use templating like this: https://example.com/user/{{ .arguments.id }}
+In this case, to hit an endpoint like /user/123, you use templating like this:  https://example.com/user/{{ .arguments.id }}
 As you type the curly brace {, Tyk shows a dropdown with all the arguments and fields you can use — it’s very intuitive.
 This setup allows your UDG to resolve data dynamically and efficiently, making it easier to integrate with your existing APIs without writing extra code. -->
 
@@ -1447,7 +1447,7 @@ GraphQL schema:
   "user_name": "Martin Buhr"
 }
 
-<!-- Notes: When the field names don’t match, UDG cannot automatically resolve the response. In this example, the API returns user_name, but your schema defines the field as name. To fix this, enable field mapping manually and point the name field to user_name. For nested JSON fields, use dot notation like user.full_name. -->
+<!-- Notes: When the field names don’t match, UDG cannot automatically resolve the response.  In this example, the API returns user_name, but your schema defines the field as name.  To fix this, enable field mapping manually and point the name field to user_name.  For nested JSON fields, use dot notation like user.full_name. -->
 
 ---
 layout: default
@@ -1497,8 +1497,8 @@ https://driver-license-api.dev/driver-licenses/{{.object.driverLicenseID}}</pre>
 </div>
 
 <!-- Notes: Now that we’ve defined our schema, the next step is to connect each field to the appropriate data source using URLs.
-For simple fields like people, you can use a static URL. But when arguments are involved — like the id in person(id: Int!) — you use the .arguments placeholder to inject the argument into the URL.
-For nested objects like driverLicense, we want to use a field (driverLicenseID) from the parent object (Person). This is where .object.driverLicenseID comes in — it tells Tyk to use a property from the parent object when forming the request URL. -->
+For simple fields like people, you can use a static URL.  But when arguments are involved — like the id in person(id: Int!) — you use the .arguments placeholder to inject the argument into the URL.
+For nested objects like driverLicense, we want to use a field (driverLicenseID) from the parent object (Person).  This is where .object.driverLicenseID comes in — it tells Tyk to use a property from the parent object when forming the request URL. -->
 
 ---
 layout: default
@@ -1521,8 +1521,8 @@ GraphQL Query:
 }
 
 <!-- Notes: Now that we’ve defined our schema, the next step is to connect each field to the appropriate data source using URLs.
-For simple fields like people, you can use a static URL. But when arguments are involved — like the id in person(id: Int!) — you use the .arguments placeholder to inject the argument into the URL.
-For nested objects like driverLicense, we want to use a field (driverLicenseID) from the parent object (Person). This is where .object.driverLicenseID comes in — it tells Tyk to use a property from the parent object when forming the request URL. -->
+For simple fields like people, you can use a static URL.  But when arguments are involved — like the id in person(id: Int!) — you use the .arguments placeholder to inject the argument into the URL.
+For nested objects like driverLicense, we want to use a field (driverLicenseID) from the parent object (Person).  This is where .object.driverLicenseID comes in — it tells Tyk to use a property from the parent object when forming the request URL. -->
 
 ---
 layout: default
@@ -1560,7 +1560,7 @@ layout: default
 
 <!-- Notes: This is the final result of our setup.
 Using only a single GraphQL query, Tyk's Universal Data Graph engine makes multiple backend calls — first to the People API, then to the Driver License API — and stitches the data together automatically.
-The end user sees a clean, unified response, while the complexity of backend integrations is abstracted away. This is the core power of UDG: connecting distributed APIs into a single queryable graph. -->
+The end user sees a clean, unified response, while the complexity of backend integrations is abstracted away.  This is the core power of UDG: connecting distributed APIs into a single queryable graph. -->
 
 ---
 layout: default
@@ -2369,10 +2369,10 @@ layout: default
 <!-- Notes: What you're looking at is the architecture enabled by GraphQL Federation in Tyk.
 In the center, we have the Supergraph, which represents the unified GraphQL schema exposed to consumers. It acts as a single endpoint but is actually composed of several Subgraphs—each one backed by a different backend service or domain team.
 All these subgraphs are stitched together within the Tyk Gateway. This is key: Tyk is not just routing requests. It acts as the control layer that applies essential API management features like:
-Authentication – to ensure only valid clients can query the graph
-Authorization – to control access to specific parts of the graph
-Rate Limiting – to protect backend services from overload
-Monitoring &amp; Tracing – to give insight into how each subgraph performs
+Authentication – to ensure only valid clients can query the graph
+Authorization – to control access to specific parts of the graph
+Rate Limiting – to protect backend services from overload
+Monitoring &amp; Tracing – to give insight into how each subgraph performs
 At the bottom, you see arrows going to mobile apps, web clients, and other consumers. From their perspective, it’s just one GraphQL API. But behind the scenes, it’s a cleanly separated and scalable architecture.
 This setup empowers teams to own and deploy their own subgraphs independently, while Tyk stitches everything together securely and reliably. -->
 
@@ -2472,18 +2472,18 @@ extend type Product @key(fields: "upc") {
 We start with the Review type, which defines fields for the review body, its author, and the related product. Notice the use of @provides(fields: "username") on the author field—this tells the supergraph that the Review subgraph can provide the username field from the User entity, even though it doesn't own the User type.
 
 Below that, we see how the User type is extended from another subgraph:
-It’s marked with @key(fields: "id"), meaning id is used to uniquely identify a User across subgraphs.
-Both id and username are marked @external, because they are owned by the original User subgraph.
-The reviews field is added by this subgraph to enrich the User entity with related reviews.
+It’s marked with @key(fields: "id"), meaning id is used to uniquely identify a User across subgraphs.
+Both id and username are marked @external, because they are owned by the original User subgraph.
+The reviews field is added by this subgraph to enrich the User entity with related reviews.
 
 Similarly, the Product type is also extended:
-It uses the same pattern with @key and @external to integrate fields like upc, which is owned by the Products subgraph.
-Then, it adds a new reviews field to the Product entity.
+It uses the same pattern with @key and @external to integrate fields like upc, which is owned by the Products subgraph.
+Then, it adds a new reviews field to the Product entity.
 
 These patterns follow subgraph conventions in GraphQL Federation:
-Subgraphs can reference types defined in other subgraphs.
-Subgraphs can extend those types with additional fields.
-To make this work, any entity being shared across subgraphs must use the @key directive—this makes it an entity that others can build on.
+Subgraphs can reference types defined in other subgraphs.
+Subgraphs can extend those types with additional fields.
+To make this work, any entity being shared across subgraphs must use the @key directive—this makes it an entity that others can build on.
 This modular, team-owned design allows you to scale your GraphQL architecture without building one giant monolithic schema. -->
 
 ---
@@ -2521,11 +2521,11 @@ type User {
 
 
 <!-- Notes: Once we’ve defined and registered all our subgraphs—like Users, Products, and Reviews—we federate them into a single supergraph within the Tyk Gateway.
-Here, you can see the complete schema that gets exposed to the client. It merges the capabilities of each subgraph:
-topProducts and subscriptions come from the Products subgraph
-me and user details from the Users subgraph
-Review ties it all together—pulling user and product data from other subgraphs
-All this is made possible through federation. And the best part? The client doesn’t know or care which subgraph the data came from—they query one unified schema. Tyk manages all the complexity behind the scenes. -->
+Here, you can see the complete schema that gets exposed to the client.  It merges the capabilities of each subgraph:
+topProducts and subscriptions come from the Products subgraph
+me and user details from the Users subgraph
+Review ties it all together—pulling user and product data from other subgraphs
+All this is made possible through federation. And the best part? The client doesn’t know or care which subgraph the data came from—they query one unified schema.  Tyk manages all the complexity behind the scenes. -->
 
 ---
 layout: default
@@ -2544,10 +2544,10 @@ One supergraph = One entry point for all consumers</pre>
 </div>
 
 <!-- Notes: Let’s summarize what we’ve learned:
-Federation allows us to break up our GraphQL schema into multiple subgraphs, each maintained by different teams or services. This enables faster development and clearer ownership.
-We use directives like @key, @external, and @provides to establish relationships across these subgraphs. This makes the overall schema composable and flexible.
-All these subgraphs are unified at the Tyk Gateway level, which handles cross-cutting concerns like authentication, authorization, rate limiting, and more—ensuring governance and performance.
-The end result is a single supergraph exposed to clients—whether they’re web apps, mobile apps, or other consumers—offering one consistent API entry point.
+Federation allows us to break up our GraphQL schema into multiple subgraphs, each maintained by different teams or services. This enables faster development and clearer ownership.
+We use directives like @key, @external, and @provides to establish relationships across these subgraphs. This makes the overall schema composable and flexible.
+All these subgraphs are unified at the Tyk Gateway level, which handles cross-cutting concerns like authentication, authorization, rate limiting, and more—ensuring governance and performance.
+The end result is a single supergraph exposed to clients—whether they’re web apps, mobile apps, or other consumers—offering one consistent API entry point.
 Tyk’s federation support gives you the flexibility of a distributed architecture with the simplicity of a unified GraphQL interface. -->
 
 ---

@@ -33,11 +33,11 @@ jobs:
       - name: Build catalog artifacts
         run: npm run build:catalog
 
-      - name: Run test suite
-        run: npm test
-
       - name: Build publishable Slidev decks
         run: npm run build:decks
+
+      - name: Run test suite
+        run: npm test
 
       - name: Build GitHub Pages site scaffold
         run: npm run build:site
